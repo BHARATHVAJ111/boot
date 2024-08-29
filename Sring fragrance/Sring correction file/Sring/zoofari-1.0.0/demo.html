@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the mobile menu */
+        .menu {
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .menu button:focus {
+            outline: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        /* Style for showing the dropdown */
+        .show {
+            display: block;
+        }
+
+        /* Responsive design */
+        @media (min-width: 768px) {
+            .dropdown-content {
+                display: block;
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+
+            .menu button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <button onclick="toggleDropdown('productBase')">PRODUCT BASE</button>
+        <button onclick="toggleDropdown('fragranceBase')">FRAGRANCE BASE</button>
+    </div>
+
+    <div id="productBase" class="dropdown-content">
+        <p>Product Base Content</p>
+        <p>This section contains details about product bases.</p>
+    </div>
+
+    <div id="fragranceBase" class="dropdown-content">
+        <p>Fragrance Base Content</p>
+        <p>This section contains details about fragrance bases.</p>
+    </div>
+
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            var otherElement = id === 'productBase' ? 'fragranceBase' : 'productBase';
+
+            if (element.classList.contains('show')) {
+                element.classList.remove('show');
+            } else {
+                document.getElementById('productBase').classList.remove('show');
+                document.getElementById('fragranceBase').classList.remove('show');
+                element.classList.add('show');
+            }
+        }
+    </script>
+
+</body>
+</html>

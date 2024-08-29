@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Education</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+		* {
+			transition: all 0.3s ease-out;
+		}
+
+
+
+		/* .container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		} */
+
+		.card-new h3 {
+			color: #262626;
+			font-size: 17px;
+			line-height: 24px;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
+
+		.card-new p {
+			font-size: 17px;
+			font-weight: 400;
+			line-height: 20px;
+			color: #666666;
+
+			&.small {
+				font-size: 14px;
+			}
+		}
+
+		.go-corner {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			overflow: hidden;
+			top: 0;
+			right: 0;
+			background-color: #00838d;
+			border-radius: 0 4px 0 32px;
+		}
+
+		.go-arrow {
+			margin-top: -4px;
+			margin-right: -4px;
+			color: white;
+			font-family: courier, sans;
+		}
+
+		.card1 {
+			display: block;
+			position: relative;
+			max-width: 320px;
+			height: 100%;
+			background-color: #f2f8f9;
+			border-radius: 4px;
+			padding: 32px 24px;
+			margin: 12px;
+			text-decoration: none;
+			z-index: 0;
+			overflow: hidden;
+
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: -30px;
+				right: -16px;
+				background: #00838d;
+				height: 62px;
+				width: 32px;
+				border-radius: 32px;
+				transform: scale(1);
+				transform-origin: 50% 50%;
+				transition: transform 0.25s ease-out;
+			}
+
+			&:hover:before {
+				transform: scale(21);
+			}
+		}
+
+		.card1:hover {
+			p {
+				transition: all 0.3s ease-out;
+				color: rgba(255, 255, 255, 0.8);
+			}
+
+			h3 {
+				transition: all 0.3s ease-out;
+				color: #ffffff;
+			}
+		}
+
+		.card2 {
+			display: block;
+			top: 0px;
+			position: relative;
+			max-width: 262px;
+			background-color: #f2f8f9;
+			border-radius: 4px;
+			padding: 32px 24px;
+			margin: 12px;
+			text-decoration: none;
+			z-index: 0;
+			overflow: hidden;
+			border: 1px solid #f2f8f9;
+
+			&:hover {
+				transition: all 0.2s ease-out;
+				box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+				top: -4px;
+				border: 1px solid #cccccc;
+				background-color: white;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: -16px;
+				right: -16px;
+				background: #00838d;
+				height: 32px;
+				width: 32px;
+				border-radius: 32px;
+				transform: scale(2);
+				transform-origin: 50% 50%;
+				transition: transform 0.15s ease-out;
+			}
+
+			&:hover:before {
+				transform: scale(2.15);
+			}
+		}
+
+		.card3 {
+			display: block;
+			top: 0px;
+			position: relative;
+			max-width: 262px;
+			background-color: #f2f8f9;
+			border-radius: 4px;
+			padding: 32px 24px;
+			margin: 12px;
+			text-decoration: none;
+			overflow: hidden;
+			border: 1px solid #f2f8f9;
+
+			.go-corner {
+				opacity: 0.7;
+			}
+
+			&:hover {
+				border: 1px solid #00838d;
+				box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+				z-index: 500;
+			}
+		}
+
+		.card3:hover {
+			p {
+				color: #00838d
+			}
+
+			.go-corner {
+				transition: opactiy 0.3s linear;
+				opacity: 1;
+			}
+		}
+
+		.card4 {
+			display: block;
+			top: 0px;
+			position: relative;
+			max-width: 262px;
+			background-color: #ffffff;
+			border-radius: 4px;
+			padding: 32px 24px;
+			margin: 12px;
+			text-decoration: none;
+			overflow: hidden;
+			border: 1px solid #cccccc;
+
+			.go-corner {
+				background-color: #00838d;
+				height: 100%;
+				width: 16px;
+				padding-right: 9px;
+				border-radius: 0;
+				transform: skew(6deg);
+				margin-right: -36px;
+				align-items: start;
+				background-image: linear-gradient(-45deg, #8F479A 1%, #DC2A74 100%);
+			}
+
+			.go-arrow {
+				transform: skew(-6deg);
+				margin-left: -2px;
+				margin-top: 9px;
+				opacity: 0;
+			}
+
+			&:hover {
+				border: 1px solid #CD3D73;
+			}
+
+			h3 {
+				margin-top: 8px;
+			}
+		}
+
+		.card4:hover {
+			.go-corner {
+				margin-right: -12px;
+			}
+
+			.go-arrow {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header id="header" id="home">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+						</ul>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+						<a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span
+								class="text">+953 012 3654 896</span></a>
+						<a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span> <span
+								class="text">support@colorlib.com</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo/WhatsApp Image 2024-08-27 at 12.27.09 PM (1).jpeg" alt="" title="" width="100px" height="100px" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="index.html">Home</a></li>
+						<!-- <li><a href="about.html">About</a></li> -->
+						<li class="menu-has-children"><a href="">About</a>
+							<ul>
+								<li><a href="whoweare.html">WHO WE ARE?</a></li>
+								<li><a href="ourmission.html">OUR MISSION & VISION</a></li>
+								<li><a href="ourphilo.html">OUR PHILOSOPHY</a></li>
+								<li><a href="accreditation.html">ACCREDITATION</a></li>
+							</ul>
+						</li>
+						<li class="menu-has-children"><a href="">Organization</a>
+							<ul>
+								<li><a href="courses.html">ADVISORY BOARD</a></li>
+								<li><a href="academiccouncil.html">ACADEMIC COUNCIL & JOINT DIRECTORS </a></li>
+								<li><a href="founder.html">FOUNDER & CHAIRMAN MESSAGE</a></li>
+								<li><a href="vice cancellor.html">VICE CANCELLOR'S MESSAGE</a></li>
+								<li><a href="senetors.html">SENETOR MESSAGE</a></li>
+
+							</ul>
+						</li>
+						<li class="menu-has-children"><a href="">Cource</a>
+							<ul>
+								<li><a href="onsite-cources.html">ONSITE COURCES</a>
+								</li>
+								<!-- <li><a href="ghpu-alison.html">GHPU-ALISON COURCES </a></li> -->
+							</ul>
+						</li>
+						<li><a href="#">Admissions</a></li>
+						<li><a href="#">Affiliation</a></li>
+						<li><a href="#">Doctaral Studies</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li class="menu-has-children"><a href="blog-home.html">Blog</a>
+							<!-- <ul>
+								<li><a href="blog-home.html">Blog Home</a></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+							</ul> -->
+						</li>
+						<!-- <li class="menu-has-children"><a href="">Pages</a>
+							<ul>
+								<li><a href="course-details.html">Course Details</a></li>
+								<li><a href="event-details.html">Event Details</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li class="menu-has-children"><a href="">Level 2 </a>
+									<ul>
+										<li><a href="#">Item One</a></li>
+										<li><a href="#">Item Two</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li> -->
+						<li><a href="#">Verification</a></li>
+
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header><!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative about-banner" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">
+						Contact Us
+					</h1>
+					<!-- <p class="text-white link-nav"><a href="index.html">Home </a> <span -->
+							<!-- class="lnr lnr-arrow-right"></span> <a href="contact.html"> Contact Us</a></p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-home"></span>
+						</div>
+						<div class="contact-details">
+							<h5>Binghamton, New York</h5>
+							<p>
+								4343 Hinkle Deegan Lake Road
+							</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>00 (958) 9865 562</h5>
+							<p>Mon to Fri 9am to 6 pm</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-envelope"></span>
+						</div>
+						<div class="contact-details">
+							<h5>support@colorlib.com</h5>
+							<p>Send us your query anytime!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+						<div class="row">
+							<div class="col-lg-6 form-group">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter your name'"
+									class="common-input mb-20 form-control" required="" type="text">
+
+								<input name="email" placeholder="Enter email address"
+									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+									class="common-input mb-20 form-control" required="" type="email">
+
+								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
+									required="" type="text">
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea class="common-textarea form-control" name="message"
+									placeholder="Enter Messege" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+							</div>
+							<div class="col-lg-12">
+								<div class="alert-msg" style="text-align: left;"></div>
+								<button class="genric-btn primary" style="float: right;">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
+	<div class="container text-center card-new">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/france.png" width="120px" height="80px" alt="">
+					<h3>FRANCE</h3>
+					<h6 class="small">GHPU Regional Center</h6>
+					<h3>Dr. VASANTE JAYAKUMAR</h3>
+					<p>MIS., MS., MP., ME.,</p>
+					<h6 style="text-align: center;">President &amp; CEO &#8211; CAMPTIF<br />
+						Joint Director , GHPU &#8211; Europe ( France )</h6>
+					<p style="text-align: center;"><strong>CAMPTIF &#8211; GHPU</strong><br />
+						29 rue Sébastien de Brossard<br />
+						77100 &#8211; Meaux, France<br />
+						Call : +33 6 27 72 45 90</p>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/india.png" width="120px" height="80px" alt="">
+					<h3>INDIA</h3>
+					<h6 class="small">GHPU Regional Center</h6>
+					<h6 style="text-align: center;">Hyderabad ( Telengana Region)</h6>
+					<p style="text-align: center;"><strong>Dr. KANDUKURI VIJAYA MOHAN </strong></p>
+					<p style="text-align: center;">Sri Varalakshmidevi Sadan, Plot No.16 , H.No. 12-1.169 Hanuman Nagar
+						Post, Jaipur Colony, G.S.I. Nagole, Hyderabad- 500068 R. R. Dist Telengana</p>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 vh-100">
+				<a class="card1" href="#">
+					<img src="./img/flags/india.png" width="120px" height="80px" alt="">
+					<h3>INDIA </h3>
+					<h6 style="text-align: center;">GHPU Regional Center</h6>
+					<h6 style="text-align: center;">BENGALURU &#8211; KARNATAKA</h6><br>
+					<p style="text-align: center;">#1035, 4th M Block, Near Golden Heights, Dr Rajkumar Road, Rajaji
+						Nagar, Bengaluru &#8211; 560010</p>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="row mt-3 mb-3">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/india.png" width="120px" height="80px" alt="">
+					<h3>INDIA </h3>
+					<h6 style="text-align: center;">GHPU Regional Center</h6>
+					<h6 style="text-align: center;">Kolkata ( West Bengal )</h6>
+					<p style="text-align: center;"><strong>Mr. SUBHASISH SAHA Regional Director </strong></p>
+					<p style="text-align: center;">51/C Mott Lane, Kolkata 700013</p>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/square.png" width="120px" height="80px" alt="">
+					<h3>MALAYSIA </h3>
+					<h6 style="text-align: center;">GHPU Regional Center</h6>
+					<p style="text-align: center;">117, Jalan Trus, 80000 Johor Bahru, Johor, Malaysia</p>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 vh-100">
+				<a class="card1" href="#">
+					<img src="./img/flags/italy flag.png" width="120px" height="80px" alt="">
+					<h3>Italy </h3>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="row mt-3 mb-5">
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/download.png" width="120px" height="80px" alt="">
+					<h3>Saudi Arabia </h3>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<a class="card1" href="#">
+					<img src="./img/flags/download (1).png" width="120px" height="80px" alt="">
+					<h3>Germany </h3>
+					<div class="go-corner" href="#">
+						<div class="go-arrow">
+							→
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- start footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<div class="d-flex justify-content-center mb-3">
+							<img src="./img/logo/WhatsApp Image 2024-08-27 at 12.27.09 PM (1).jpeg" alt="" width="100px" height="100px">
+						<h3 class="mt-2 ml-2 text-white">
+							Research University For Socio-Economic Development(R)</span></h3>
+							
+						</div>
+						<ul>
+							<li><a href="#">Global Human Peace University an Independent , Non Academic International
+									Online University Incorporated and Registered under the State of Delaware, USA and
+									Globally Recognized.</a></li>
+							<li><a href="#">Certified by, SCK – a Certification Body which is Accredited by
+									International Accreditation Service ( IAS ) and recognized by International
+									Accreditation Forum ( IAF )</a></li>
+							<li><a href="#">GHPU association with People Forum of India Bharat Sevak Shamaj ( Regd.
+									866/BK IV/2011 ) an NGO Partner under Planning Commission – Government of India</a>
+							</li>
+							<!-- <li><a href="#">Marketing Service</a></li> -->
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Quick links</h4>
+						<ul>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Brand Assets</a></li>
+							<li><a href="#">Investor Relations</a></li>
+							<li><a href="#">Terms of Service</a></li>
+						</ul>
+					</div>
+				</div> -->
+				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Features</h4>
+						<ul>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Brand Assets</a></li>
+							<li><a href="#">Investor Relations</a></li>
+							<li><a href="#">Terms of Service</a></li>
+						</ul>
+					</div>
+				</div> -->
+				<div class="col-lg-3 col-md-6 col-sm-6 text-center">
+					<div class="single-footer-widget">
+						<h4>Useful links</h4>
+						<ul>
+							<li><a href="./whoweare.html">About</a></li>
+							<li><a href="./academiccouncil.html">Organization</a></li>
+							<li><a href="onsite-cources.html">Cource</a></li>
+							<li><a href="./gallery.html">Gallery</a></li>
+							<li><a href="./blog-home.html">Blog</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4 class="text-center">Contact With Us</h4>
+						<!-- <p>Stay update with our latest</p> -->
+						<div class="" id="mc_embed_signup">
+							<div class="d-flex justify-content-between">
+								<img src="./img/location.jpeg" alt="" width="30px" class="mr-4" height="30px">
+							<p>19, Holly
+								Cove Ln. Dover, Kent - 19901 , Delaware State, USA</p>
+							</div> 
+							<img src="./img/mail.jpeg" alt="" width="30px" height="30px"><span> info@ghpuedu.org</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom row align-items-center justify-content-between">
+				<p class="footer-text m-0 col-lg-12 col-md-12 text-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</p>
+				
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.tabs.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

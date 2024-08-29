@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Design by foolishdeveloper.com -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <title>Sring</title>
+    <link href="/TeaHouse-1.0.0/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="TeaHouse-1.0.0/assets/css/bootstrap.min.css">
+    <style media="screen">
+*{
+	box-sizing: border-box;
+}
+
+/* .item{
+  background: #E8E8E8;
+  margin-top: 10px;
+  text-align: center;
+} */
+
+.vendor-info, .caption{
+  padding: 5px;
+}
+
+.vendor-info img{
+  border-bottom: thin solid #353535;
+  -webkit-box-shadow: inset 0px -8px 20px 7px rgba(0,0,0,0.42);
+-moz-box-shadow: inset 0px -8px 20px 7px rgba(0,0,0,0.42);
+box-shadow: inset 0px -8px 20px 7px rgba(0,0,0,0.42);
+}
+
+/* owl nav */
+.owl-nav span{
+  color:#fff;
+}
+
+.owl-nav span:hover{
+  color: #424242;
+}
+
+.owl-prev, .owl-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -3rem
+}
+
+.owl-next {
+  right: -3rem;
+}
+
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+
+/*** Animal ***/
+.animal-item {
+    position: relative;
+    display: block;
+}
+
+.animal-item .animal-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px !important;
+    opacity: 0;
+    transition: .5s;
+}
+
+.animal-item:hover .animal-text {
+    opacity: 1;
+    padding-bottom: 20px !important;
+}
+    </style>
+  </head>
+  <body>
+   <!-- Topbar Start -->
+   <div class="container-fluid bg-dark text-light p-0 wow fadeIn" data-wow-delay="0.1s">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-envelope-open -alt text-primary me-2"></small>
+          <small>
+            sringfragrance@gmail.com
+           </small>
+        </div>
+        <!-- <div class="h-100 d-inline-flex align-items-center py-3">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+        </div> -->
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-phone text-primary me-2"></small>
+          <small>+91 9445903393</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/SringFragrances/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.youtube.com/channel/UCGTcrCWm1z4aGkzwnVhgVDQ"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/sringfragrances/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <nav
+  class="navbar navbar-expand-lg navbar-light bg-color sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+  data-wow-delay="0.1s"
+>
+  <a href="index.html" class="d-flex">
+    <img class="" src="./images/logo/img-2.jpeg" alt="Icon" width="80px" height="70px" />
+    <h3 class="m-0 text-light pt-3">Sring Fragrance</h3>
+  </a>
+  <button
+    type="button"
+    class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+    <div class="navbar-nav ms-auto">
+      <a href="index.html" class="nav-item nav-link active text-light">Home</a>
+      <a href="about.html" class="nav-item nav-link">About</a>
+      <div class="nav-item dropdown">
+        <a
+          href="#"
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Categories</a
+        >
+        <div class="dropdown-menu">
+          <table class="table">
+            <tbody>
+              <tr class="">
+                <th class="bg-light">
+                   <a href="attar.html" class="border-bottom border-2">Attar & Ittar</a>
+                   <p>Gold Sandal <br>Jannatul Firdaus <br>Jasmin <br>Madeena Oudh <br>Majmua <br>Mitti <br>Oudh Flora <br>Oud Rose <br>Saffron <br>Sandal Pure <br>White Oudh</p>
+                   <a href="exdb.html" class="">Extrait De Perfume</a><br>
+                   <hr>
+                   <a href="edt.html" class="border-bottom border-2">Eau De Toilette</a><br>
+                   <a href="essentialoil.html" class="border-bottom border-2">Essential Oil</a><br>
+                   <a href="oil.html" class="border-bottom border-2">Perfume Oil</a> <br>
+                  </th>
+                  <th class="w-25">
+                 <a href="bakhoor.html" class="border-bottom border-2">Bakhoor</a><br>
+                 <a href="reedsticks.html" class="border-bottom border-2">Reed Sticks</a><br>
+                <p>Arabian Oudh <br>Moon Light <br>Oudh Kuwaiti <br>Ruh Gulab <br>Ultimate </p>
+                  <a href="agarbathi.html" class="border-bottom border-2">Agarbathi Sticks</a><br>
+                   <a href="edc.html" class="border-bottom border-2" >Eau De Cologne</a><br>
+                   <a href="ef.html" class="border-bottom border-2">Eau Fraiche</a><br>
+                   <a href="edp.html" class="border-bottom border-2">Eau De Perfume/Parfum</a>
+                   <p>Active Men <br>Amber Bahraini <br>Amber Oudh Rasasi <br>Armani Code<br>Aseel Gold </p>
+                </th>
+                 <th class="bg-light">
+                  <p>Cigar Cobra <br>Cool Water Men <br>Demin Oudh <br>Dunhill Desire Red <br>Eternity Men <br>Figo Boss <br>Good Morning <br>Ice Cube <br>Jaquar <br>Jovan Musk <br>Lords <br>Magnet <br>Maxi <br>Million <br>Mix Fruit <br>Musk <br>Mysore sandal<br>Armani Code Sports </p>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- <a href="/TeaHouse-1.0.0/index.html" class="nav-item nav-link">Products</a> -->
+      <a href="contact.html" class="nav-item nav-link">Contact</a>
+      <button type="button" data-toggle="tooltip" data-placement="bottom" title="Dark and Light"class="btn btn boorder border-circle nav-item nav-link" onclick="myFunction()"><i class="fa-regular fa-moon"></i></button>
+     
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+    <!-- Animal Start -->
+    <div class="container-xxl py-5 bg">
+      <div class="container">
+        <div
+          class="row g-5 mb-5 align-items-end wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="col-lg-6">
+            <h4 class="fst-italic"><span class="text-primary me-2">#</span>Our Fragurance</h4>
+           
+          </div>
+          <div class="col-lg-6 text-lg-end">
+           
+          </div>
+        </div>
+        <hr>
+        <h2 class="text-center fst-italic"><span class="text-primary me-2">#</span>Attar and Ittar</h1>
+        <hr>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4">
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="img-fluid" src="images/attar and ittar/gold sandal.jpeg" alt="" />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Attar</p>
+                      <h5 class="text-white mb-0">Gold Sandal</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="" src="images/attar and ittar/jannadul.jpeg" alt="" width="350px" height="400px"/>
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Attar</p>
+                      <h5 class="text-white mb-0">Jannatul Firdaus</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="row g-4">
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="" src="images/attar and ittar/rose oud.jpeg" alt="" height="400px" width="355px" />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Oudh</p>
+                      <h5 class="text-white mb-0">Oudh Rose</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="img-fluid" src="images/attar and ittar/majma.jpeg" alt="" />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Attar</p>
+                      <h5 class="text-white mb-0">Majmua Attar</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row g-4">
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="img-fluid" src="images/attar and ittar/mitti.jpeg" alt="" />
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Oudh</p>
+                      <h5 class="text-white mb-0">Mitti Oudh</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-12">
+                <a
+                  class="animal-item"
+                  href=""
+                  data-lightbox="animal"
+                >
+                  <div class="position-relative">
+                    <img class="" src="images/attar and ittar/oud floral.jpeg" alt="" width="355px" height="400px"/>
+                    <div class="animal-text p-4">
+                      <p class="text-white small text-uppercase mb-0">Oudh</p>
+                      <h5 class="text-white mb-0">Oudh Flora</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Animal End -->
+
+
+    <div class="untree_co-section pt-4 product-section before-footer-section bg">
+      <div class="container">
+        <div class="row">
+          <hr>
+          <h3 class="fst-italic text-center p-2"><span class="text-primary me-2">#</span>Pick From The Best</h3>
+          <hr>
+          <!-- Start Column 1 -->
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <a class="product-item" href="#">
+              <img
+                src="images/attar and ittar/jasmin.jpeg"
+                class=" product-thumbnail" height="338px" width="260px"
+              />
+            </a>
+             <h3 class="product-title text-center">Jasmin Attar</h3>
+          </div>
+          <!-- End Column 1 -->
+
+          
+          <!-- Start Column 4 -->
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <a class="product-item" href="#">
+              <img
+                src="images/attar and ittar/saffron.jpeg"
+                class="product-thumbnail" height="338px" width="260px"
+              />
+            </a>
+            <h3 class="product-title text-center">Saffron Oudh</h3>
+          </div>
+          <!-- End Column 4 -->
+
+          <!-- Start Column 1 -->
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <a class="product-item" href="#">
+              <img
+                src="images/attar and ittar/sandal.jpeg"
+                class=" product-thumbnail"  height="338px" width="260px"  />
+            </a>
+            <h3 class="product-title text-center">Sandal Pure</h3>
+
+          </div>
+          <!-- End Column 1 -->
+
+          <!-- Start Column 2 -->
+          <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <a class="product-item" href="#">
+              <img
+                src="images/attar and ittar/white oud.jpeg"
+                class="product-thumbnail" height="338px" width="260px"  />
+            </a>
+            <h3 class="product-title text-center">White Oudh</h3>
+          </div>
+          <!-- End Column 2 -->
+
+                  </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+<div
+class="container-fluid footer text-light footer mt-5 pt-5 wow fadeIn bg-color"
+data-wow-delay="0.1s"
+>
+<div class="container py-3">
+  <div class="row g-5">
+    <div class="col-lg-4 col-md-6">
+      <h4 class=" mb-4 text-light"><span><i class="fa fa-map-marker-alt me-2 fs-3"></i></span>Address</h5>
+      <p class="mb-2">
+        <span class="fs-5 pb-2" style="margin-left: 30px;">No:31,4th Main Road,Rajalakshmi <span class="" style="margin-left: 30px;">Nagar,Velachery,Chennai-600042.</span></span>
+        </p>
+      </p>
+    </div>
+    <div class="col-lg-4 col-md-6 text-light text-center">
+      <h4 class="mb-4 text-light"><span><i class="fa fa-phone me-3 fs-3"></i></span>Contact Now</h4>
+      <p class="mb-2">
+        <span class="fs-5 pb-2 ms-5">+91 9445903393</span>
+      </p>
+     
+    </div>
+    <div class="col-lg-4 col-md-6 text-light">
+      <h4 class="mb-4 text-light"> <span> <i class="fa fa-envelope me-3 fs-3"></i></span>Email Now</h4>
+      <p class="mb-2">
+       <span class="fs-5 pb-2 ms-5">sringfragrance@gmail.com</span>
+      </p>
+  
+  </div>
+</div>
+<!-- icons -->
+<div class="d-flex pt-1 justify-content-center">
+  <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sringfragrances/"
+    ><i class="fab fa-instagram"></i
+  ></a>
+  <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/SringFragrances/"
+    ><i class="fab fa-facebook-f"></i
+  ></a>
+  <a class="btn btn-outline-light  btn-social" href="https://www.youtube.com/channel/UCGTcrCWm1z4aGkzwnVhgVDQ"
+    ><i class="fab fa-youtube"></i
+  ></a>
+  
+</div>
+<hr>
+<div class="text-center  fs-5  pt-1">
+  &copy; <a class="border-bottom " href="https://www.pojotechnology.com/">pojotechnology</a>, All
+  Right Reserved.
+</div>
+<div class="">
+  <div class="">
+    <div class="row">
+     
+      <div class="">
+        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <!-- <a href="" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a> -->
+
+
+   <!-- JavaScript Libraries -->
+   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/counterup/counterup.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+
+   <!-- Template Javascript -->
+   <!-- <script src="js/main.js"></script> -->
+
+
+   
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+  </body>
+</html>
