@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Pojo Technology</title>
+	<title>Drop Truck</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#4302b2">
 
-	<link href="images/favicon.png" rel="icon">
+	<link href="img/logo/logo-1.jpg" rel="icon">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/plugin.min.css" rel="stylesheet">
@@ -24,6 +24,102 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.img-product {
+			width: 100%;
+			/* Ensures the image takes the full width of its container */
+			height: 250px;
+			/* Set a fixed height for uniformity */
+			object-fit: cover;
+			/* Ensures the image covers the area without distortion */
+		}
+
+
+		a:hover,
+		a:focus {
+			outline: none;
+		}
+
+		/*----*/
+
+	
+
+	
+
+
+
+
+
+		/*
+-----------------
+common style
+-----------------
+*/
+
+		.menu button {
+			color: rgba(255, 255, 255, 0.8);
+			font-family: Lato;
+			font-size: 17pt;
+			font-weight: 400;
+			padding: 15px 25px;
+			/**/
+			position: relative;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.SMN_effect-39 button:before,
+		.SMN_effect-39 button:after {
+			content: '';
+			position: absolute;
+			width: 5px;
+			border-radius: 50%;
+			background: #fedd2e;
+			top: 17px;
+			transition: height 0.3s 0.3s ease, border-radius 0.3s 0.3s ease, top 0.3s 0.3s ease, width 0.3s ease;
+		}
+
+		.SMN_effect-39 button:before {
+			height: 5px;
+			left: 0;
+		}
+
+		.SMN_effect-39 button:after {
+			height: 0;
+			right: 0;
+		}
+
+		.SMN_effect-39 button:hover:before,
+		.SMN_effect-39 button:hover:after {
+			top: 10%;
+			width: 55%;
+			height: 80%;
+			z-index: -1;
+			border-radius: 5px;
+			transition: height 0.3s ease, border-radius 0.3s ease, top 0.3s ease, width 0.3s 0.3s ease;
+		}
+
+		.SMN_effect-39 button {
+			z-index: 1;
+			display: inline-block;
+			padding: 10px 20px;
+			position: relative;
+			transition: all 0.3s ease;
+		}
+
+		.SMN_effect-39 button:hover {
+			transition: all 0.3s 0.3s ease;
+			text-decoration: none;
+			color: black;
+			font-weight: 700;
+		}
+		.active {
+  background-color: #fedd2e !important;
+  color: black;
+  font-weight: 700;
+}
+	</style>
 </head>
 
 <body>
@@ -32,8 +128,8 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img src="images/logo.png" alt="Logo" class="mega-white-logo" />
-						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" />
+						<img src="img/logo/Drop Truck Logo.png" alt="Logo" class="mega-white-logo" />
+						<img src="img/logo/Drop Truck Logo.png" alt="Logo" class="mega-darks-logo" />
 					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -47,10 +143,10 @@
 						</li>
 
 						<li>
-							<a href="products.html" class="menu-links">Products</a>
+							<a href="products.html" class="menu-links">Services</a>
 						</li>
 
-						<li class="sbmenu rpdropdown">
+						<!-- <li class="sbmenu rpdropdown">
 							<a href="#" class="menu-links">Services</a>
 							<div class="nx-dropdown menu-dorpdown">
 								<div class="sub-menu-section">
@@ -73,7 +169,7 @@
 						</li>
 						<li>
 							<a href="our-clients.html" class="menu-links">Our Clients</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="contact-us.html" class="menu-links">Contact Us</a>
 						</li>
@@ -83,8 +179,8 @@
 					<ul class="nav-list right-end-btn">
 						<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
 								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-						<li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
-								Quote <span class="circle"></span></a> </li>
+						<!-- <li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
+								Quote <span class="circle"></span></a> </li> -->
 
 						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
 								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
@@ -104,10 +200,10 @@
 					</li>
 
 					<li>
-						<a href="products.html">Products</a>
+						<a href="products.html">Services</a>
 					</li>
 
-					<li>
+					<!-- <li>
 						<a href="#">Services</a>
 						<ul>
 							<li><a href="mobile-app-development.html">Mobile App Development</a> </li>
@@ -122,7 +218,7 @@
 
 					<li>
 						<a href="our-clients.html" class="menu-links">Our Clients</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="contact-us.html" class="menu-links">Contact Us</a>
 					</li>
@@ -149,48 +245,48 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+918072515050">+91 80725 15050 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="tel:+917502999899">+91 7502999899<span>Mon-Fri 9am - 6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+91918072515050" target="_blank">+91 80725 15050 <span>Mon-Fri 9am -
+						<a href="https://wa.me/+917502999899" target="_blank">+91 7502999899<span>Mon-Fri 9am -
 								6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="mailto:info@pojotechnology.com" target="_blank">info@pojotechnology.com
+						<a href="mailto:info@pojotechnology.com" target="_blank">admin@droptruck.in
 							<span>Online Support</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="#">111, RR Building Opp, Guindy, Chennai-600032<span>Visit Our Office</span></a>
+						<a href="#">No: 7/2, Anjaneyar Koil St, LittleMount, Saidapet, Chennai, Tamil Nadu-600015<span>Visit Our Office</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="contact-data mt30">
 				<h4>Follow Us On:</h4>
 				<div class="social-media-linkz mt10">
-					<a href="https://www.facebook.com/pojotechnology" target="blank"><i class="fab fa-facebook"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i
+					<a href="https://www.facebook.com/profile.php?id=61553537716903&mibextid=ZbWKwL" target="blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://x.com/_drop_truck" target="blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/droptruck.in?igsh=cjMzamxuZDR2M3U0" target="blank"><i
 							class="fab fa-instagram"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-					<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a> -->
+					<a href="https://www.youtube.com/@DROPTRUCK" target="blank"><i
 							class="fab fa-youtube"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a> -->
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<section class="breadcrumb-area banner-1" data-background="images/banner/9.jpg">
+	<!-- <section class="breadcrumb-area banner-1" data-background="images/banner/9.jpg">
 		<div class="text-block">
 			<div class="container">
 				<div class="row">
@@ -210,91 +306,91 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
-	<section class="case-study pad-tb pt40">
+	<!-- <section class="case-study pad-tb pt40">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/products/web-design.jpg" alt="products"
+						<div class="image-div"><a href="#"><img src="img/bolero.jpeg" alt="products"
 									class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Web Design</a></h4>
+							<h4><a href="#">7 Feet, 8 Feet Trucks</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/products/e-commerce-website.jpg"
+						<div class="image-div"><a href="#"><img src="img/407.jpg"
 									alt="products" class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">E-Commerce Website</a></h4>
+							<h4><a href="#">407,Bada Dost,Intra</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
-						<div class="image-div"><a href="#"><img src="images/products/business-website.jpg"
+						<div class="image-div"><a href="#"><img src="img/12 feet.jpeg"
 									alt="products" class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Business Website</a></h4>
+							<h4><a href="#">Eichers Trucks(Open,Containers)</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/travel-booking.jpg" alt="products"
 									class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Travel Booking Websites</a></h4>
+							<h4><a href="#">Taurus Lorries</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/e-commerce-app.jpg" alt="products"
 									class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">E-Commerce App</a></h4>
+							<h4><a href="#">SXL, MXL Containers</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/matrimony-website.jpg"
 									alt="products" class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Matrimony Website</a></h4>
+							<h4><a href="#">Trailers Segments</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/mini-website.jpg" alt="products"
 									class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Mini Website</a></h4>
+							<h4><a href="#">ODC (Over Dimensional Cargo)</a></h4>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/voice-chat-app.jpg" alt="products"
 									class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Voice Chat App</a></h4>
+							<h4><a href="#">Car Carrier</a></h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="full-image-card hover-scale">
 						<div class="image-div"><a href="#"><img src="images/products/taxi-booking-app.jpg"
 									alt="products" class="img-fluid" /></a></div>
 						<div class="info-text-block">
-							<h4><a href="#">Taxi Booking App</a></h4>
+							<h4><a href="#">Part Load Services</a></h4>
 						</div>
 					</div>
 				</div>
@@ -309,51 +405,304 @@
 				</div>
 			</div>
 		</div>
+	</section> -->
+
+	<section class="case-study  pt100 bg-light pb-5">
+		<h2 class="text-center pt-3"><span class="text-second">Drop Truck </span>Provides</h2>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/mahindra-bolero-pickup-exterior-5-removebg-preview.png"
+									alt="Turkey" class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">7 Feet & 8 Feet </a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div bg-light shadow">
+							<a href="#">
+								<img src="img/trucks/407.jpg" alt="Giriraja Chicken" class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">407, Bada Dost & Intra</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/eicher-removebg-preview.png" alt="Gramapriya"
+									class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">Canter</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/52687797337_452630577c_h-removebg-preview.png"
+									alt="Country Chicken (Nattukozhi)" class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">Taurus</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/ashok-leyland-removebg-preview.png" alt="Kadaknath Chicken"
+									class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">SXL & MXL </a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/trailer.png" alt="Indian Runner" class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">Trailers</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/odc-transport-removebg-preview.png" alt="Ducks"
+									class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">ODC (Over Dimensional Cargo)</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/40-ft-car-carrier-trailer-500x500.webp" alt="Fancy Chicks"
+									class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">Car Carrier</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="full-image-card hover-scale">
+						<div class="image-div shadow">
+							<a href="#">
+								<img src="img/trucks/Part Load.jpg" alt="Fancy Chicks"
+									class="img-fluid img-product" />
+							</a>
+						</div>
+						<div class="info-text-block">
+							<h4><a href="#">Part Load</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
-	<footer>
+	<!-- <section class="mt-5 mb-5 "></section> -->
+	<div class="container-fluid text-center pb-5 pt-5">
+		<!-- <h4 class="mb-2"	><span class=""></span>We are transforming cities</h4>
+		<P class="container">Droptruck is India's Leading Web And App-Based Truck Booking Platform, Offering Customers
+			All The Essential Information In One Place. As The Only Online Truck Service Provider Offering Vehicles From
+			Tata Ace to ODC Consignments, Droptruck Lets You Track Your Truck's Location In Real-Time And Access Crucial
+			Documents Such As Driver Details, Vehicle Documents, And Proof Of Delivery Through Our Application.
+			Droptruck Logistics Services Are Considered The Best in The Industry With 24/7 Support And Real-Time SIM
+			Tracking Fxacility.</P> -->
+		<h2 class="p-2 pb-5">
+			<span class="spanw"></span>Transportation Services to
+		</h2>
+		<div>
+			<div class="">
+				<div class=" ">
+					<ul class="SMN_effect-39 d-flex flex-wrap justify-content-evenly"  id="myDIV">
+						<li><button onclick="showCities('Andhra Pradesh',this)" class="btn">Andhra Pradesh</button></li>
+						<!-- <li>
+							<button onclick="showCities('Andhra Pradesh')" class="btn">Andhra Pradesh</button>
+						</li> -->
+						<li>
+							<button onclick="showCities('Arunachal Pradesh',this)" class="btn">Arunachal Pradesh</button>
+						</li>
+						<li>
+							<button onclick="showCities('Assam')" class="btn">Assam</button>
+						</li>
+						<li>
+							<button onclick="showCities('Bihar')" class="btn">Bihar</button>
+						</li>
+						<li>
+							<button onclick="showCities('Chandigarh')" class="btn">Chandigarh</button>
+						</li>
+						</li>
+						<button onclick="showCities('Sikkim')" class="btn">Sikkim</button>
+						</li>
+						<li>
+							<button onclick="showCities('Delhi')" class="btn">Delhi</button>
+						</li>
+						<li>
+							<button onclick="showCities('Goa')" class="btn">Goa</button>
+						</li>
+						<li>
+							<button onclick="showCities('Gujarat')" class="btn">Gujarat</button>
+						</li>
+						<li>
+							<button onclick="showCities('Haryana')" class="btn">Haryana</button>
+						</li>
+						<li>
+							<button onclick="showCities('Himachal Pradesh')" class="btn">Himachal Pradesh</button>
+						</li>
 
+						<li>
+							<button onclick="showCities('Jharkhand')" class="btn">Jharkhand</button>
+						</li>
+						<li>
+							<button onclick="showCities('West Bengal')" class="btn">West Bengal</button>
+						</li>
+						<li>
+							<button onclick="showCities('Karnataka')" class="btn">Karnataka</button>
+						</li>
+						<li>
+							<button onclick="showCities('Kerala')" class="btn">Kerala</button>
+						</li>
+						<li>
+							<button onclick="showCities('Ladakh')" class="btn">Ladakh</button>
+						</li>
+
+						<li>
+							<button onclick="showCities('Madhya Pradesh')" class="btn">Madhya Pradesh</button>
+						</li>
+						<li>
+							<button onclick="showCities('Maharashtra')" class="btn">Maharashtra</button>
+						</li>
+						<li>
+							<button onclick="showCities('Manipur')" class="btn">Manipur</button>
+						</li>
+						<li>
+							<button onclick="showCities('Meghalya')" class="btn">Meghalaya</button>
+						</li>
+						<li>
+							<button onclick="showCities('Tamil Nadu')" class="btn">Tamil Nadu</button>
+						</li>
+						<li>
+
+
+							<li>
+								<button onclick="showCities('Telungana')" class="btn">Telungana</button>
+						</li>
+						<li>
+							<button onclick="showCities('Tripura')" class="btn">Tripura</button>
+						</li>
+						<li>
+							<button onclick="showCities('Uttar Pradesh')" class="btn">Uttar Pradesh</button>
+						</li>
+						<li>
+							<button onclick="showCities('Mizoram')" class="btn">Mizoram</button>
+						</li>
+
+						<li>
+							<button onclick="showCities('Uttarakhand')" class="btn">Uttarakhand</button>
+						</li>
+						<li>
+							<button onclick="showCities('Nagaland')" class="btn">Nagaland</button>
+						</li>
+						<li>
+							<button onclick="showCities('Punjab')" class="btn">Punjab</button>
+						</li>
+						<li>
+							<button onclick="showCities('Odisha')" class="btn">Odisha</button>
+						</li>
+						<li>
+							<button onclick="showCities('Puducherry')" class="btn">Puducherry</button>
+						</li>
+						<li>
+							<button onclick="showCities('Rajasdhan')" class="btn">Rajasthan</button>
+						</li>
+						<li>
+							<button onclick="showCities('Jammu and Kashmir')" class="btn">Jammu and Kashmir</button>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <p id="demo"></p> -->
+		<div id="content" class="bg-warning shadow mb-2">
+			
+
+		</div>
+
+	</div>
+	</section>
+
+
+	<footer class="">
 		<div class="footer-row2">
-			<div class="container">
+			<div class="container pb-3">
 				<div class="row justify-content-between">
-					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="images/logo.png"
-								alt="Logo" /></a>
-						<a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="images/white-logo.png"
-								alt="Logo" /></a>
-						<p>Founded in 2018, Pojo Technology is working with customers and partners to deliver solutions
-							across multiple verticals. With proprietary core technologies, Pojo Technology delivers
-							Website,Mobile Applications and Digital Marketing solutions to enhance enterprise
-							operations.</p>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<h5>Useful Links</h5>
-						<ul class="footer-address-list link-hover">
-							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
-							<li><a href="web-development.html">Web Development</a></li>
-							<li><a href="seo.html">Search Engine Optimization</a></li>
-							<li><a href="digital-marketing.html">Digital Marketing</a></li>
-							<li><a href="hosting.html">Hosting Services</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-6 col-sm-6  ftr-brand-pp">
+						<div class="d-flex justify-content-center text-center">
+							<a class="navbar-brand  f-dark-logo" href="#"> <img src="img/logo/Drop Truck Logo.png"
+									alt="Logo" /></a>
+							<a class="navbar-brand f-white-logo" href="#"> <img src="img/logo/Drop Truck Logo.png"
+									alt="Logo" /></a>
+						</div>
+								<!-- <p><b><span class="text-second">Drop Truck</span></b> is a one-stop solution connecting customers directly with drivers, eliminating middlemen for transparent and hassle-free trucking across India. We ensure reliable shipping and peace of mind by parting ways with fraudulent brokers and transporters.</p> -->
+								<div class="text-center">
+									<a href="https://play.google.com/store/apps/details?id=com.pojo.nkstraders&pcampaignid=web_share" target="_blank">
+										<img src="./img/icons/google play.jpeg" width="125px" height="100px" alt="">
+										<img src="./img/icons/app  store.jpeg" width="125px" height="100px" alt="">
+									</a>
+								</div>
+							</div>
+					<div class="col-lg-1"></div>
+					
+					<div class="col-lg-5 col-sm-6">
 						<h5>Contact Us</h5>
 						<ul class="footer-address-list ftr-details">
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
 								<p>Email <span> <a
-											href="mailto:info@pojotechnology.com">info@pojotechnology.com</a></span>
+											href="mailto:info@pojotechnology.com">admin@droptruck.in</a></span>
 								</p>
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
 								<p>Phone <span> <a href="tel:+918072515050">
-											+91 80725 15050</a></span></p>
+									+91 7502999899</a></span></p>
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span> 111, RR Building Opp, Guindy, Chennai-600032</span></p>
+								<p>Address <span> No: 7/2, Anjaneyar Kovil St, LittleMount, Saidapet, Chennai, Tamil Nadu-600015</span></p>
 							</li>
 						</ul>
 					</div>
@@ -361,7 +710,12 @@
 
 				</div>
 			</div>
+			<div class="px-5 border-bottom pb-2">
+				<p><b>© 2024 All Rights Reserved By <span class="text-second">WEHAUL LOGISTICS PRIVATE LIMITED</span></b></p>
+			</div>
 		</div>
+
+
 	</footer>
 
 
@@ -373,6 +727,152 @@
 	<script src="js/dark-mode.js"></script>
 
 	<script src="js/main.js"></script>
+	<style>
+		   .text-wrap {
+        word-wrap: break-word;
+        overflow-wrap: break-word; /* For wrapping */
+        overflow-x: auto; /* For horizontal scrolling if needed */
+        white-space: nowrap; /* If you prefer no wrapping */
+        width: 100%; /* Full width */
+    }
+	</style>
+	<script>
+		var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) { 
+            current[0].classList.remove("active");
+        }
+        this.classList.add("active");
+    });
+}
+		function showCities(state, button) {
+			let content = '';
+			switch (state) {
+				case 'Andhra Pradesh':
+					content = "<div class='mt-2 p-4 text-dark'>Visakhapatnam, Vijayawada, Guntur, Tirupati, Kakinada, Rajahmundry, Nellore, Ongole, Anantapur, Kadapa</div>";
+
+					break;
+
+				case 'Arunachal Pradesh':
+				content = "<div class='mt-2 p-4 text-dark'>Itanagar, Naharlagun, Pasighat, Tawang, Bomdila</div>";
+					break;
+				case 'Assam':
+				content = "<div class='mt-2 p-4 text-dark'> Guwahati, Silchar, Dibrugarh, Tinsukia, Jorhat, Tezpur, Nagaon, Sivasagar</div>";
+					break;
+				case 'Bihar':
+				content = "<div class='mt-2 p-4 text-dark'> Patna, Gaya, Bhagalpur, Muzaffarpur, Purnia, Darbhanga, Ara, Begusarai, Munger, Chapra</div>";
+					break;
+				case 'Chandigarh':
+				content = "<div class='mt-2 p-4 text-dark'>  Raipur, Bilaspur, Bhilai, Korba, Durg, Rajnandgaon, Jagdalpur</div>";
+					break;
+				case 'Delhi':
+				content = "<div class='mt-2 p-4 text-dark'>New Delhi, Central Delhi, East Delhi, West Delhi, South Delhi</div>";
+					break;
+				case 'Goa':
+				content = "<div class='mt-2 p-4 text-dark'> Panaji, Vasco da Gama, Margao, Mapusa, Ponda</div>";
+					break;
+				case 'Gujarat':
+				content = "<div class='mt-2 p-4 text-dark'> Ahmedabad, Surat, Vadodara, Rajkot, Bhavnagar, Jamnagar, Gandhinagar</div>";
+					break;
+				case 'Haryana':
+				content = "<div class='mt-2 p-4 text-dark'> Gurgaon (Gurugram), Faridabad, Panipat, Karnal, Ambala, Hisar, Rohtak</div>";
+					break;
+				case 'Himachal Pradesh':
+				content = "<div class='mt-2 p-4 text-dark'> Shimla, Solan, Dharamshala, Baddi, Mandi</div>";
+					break;
+				case 'Jammu and Kashmir':
+				content = "<div class='mt-2 p-4 text-dark'>Srinagar, Jammu, Anantnag, Baramulla, Kathua</div>";
+					break;
+				case 'Jharkhand':
+				content = "<div class='mt-2 p-4 text-dark'>Ranchi, Jamshedpur, Dhanbad, Bokaro, Hazaribagh</div>";
+					break;
+				case 'Karnataka':
+				content = "<div class='mt-2 p-4 text-dark'>Bengaluru, Mysuru, Hubballi-Dharwad, Mangaluru, Belagavi, Ballari</div>";
+					break;
+				case 'Kerala':
+				content = "<div class='mt-2 p-4 text-dark'>Thiruvananthapuram, Kochi, Kozhikode, Kollam, Thrissur</div>";
+					break;
+				case 'Ladakh':
+				content = "<div class='mt-2 p-4 text-dark'>Leh,Kargil</div>";
+					break;
+				case 'Madhya Pradesh':
+				content = "<div class='mt-2 p-4 text-dark'> Indore, Bhopal, Gwalior, Jabalpur, Ujjain</div>";
+					break;
+				case 'Maharashtra':
+				content = "<div class='mt-2 p-4 text-dark'>Mumbai, Pune, Nagpur, Nashik, Aurangabad</div>";
+					break;
+				case 'Manipur':
+				content = "<div class='mt-2 p-4 text-dark'>Imphal, Churachandpur, Thoubal, Bishnupur</div>";
+					break;
+				case 'Meghalya':
+				content = "<div class='mt-2 p-4 text-dark'>Shillong, Tura, Jowai, Nongstoin</div>";
+					break;
+				case 'Mizoram':
+				content = "<div class='mt-2 p-4 text-dark'>Aizawl, Lunglei, Champhai, Serchhip</div>";
+					break;
+				case 'Nagaland':
+				content = "<div class='mt-2 p-4 text-dark'> Dimapur, Kohima, Mokokchung, Wokha</div>";
+					break;
+				case 'Odisha':
+				content = "<div class='mt-2 p-4 text-dark'>Bhubaneswar, Cuttack, Rourkela, Sambalpur, Berhampur</div>";
+					break;
+				case 'Punjab':
+					content = "<div class='mt-2 p-4 text-dark'>Ludhiana, Amritsar, Jalandhar, Patiala, Bathinda</div>";
+					break;
+				case 'Puducherry':
+				content = "<div class='mt-2 p-4 text-dark'>Karaikal</div>";
+					break;
+				case 'Rajesthan':
+				content = "<div class='mt-2 p-4 text-dark'>Jaipur, Jodhpur, Kota, Udaipur, Ajmer</div>";
+					break;
+				case 'Sikkim':
+				content = "<div class='mt-2 p-4 text-dark'>Gangtok, Namchi, Geyzing, Singtam</div>";
+					break;
+				case 'Tamil Nadu':
+				content = "<div class='mt-2 p-4 text-dark'>Chennai, Coimbatore, Madurai, Tiruchirappalli, Salem</div>";
+					break;
+				case 'Telungana':
+				content = "<div class='mt-2 p-4 text-dark'> Hyderabad, Warangal, Nizamabad, Karimnagar, Khammam</div>";
+					break;
+				case 'Tripura':
+				content = "<div class='mt-2 p-4 text-dark'>Agartala, Udaipur, Ambassa, Dharmanagar</div>";
+					break;
+				case 'Uttar Pradesh':
+				content = "<div class='mt-2 p-4 text-dark'>Lucknow, Kanpur, Varanasi, Agra, Ghaziabad</div>";
+					break;
+				case 'Uttarakhand':
+				content = "<div class='mt-2 p-4 text-dark'>Dehradun, Haridwar, Rishikesh, Nainital, Haldwani</div>";
+					break;
+				case 'Rajasdhan':
+				content = "<div class='mt-2 p-4 text-dark'>Visakhapatnam, Vijayawada, Guntur, Tirupati, Kakinada, Rajahmundry, Nellore, Ongole, Anantapur, Kadapa</div>";
+					break;
+
+				case 'West Bengal':
+				content = "<div class='mt-2 p-4 text-dark'>Kolkata, Howrah, Asansol, Durgapur, Siliguri, Haldia, Kharagpur, Bardhaman</div>";
+					break;
+				default:
+					content = "No content available";
+			}
+			document.getElementById("content").innerHTML = content;
+
+			document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('highlighted'));
+
+			// Add 'highlighted' class to the clicked button
+			button.classList.add('highlighted');
+			
+
+			// Your existing logic to show cities for the selected state
+			console.log("Showing cities for:", state);
+			
+
+		}
+
+		
+	</script>
 </body>
 
 </html>
