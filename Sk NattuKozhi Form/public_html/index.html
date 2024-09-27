@@ -25,253 +25,303 @@
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
 	<style>
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-            text-decoration: none;
-            outline: none;
-        }
-        
-        a,
-        a:active,
-        a:focus {
-            color: #333;
-            text-decoration: none;
-            transition-timing-function: ease-in-out;
-            -ms-transition-timing-function: ease-in-out;
-            -moz-transition-timing-function: ease-in-out;
-            -webkit-transition-timing-function: ease-in-out;
-            -o-transition-timing-function: ease-in-out;
-            transition-duration: .2s;
-            -ms-transition-duration: .2s;
-            -moz-transition-duration: .2s;
-            -webkit-transition-duration: .2s;
-            -o-transition-duration: .2s;
-        }
-        
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        img {
-    max-width: 100%;
-    height: auto;
-}
-span, a, a:hover {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-.section-head {
-  margin-bottom: 60px;
-}
-.section-head h4 {
-  position: relative;
-  padding:0;
-  color:#f91942;
-  line-height: 1;
-  letter-spacing:0.3px;
-  font-size: 34px;
-  font-weight: 700;  
-  text-align:center;
-  text-transform:none;
-  margin-bottom:30px;
-}
-.section-head h4:before {
-  content: '';
-  width: 60px;
-  height: 3px;
-  background: #f91942;
-  position: absolute;
-  left: 0px;
-  bottom: -10px;
-  right:0;  
-  margin:0 auto;
-}
-.section-head h4 span {
-  font-weight: 700;
-  padding-bottom: 5px;
-  color:#2f2f2f
-}
-p.service_text{
-  color:#cccccc !important;
-  font-size:16px;
-  line-height:28px;
-  text-align:center;    
-}
-.section-head p, p.awesome_line{
-  color:#818181;
-  font-size:16px;
-  line-height:28px;
-  text-align:center;  
-}
+		a,
+		a:hover,
+		a:focus,
+		a:active {
+			text-decoration: none;
+			outline: none;
+		}
 
-.extra-text {
-    font-size:34px;
-    font-weight: 700;
-    color:#2f2f2f;
-    margin-bottom: 25px;
-    position:relative;
-    text-transform: none;
-}
-.extra-text::before {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background: #f91942;
-    position: absolute;
-    left: 0px;
-    bottom: -10px;
-    right: 0;
-    margin: 0 auto;
-}
-.extra-text span {
-    font-weight: 700;
-    color:#f91942;
-}
-.item {
-	height: 100%;
-    background: #fff;
-    text-align: center;
-    padding: 30px 25px;
-    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
-    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
-    border-radius: 20px;
-    border:5px solid rgba(0, 0, 0, 0.07);
-    margin-bottom: 30px;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
-}
-.item:hover{
-    background:#f91942;
-    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
-}
-.item:hover .item, .item:hover span.icon{
-    background:#fff;
-    border-radius:10px;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
-}
-.item:hover h6, .item:hover p{
-    color:#fff;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
-}
-.item .icon {
-    font-size: 40px;
-    margin-bottom:25px;
-    color: #f91942;   
-    width: 90px;
-    height: 90px;
-    line-height: 96px;
-    border-radius: 50px;
-}
-.item .feature_box_col_one{
-    background:rgba(247, 198, 5, 0.20);
-    color:#f91942
-}
-.item .feature_box_col_two{
-    background:rgba(255, 77, 28, 0.15);
-    color:#f91942
-}
-.item .feature_box_col_three{
-    background:rgba(0, 147, 38, 0.15);
-    color:#f91942
-}
-.item .feature_box_col_four{
-    background:rgba(0, 108, 255, 0.15);
-    color:#f91942
-}
-.item .feature_box_col_five{
-    background:rgba(146, 39, 255, 0.15);
-    color:#f91942
-}
-.item .feature_box_col_six{
-    background:rgba(23, 39, 246, 0.15);
-    color:#f91942
-}
-.item p{
-    font-size:15px;
-    line-height:26px;
-}
-.item h6 {
-    margin-bottom:20px;
-    color:#2f2f2f;
-}
-.mission p {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 28px;
-    font-weight: 500;
-}
-.mission i {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #f91942;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 25px;
-}
-.mission .small-text {
-    margin-left: 10px;
-    font-size: 13px;
-    color: #666;
-}
-.skills {
-    padding-top:0px;
-}
-.skills .prog-item {
-    margin-bottom: 25px;
-}
-.skills .prog-item:last-child {
-    margin-bottom: 0;
-}
-.skills .prog-item p {
-    font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 10px;
-}
-.skills .prog-item .skills-progress {
-    width: 100%;
-    height: 10px;
-    background: #e0e0e0;
-    border-radius:20px;
-    position: relative;
-}
-.skills .prog-item .skills-progress span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    background: #f91942;
-    width: 10%;
-    border-radius: 10px;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
-.skills .prog-item .skills-progress span:after {
-    content: attr(data-value);
-    position: absolute;
-    top: -5px;
-    right: 0;
-    font-size: 10px;
-    font-weight:600;    
-    color: #fff;
-    background:rgba(0, 0, 0, 0.9);
-    padding: 3px 7px;
-    border-radius: 30px;
-}
+		a,
+		a:active,
+		a:focus {
+			color: #333;
+			text-decoration: none;
+			transition-timing-function: ease-in-out;
+			-ms-transition-timing-function: ease-in-out;
+			-moz-transition-timing-function: ease-in-out;
+			-webkit-transition-timing-function: ease-in-out;
+			-o-transition-timing-function: ease-in-out;
+			transition-duration: .2s;
+			-ms-transition-duration: .2s;
+			-moz-transition-duration: .2s;
+			-webkit-transition-duration: .2s;
+			-o-transition-duration: .2s;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		span,
+		a,
+		a:hover {
+			display: inline-block;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.section-head {
+			margin-bottom: 60px;
+		}
+
+		.section-head h4 {
+			position: relative;
+			padding: 0;
+			color: #f91942;
+			line-height: 1;
+			letter-spacing: 0.3px;
+			font-size: 34px;
+			font-weight: 700;
+			text-align: center;
+			text-transform: none;
+			margin-bottom: 30px;
+		}
+
+		.section-head h4:before {
+			content: '';
+			width: 60px;
+			height: 3px;
+			background: #f91942;
+			position: absolute;
+			left: 0px;
+			bottom: -10px;
+			right: 0;
+			margin: 0 auto;
+		}
+
+		.section-head h4 span {
+			font-weight: 700;
+			padding-bottom: 5px;
+			color: #2f2f2f
+		}
+
+		p.service_text {
+			color: #cccccc !important;
+			font-size: 16px;
+			line-height: 28px;
+			text-align: center;
+		}
+
+		.section-head p,
+		p.awesome_line {
+			color: #818181;
+			font-size: 16px;
+			line-height: 28px;
+			text-align: center;
+		}
+
+		.extra-text {
+			font-size: 34px;
+			font-weight: 700;
+			color: #2f2f2f;
+			margin-bottom: 25px;
+			position: relative;
+			text-transform: none;
+		}
+
+		.extra-text::before {
+			content: '';
+			width: 60px;
+			height: 3px;
+			background: #f91942;
+			position: absolute;
+			left: 0px;
+			bottom: -10px;
+			right: 0;
+			margin: 0 auto;
+		}
+
+		.extra-text span {
+			font-weight: 700;
+			color: #f91942;
+		}
+
+		.item {
+			height: 100%;
+			background: #fff;
+			text-align: center;
+			padding: 30px 25px;
+			-webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+			box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+			border-radius: 20px;
+			border: 5px solid rgba(0, 0, 0, 0.07);
+			margin-bottom: 30px;
+			-webkit-transition: all .5s ease 0;
+			transition: all .5s ease 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.item:hover {
+			background: #f91942;
+			box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+			-webkit-transition: all .5s ease 0;
+			transition: all .5s ease 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.item:hover .item,
+		.item:hover span.icon {
+			background: #fff;
+			border-radius: 10px;
+			-webkit-transition: all .5s ease 0;
+			transition: all .5s ease 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.item:hover h6,
+		.item:hover p {
+			color: #fff;
+			-webkit-transition: all .5s ease 0;
+			transition: all .5s ease 0;
+			transition: all 0.5s ease 0s;
+		}
+
+		.item .icon {
+			font-size: 40px;
+			margin-bottom: 25px;
+			color: #f91942;
+			width: 90px;
+			height: 90px;
+			line-height: 96px;
+			border-radius: 50px;
+		}
+
+		.item .feature_box_col_one {
+			background: rgba(247, 198, 5, 0.20);
+			color: #f91942
+		}
+
+		.item .feature_box_col_two {
+			background: rgba(255, 77, 28, 0.15);
+			color: #f91942
+		}
+
+		.item .feature_box_col_three {
+			background: rgba(0, 147, 38, 0.15);
+			color: #f91942
+		}
+
+		.item .feature_box_col_four {
+			background: rgba(0, 108, 255, 0.15);
+			color: #f91942
+		}
+
+		.item .feature_box_col_five {
+			background: rgba(146, 39, 255, 0.15);
+			color: #f91942
+		}
+
+		.item .feature_box_col_six {
+			background: rgba(23, 39, 246, 0.15);
+			color: #f91942
+		}
+
+		.item p {
+			font-size: 15px;
+			line-height: 26px;
+		}
+
+		.item h6 {
+			margin-bottom: 20px;
+			color: #2f2f2f;
+		}
+
+		.mission p {
+			margin-bottom: 10px;
+			font-size: 15px;
+			line-height: 28px;
+			font-weight: 500;
+		}
+
+		.mission i {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: #f91942;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 25px;
+		}
+
+		.mission .small-text {
+			margin-left: 10px;
+			font-size: 13px;
+			color: #666;
+		}
+
+		.skills {
+			padding-top: 0px;
+		}
+
+		.skills .prog-item {
+			margin-bottom: 25px;
+		}
+
+		.skills .prog-item:last-child {
+			margin-bottom: 0;
+		}
+
+		.skills .prog-item p {
+			font-weight: 500;
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		.skills .prog-item .skills-progress {
+			width: 100%;
+			height: 10px;
+			background: #e0e0e0;
+			border-radius: 20px;
+			position: relative;
+		}
+
+		.skills .prog-item .skills-progress span {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			background: #f91942;
+			width: 10%;
+			border-radius: 10px;
+			-webkit-transition: all 1s;
+			transition: all 1s;
+		}
+
+		.skills .prog-item .skills-progress span:after {
+			content: attr(data-value);
+			position: absolute;
+			top: -5px;
+			right: 0;
+			font-size: 10px;
+			font-weight: 600;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.9);
+			padding: 3px 7px;
+			border-radius: 30px;
+		}
+
+		.service-img {
+			width: 100%;
+			height: 400px;
+			/* object-fit: cover; */
+		}
+
+		.service-img-1 {
+			width: 100%;
+			height: 400px;
+			object-fit: cover;
+		}
 	</style>
 </head>
 
@@ -290,8 +340,10 @@ p.service_text{
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png" alt="Logo" class="mega-white-logo" />
-						<img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png" alt="Logo" class="mega-darks-logo" />
+						<img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png" alt="Logo"
+							class="mega-white-logo" />
+						<img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png" alt="Logo"
+							class="mega-darks-logo" />
 					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -402,7 +454,7 @@ p.service_text{
 
 			<div class="getintouchblock mt30">
 				<h4>Get In Touch</h4>
-				
+
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
@@ -412,7 +464,7 @@ p.service_text{
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+919003774795" target="_blank">+91 9003774795  <span>Mon-Fri 9am -
+						<a href="https://wa.me/+919003774795" target="_blank">+91 9003774795 <span>Mon-Fri 9am -
 								6pm</span></a>
 					</div>
 				</div>
@@ -426,7 +478,8 @@ p.service_text{
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="#">SK NATTUKOZHI FARM,D.NO:3/335,Nekkunthi (Village),Errabaiyanalli (Post),Dharmapuri(District),Pincode - 636813.<span>Visit Our Form</span></a>
+						<a href="#">SK NATTUKOZHI FARM,D.NO:3/335,Nekkunthi (Village),Errabaiyanalli
+							(Post),Dharmapuri(District),Pincode - 636813.<span>Visit Our Form</span></a>
 					</div>
 				</div>
 			</div>
@@ -449,124 +502,137 @@ p.service_text{
 		<div class="swiper-container">
 
 			<div class="swiper-wrapper">
-<style>
-	.slide-bg-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Adjust height as needed */
-}
+				<style>
+					.slide-bg-image {
+						position: relative;
+						background-size: cover;
+						background-position: center;
+						height: 100vh;
+						/* Adjust height as needed */
+					}
 
-.gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
-    z-index: 1; /* Make sure the gradient is on top of the background image */
-}
+					.gradient-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+						/* Dark gradient overlay */
+						z-index: 1;
+						/* Make sure the gradient is on top of the background image */
+					}
 
-.slide-inner .container {
-    position: relative;
-    z-index: 2; /* Ensure content is on top of the gradient */
-}
+					.slide-inner .container {
+						position: relative;
+						z-index: 2;
+						/* Ensure content is on top of the gradient */
+					}
 
-.text-white {
-    color: #ffffff;
-}
+					.text-white {
+						color: #ffffff;
+					}
 
-.slide-title h3,
-.slide-text p {
-    color: white;
-    z-index: 2;
-}
+					.slide-title h3,
+					.slide-text p {
+						color: white;
+						z-index: 2;
+					}
+				</style>
+				<div class="swiper-slide">
+					<!-- <img src="./img/download/WhatsApp Image 2024-09-21 at 1.20.12 PM.jpeg" alt=""> -->
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/nattukkoli.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Healthy, Happy Chicks, Delivered to Your Farm!</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>Provide the best start for your poultry with our premium chicks, raised with
+											care and delivered at both wholesale and retail prices.</p>
+									</div>
 
-</style>
-<div class="swiper-slide">
-    <div class="slide-inner slide-bg-image background-img" data-background="img/download/chickens-3949199_1280.jpg">
-        <div class="gradient-overlay"></div> <!-- Gradient overlay -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div data-swiper-parallax="300" class="slide-title">
-                        <h3 class="text-white">Healthy, Happy Chicks, Delivered to Your Farm!</h3>
-                    </div>
-                    <div data-swiper-parallax="400" class="slide-text">
-                        <p>Provide the best start for your poultry with our premium chicks, raised with care and delivered at both wholesale and retail prices.</p>
-                    </div>
-
-                    <div class="clearfix"></div>
-                    <div data-swiper-parallax="500" class="slide-btns">
-                        <a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
-                                class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Empty column for layout purpose -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="swiper-slide">
-    <div class="slide-inner slide-bg-image background-img" data-background="img/download/chicken-coop-245745_1280.jpg">
-        <div class="gradient-overlay"></div> <!-- Gradient overlay -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div data-swiper-parallax="300" class="slide-title">
-                        <h3 class="text-white">From Our Farm to Your Business, We’ve Got You Covered!</h3>
-                    </div>
-                    <div data-swiper-parallax="400" class="slide-text">
-                        <p>Whether you're a small-scale farmer or a large enterprise, SK Nattukozhi Farm offers affordable, high-quality chickens for everyone.
-						</p>
-                    </div>
-
-                    <div class="clearfix"></div>
-                    <div data-swiper-parallax="500" class="slide-btns">
-                        <a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
-                                class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Empty column for layout purpose -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- Empty column for layout purpose -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
-<div class="swiper-slide">
-    <div class="slide-inner slide-bg-image background-img" data-background="img/download/chicken-4849979_1280.jpg">
-        <div class="gradient-overlay"></div> <!-- Gradient overlay -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div data-swiper-parallax="300" class="slide-title">
-                        <h3 class="text-white">Well-Bred, Disease-Free Chickens for Your Peace of Mind.</h3>
-                    </div>
-                    <div data-swiper-parallax="400" class="slide-text">
-                        <p>We ensure every bird is raised in a healthy environment, with a focus on proper feeding and disease prevention.</p>
-                    </div>
 
-                    <div class="clearfix"></div>
-                    <div data-swiper-parallax="500" class="slide-btns">
-                        <a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
-                                class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Empty column for layout purpose -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="img/chicks.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">From Our Farm to Your Business, We’ve Got You Covered!
+										</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>Whether you're a small-scale farmer or a large enterprise, SK Nattukozhi Farm
+											offers affordable, high-quality chickens for everyone.
+										</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- Empty column for layout purpose -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img"
+						data-background="img/download/chicken-4849979_1280.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Well-Bred, Disease-Free Chickens for Your Peace of Mind.
+										</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>We ensure every bird is raised in a healthy environment, with a focus on
+											proper feeding and disease prevention.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- Empty column for layout purpose -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 			</div>
@@ -585,12 +651,22 @@ p.service_text{
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="common-heading text-l">
-						<h2 class="mb30"><span class="text-second text-bold">Welcome to SK Nattukozhi Farm</span>Your Trusted Supplier of Quality Chicks and Chickens</h2>
-						<p class="text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2" alt="">At SK Nattukozhi Farm, we are dedicated to providing the finest quality chicks and chickens to our customers. Whether you are a small-scale buyer or a large wholesaler, we have the perfect range of poultry to meet your needs.</p>
-						<p><img src="./img/logo/cursor.png" width="23" class="me-2" alt=""> With a focus on both wholesale and retail supply, we ensure that our customers receive healthy, well-bred birds at competitive prices</p>
-						<p class="mt10 text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2" alt=""> We offer quick, safe delivery of all orders, ensuring your chicks and chickens arrive in excellent condition.
-							</p>
-						<p class="mt10  text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2" alt="">Partner with us for personalized support, including feeding programs and expert advice to maximize your poultry farm’s success.</p>
+						<h2 class="mb30"><span class="text-second text-bold">Welcome to SK Nattukozhi Farm</span>Your
+							Trusted Supplier of Quality Chicks and Chickens</h2>
+						<p class="text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2" alt="">At SK
+							Nattukozhi Farm, we are dedicated to providing the finest quality chicks and chickens to our
+							customers. Whether you are a small-scale buyer or a large wholesaler, we have the perfect
+							range of poultry to meet your needs.</p>
+						<p><img src="./img/logo/cursor.png" width="23" class="me-2" alt=""> With a focus on both
+							wholesale and retail supply, we ensure that our customers receive healthy, well-bred birds
+							at competitive prices</p>
+						<p class="mt10 text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2" alt=""> We
+							offer quick, safe delivery of all orders, ensuring your chicks and chickens arrive in
+							excellent condition.
+						</p>
+						<p class="mt10  text-justify"><img src="./img/logo/cursor.png" width="23" class="me-2"
+								alt="">Partner with us for personalized support, including feeding programs and expert
+							advice to maximize your poultry farm’s success.</p>
 					</div>
 
 
@@ -603,30 +679,33 @@ p.service_text{
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl2">
 									<img src="images/icons/startup.svg" alt="startup icon">
-									<span class="services-cuntr counter">6</span><span class="services-cuntr">+</span>
+									<span class="services-cuntr counter">1000 </span><span
+										class="services-cuntr">+</span>
 									<p>Hatching Eggs </p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl3">
 									<img src="images/icons/team.svg" alt="team">
-									<span class="services-cuntr counter">50</span><span class="services-cuntr">+</span>
-									<p>Poultry Farm Chicks</p>
+									<span class="services-cuntr counter">400 </span><span
+										class="services-cuntr">+</span>
+									<p>Country Chickens</p>
 								</div>
 							</div>
 
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl5">
 									<img src="images/icons/computers.svg" alt="projects">
-									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
-									<p>Desi Chicks</p>
+									<span class="services-cuntr counter">3000 </span><span
+										class="services-cuntr">+</span>
+									<p>No Of Customers</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl1">
 									<img src="images/icons/deal.svg" alt="Satisfaction">
-									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
-									<p>Kadaknath Chicks</p>
+									<span class="services-cuntr counter">10 </span><span class="services-cuntr">+</span>
+									<p>Variety Of Chicks</p>
 								</div>
 							</div>
 						</div>
@@ -647,220 +726,109 @@ p.service_text{
 						<h2>Our Services</h2>
 					</div>
 				</div>
-				<p class="mb30 text-center">At SK Nattukozhi Farm, we go beyond just supplying poultry. We offer a range of services designed to support our customers in achieving success in their poultry businesses.
+				<p class="mb30 text-center">At SK Nattukozhi Farm, we go beyond just supplying poultry. We offer a range
+					of services designed to support our customers in achieving success in their poultry businesses.
 				</p>
 			</div>
 			<div class="row upset">
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.2s">
 					<div class="service-card-app hoshd">
 						<h4>Day-Old to Month-Old Chicks Sale</h4>
-						<!-- <ul class="-service-list mt10">
-							<li> <a href="#">iPhone</a> </li>
-							<li> <a href="#">Android</a> </li>
-							<li> <a href="#">Cross Platform</a> </li>
-						</ul> -->
+
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr rounded">
-								<img class="rounded" src="./img/download/hen-5642953_1280.jpg" alt="image">
-								<!-- <li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/android.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/apple.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/tablet.svg" alt="img"></div>
-									</a></li> -->
+								<img class="rounded service-img-1" src="./img/download/image-3.jpeg" alt="image">
+
 							</ul>
 						</div>
-						<p class="mt20 text-justify">We offer chicks ranging from day-old to month-old, ensuring healthy and well-cared-for poultry. Whether you're starting a small farm or need large quantities for a commercial operation, we have the perfect solution.
+						<p class="mt20 text-justify">We offer chicks ranging from day-old to month-old, ensuring healthy
+							and well-cared-for poultry. Whether you're starting a small farm or need large quantities
+							for a commercial operation, we have the perfect solution.
 						</p>
-						<a href="" class="link-prbs mt-5">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
+						<a href="" class="link-prbs mt-5">Read More <i class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.5s">
 					<div class="service-card-app hoshd">
 						<h4 class="w-100">Diverse Breeds Available</h4>
-						<!-- <ul class="-service-list mt10">
-							<li> <a href="#">Angular Js</a> </li>
-							<li> <a href="#">Node Js</a> </li>
-							<li> <a href="#">React Js</a> </li>
-							<li> <a href="#">WordPress</a></li>
-						</ul> -->
+
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img class="rounded" style="margin-top: 30px;" src="./img/download/WhatsApp Image 2024-09-21 at 1.20.12 PM.jpeg" alt="image">
-								<!-- <li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/angular.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/node.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/react.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/wordpress.svg" alt="img"></div>
-									</a></li> -->
+								<img class="rounded service-img" style="margin-top: 30px;"
+									src="./img/download/image-1.jpeg" alt="image">
+
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Our farm provides a variety of breeds, including Turkey, Giriraja, Broiler, Country Chicken (Nattukozhi), Kadaknath, Vanaraja, Layer Chicken, Aseel, and Guinea Fowl. These are available in different stages of growth, from day-old chicks to older birds, ensuring you get the breed and age that best fits your needs.</p>
-						<a href="" class="mt20 link-prbs">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
+						<p class="mt20 text-justify">Our farm provides a variety of breeds, including Turkey, Giriraja,
+							Broiler, Country Chicken (Nattukozhi), Kadaknath, Vanaraja, Layer Chicken, Aseel, and Guinea
+							Fowl. These are available in different stages of growth, from day-old chicks to older birds,
+							ensuring you get the breed and age that best fits your needs.</p>
+						<a href="" class="mt20 link-prbs">Read More <i class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
 						<h4>Transport & Packaging Services </h4>
-						<!-- <ul class="-service-list mt10">
-							<li> <a href="#">Magento</a> </li>
-							<li> <a href="#">Shopify</a> </li>
-							<li> <a href="#">Woo-commerce</a></li>
-						</ul> -->
+
+
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img class="rounded" src="./img/download/WhatsApp Image 2024-09-21 at 1.20.15 PM.jpeg" alt="">
-								<!-- <li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/shopify.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/woocommerce.svg" alt="img"></div>
-									</a></li> -->
+								<img class="rounded img service-img" src="./img/download/image-2.jpeg" alt="">
+
 							</ul>
 						</div>
-						<p class="mt20 text-justify">To ensure your poultry reaches you in perfect condition, we offer reliable transport services. We use secure, comfortable, and hygienic packaging, designed to protect the chicks during transit, whether you are located locally or at a distance.</p>
+						<p class="mt20 text-justify">To ensure your poultry reaches you in perfect condition, we offer
+							reliable transport services. We use secure, comfortable, and hygienic packaging, designed to
+							protect the chicks during transit, whether you are located locally or at a distance.</p>
 						<a href="hosting.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
-
-
-				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
-					<div class="service-card-app hoshd">
-						<h4>Digital Marketing</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Facebook</a> </li>
-							<li> <a href="#">Instagram</a> </li>
-							<li> <a href="#">Youtube</a> </li>
-							<li> <a href="#">LinkedIn</a> </li>
-
-
-						</ul>
-						<div class="tec-icon mt30">
-							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/facebook.png" alt="Facebook">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/instagram.png" alt="Instagram">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/youtube.png" alt="Youtube">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/linkedin.png" alt="LinedI n">
-										</div>
-									</a></li>
-
-							</ul>
-						</div>
-						<p class="mt20 text-justify">Digital media marketing is a big ocean unto itself, with several
-							significant elements to be worked on. </p>
-						<a href="digital-marketing.html" class="mt20 link-prbs">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
-					<div class="service-card-app hoshd">
-						<h4>SEO Optimization</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Google Search Console</a> </li>
-
-						</ul>
-						<div class="tec-icon mt30">
-							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/google.png" alt="Google"></div>
-									</a></li>
-
-							</ul>
-						</div>
-						<p class="mt20 text-justify">Get more website traffic, more customers, and more online
-							visibility with powerful SEO services.
-
-						</p>
-						<a href="seo.html" class="mt20 link-prbs">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
-					<div class="service-card-app hoshd">
-						<h4>Graphic Design</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Coreldraw</a> </li>
-							<li> <a href="#">Photoshop</a> </li>
-						</ul>
-						<div class="tec-icon mt30">
-							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/coreldraw.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/photoshop.png" alt="img"></div>
-									</a></li>
-
-							</ul>
-						</div>
-						<p class="mt20 text-justify">If you're looking for a logo design firm for your brand, then
-							you've landed on the right page. </p>
-						<a href="graphic-design.html" class="mt20 link-prbs">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
-			</div> -->
-		</div>
+			</div>
 	</section>
 
 	<!-- why choose us start -->
 	<div class="feat bg-gray pt-5 pb-5">
 		<div class="container">
-		  <div class="row">
-			<div class="section-head col-sm-12">
-			  <h4 class="text-white"><span>Why Choose US ?</span></h4>
-			  <p class="text-white">When you choose us, you'll feel the benefit of 10 years' experience of poultry Form.</p>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-			  <div class="item" style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.13\ PM.jpeg);background-size: cover;"> 
-				<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Quality Assurance</h6>
-				<p class="text-white" style="text-shadow: 2px 1px 2px black;">Our chicks and chickens are raised under expert supervision with the highest health and hygiene standards.</p>
-			  </div>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-			  <div class="item" style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.14\ PM\ \(1\).jpeg);background-size: cover;">
-				<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Wide Variety</h6>
-				<p class="text-white" style="text-shadow: 2px 1px 2px black;">From country chicks to fast-growing broilers, we have a wide selection of poultry to choose from.</p>
-			  </div>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-			  <div class="item" style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.14\ PM\ \(2\).jpeg);background-size: cover;"> 
-				<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Customer-Centric Approach</h6>
-				<p class="text-white" style="text-shadow: 2px 1px 2px black;">We pride ourselves on providing personalized service and building long-lasting relationships with our customers.</p>
-			  </div>
-			</div>
-			<div class="col-lg-3 col-sm-6">
-			  <div class="item" style="background-image: url(./img/download/chickens-3949199_1280.jpg);background-size: cover; background-color: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));"> 
-				<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Competitive Prices</h6>
-				<p class="text-white" style="text-shadow: 2px 1px 2px black;">Whether you are buying wholesale or retail, you’ll find our pricing affordable and transparent.</p>
-			  </div>
-			</div>
-			<!-- <div class="col-lg-4 col-sm-6">
+			<div class="row">
+				<div class="section-head col-sm-12">
+					<h4 class="text-white"><span>Why Choose US ?</span></h4>
+					<p class="text-white">When you choose us, you'll feel the benefit of 10 years' experience of poultry
+						Form.</p>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item"
+						style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.13\ PM.jpeg);background-size: cover;">
+						<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Quality Assurance</h6>
+						<p class="text-white" style="text-shadow: 2px 1px 2px black;">Our chicks and chickens are raised
+							under expert supervision with the highest health and hygiene standards.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item"
+						style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.14\ PM\ \(1\).jpeg);background-size: cover;">
+						<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Wide Variety</h6>
+						<p class="text-white" style="text-shadow: 2px 1px 2px black;">From country chicks to
+							fast-growing broilers, we have a wide selection of poultry to choose from.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item"
+						style="background-image: url(./img/download/WhatsApp\ Image\ 2024-09-21\ at\ 1.20.14\ PM\ \(2\).jpeg);background-size: cover;">
+						<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Customer-Centric Approach</h6>
+						<p class="text-white" style="text-shadow: 2px 1px 2px black;">We pride ourselves on providing
+							personalized service and building long-lasting relationships with our customers.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="item"
+						style="background-image: url(./img/download/chickens-3949199_1280.jpg);background-size: cover; background-color: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));">
+						<h6 class="text-white" style="text-shadow: 2px 1px 2px black;">Competitive Prices</h6>
+						<p class="text-white" style="text-shadow: 2px 1px 2px black;">Whether you are buying wholesale
+							or retail, you’ll find our pricing affordable and transparent.</p>
+					</div>
+				</div>
+				<!-- <div class="col-lg-4 col-sm-6">
 			  <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
 				<h6>Market Strategy</h6>
 				<p>Holding back technology to preserve broken business models is like allowing blacksmiths to veto the internal combustion engine in order to protect their horseshoes.</p>
@@ -872,17 +840,17 @@ p.service_text{
 				<p>Love is a special word, and I use it only when I mean it. You say the word too much and it becomes cheap.</p>
 			  </div>
 			</div> -->
-		  </div>
+			</div>
 		</div>
-	  </div>
-	
+	</div>
+
 	<!-- why choose us end -->
 
 
 
 
 
-		<!-- <section class="work-category pad-tb">
+	<!-- <section class="work-category pad-tb">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8">
@@ -1127,11 +1095,15 @@ p.service_text{
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand f-dark-logo" href="#"> <img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png"
+						<a class="navbar-brand f-dark-logo" href="#"> <img
+								src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png"
 								alt="Logo" /></a>
-						<a class="navbar-brand f-white-logo" href="#"> <img src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png"
+						<a class="navbar-brand f-white-logo" href="#"> <img
+								src="img/logo/WhatsApp_Image_2024-09-20_at_3.43.08_PM-removebg-preview.png"
 								alt="Logo" /></a>
-						<p class="mt-5">At SK Nattukozhi Farm, we are dedicated to providing the finest quality chicks and chickens to our customers. Whether you are a small-scale buyer or a large wholesaler, we have the perfect range of poultry to meet your needs.</p>
+						<p class="mt-3">At SK Nattukozhi Farm, we are dedicated to providing the finest quality chicks
+							and chickens to our customers. Whether you are a small-scale buyer or a large wholesaler, we
+							have the perfect range of poultry to meet your needs.</p>
 					</div>
 					<div class="col-lg-1 col-sm-6"></div>
 					<div class="col-lg-2 col-sm-6">
@@ -1160,18 +1132,18 @@ p.service_text{
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span> SK NATTUKOZHI FARM,D.NO:3/335,Nekkunthi (Village),Errabaiyanalli (Post),Dharmapuri(District),Pincode - 636813.</span></p>
+								<p>Address <span> SK NATTUKOZHI FARM,D.NO:3/335,Nekkunthi (Village),Errabaiyanalli
+										(Post),Dharmapuri(District),Pincode - 636813.</span></p>
 							</li>
 						</ul>
 					</div>
 
-
+					<p class="border-bottom border-2 pb-2 ">© 2024 All Rights Reserved By SK Nattukozhi Farm</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<div class="border-bottom border-3">
-		
 	</div>
 
 

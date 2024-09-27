@@ -24,6 +24,43 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.slide-bg-image {
+						position: relative;
+						background-size: cover;
+						background-position: center;
+						height: 100vh;
+						/* Adjust height as needed */
+					}
+
+					.gradient-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+						/* Dark gradient overlay */
+						z-index: 1;
+						/* Make sure the gradient is on top of the background image */
+					}
+
+					.slide-inner .container {
+						position: relative;
+						z-index: 2;
+						/* Ensure content is on top of the gradient */
+					}
+
+					.text-white {
+						color: #ffffff;
+					}
+
+					.slide-title h3,
+					.slide-text p {
+						color: white;
+						z-index: 2;
+					}
+	</style>
 </head>
 
 <body>
@@ -55,9 +92,9 @@
 							<a href="about-us.html" class="menu-links">About Us</a>
 						</li>
 
-						<li>
+						<!-- <li>
 							<a href="products.html" class="menu-links">Products</a>
-						</li>
+						</li> -->
 
 						<li class="sbmenu rpdropdown">
 							<a href="#" class="menu-links">Services</a>
@@ -66,23 +103,24 @@
 									<div class="sub-menu-center-block">
 										<div class="sub-menu-column smfull">
 											<ul>
-												<li><a href="mobile-app-development.html">Mobile App Development</a>
+												<li><a href="career.html">Career Counseling & Psychometric
+														Assessments</a> </li>
+												<li><a href="web-development.html">Recruitment & Placement Services</a>
 												</li>
-												<li><a href="web-development.html">Web Development</a> </li>
-												<li><a href="graphic-design.html">Graphic Design</a> </li>
-												<li><a href="seo.html">SEO</a> </li>
+												<li><a href="upskilling.html">Upskilling & Corporate Training</a> </li>
+												<!-- <li><a href="seo.html">SEO</a> </li>
 
 												<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-												<li><a href="hosting.html">Hosting Service</a> </li>
+												<li><a href="hosting.html">Hosting Service</a> </li> -->
 											</ul>
 										</div>
 									</div>
 								</div>
 							</div>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="our-clients.html" class="menu-links">Our Clients</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="contact-us.html" class="menu-links">Contact Us</a>
 						</li>
@@ -112,26 +150,22 @@
 						<a href="about-us.html">About Us</a>
 					</li>
 
-					<li>
+					<!-- <li>
 						<a href="products.html">Products</a>
-					</li>
+					</li> -->
 
 					<li>
 						<a href="#">Services</a>
 						<ul>
-							<li><a href="mobile-app-development.html">Mobile App Development</a> </li>
-							<li><a href="web-development.html">Web Development</a> </li>
-							<li><a href="graphic-design.html">Graphic Design</a> </li>
-							<li><a href="seo.html">SEO</a> </li>
-
-							<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-							<li><a href="hosting.html">Hosting Service</a> </li>
+							<li><a href="career.html">Career Counseling & Psychometric Assessments</a> </li>
+							<li><a href="web-development.html">Recruitment & Placement Services</a> </li>
+							<li><a href="upskilling.html">Upskilling & Corporate Training</a> </li>
 						</ul>
 					</li>
 
-					<li>
+					<!-- <li>
 						<a href="our-clients.html" class="menu-links">Our Clients</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="contact-us.html" class="menu-links">Contact Us</a>
 					</li>
@@ -158,43 +192,46 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+918072515050">+91 80725 15050 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="">+91 8808807014 <span>Mon-Fri 9am - 6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+91918072515050" target="_blank">+91 80725 15050 <span>Mon-Fri 9am -
+						<a href="https://wa.me/+918808807014" target="_blank">+91 8808807014 <span>Mon-Fri 9am -
 								6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="mailto:info@pojotechnology.com" target="_blank">info@pojotechnology.com
+						<a href="mailto:info@pojotechnology.com" target="_blank">info.icmsgroup@gmail.com
 							<span>Online Support</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="#">Maliyakkal, Princy Villa 
-							Chekom ,Pathanapuram 
-							Kollam , Kerala 689695 <span>Visit Our Office</span></a>
+						<a href="#">
+							IV 64 -1,C , Darshanam Complex Mundur, Thrissur Kerala India 680541 <span>Visit Our Office</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="contact-data mt30">
 				<h4>Follow Us On:</h4>
 				<div class="social-media-linkz mt10">
-					<a href="https://www.facebook.com/pojotechnology" target="blank"><i class="fab fa-facebook"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i
+					<a href="https://www.facebook.com/careercounsellorkerala?mibextid=ZbWKwL
+					" target="blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://g.page/r/Ce8Cs2xacesZEBE/review"><img src="./img/download/google.png" width="18px"
+							alt=""></a>
+					<a href="https://whatsapp.com/channel/0029VaAp5558qIzkROqAVj3R" target="blank"><img
+							src="./img/download/whatsapp.png" width="18px" alt=""></a>
+					<a href=" https://instagram.com/mycareercounsellor?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
 							class="fab fa-instagram"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-					<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a> -->
+					<a href="https://youtube.com/@mycareercounsellor?si=deOSl3bAqhPsV4ph" target="blank"><i
 							class="fab fa-youtube"></i></a>
-					<a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a> -->
 				</div>
 			</div>
 		</div>
@@ -205,15 +242,18 @@
 			<div class="swiper-wrapper">
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-12.jpg">
+					<!-- <img src="" alt=""> -->
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-1.webp">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
 									<div data-swiper-parallax="300" class="slide-title">
-										<h2>Mobile App Development</h2>
+										<h3 class="text-white">Career Counseling & Psychometric Testing</h3>
 									</div>
 									<div data-swiper-parallax="400" class="slide-text">
-										<p>All Application development from design to release.</p>
+										<h4 class="text-white">Discover the Right Career Path with Expert Guidance</h4>
+										<p>Unlock your true potential with personalized counseling and psychometric assessments designed to match your skills and aspirations.</p>
 									</div>
 
 									<div class="clearfix"></div>
@@ -224,7 +264,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/mobile-app.png">
+									<!-- <img src="images/hero/mobile-app.png"> -->
 								</div>
 							</div>
 
@@ -234,15 +274,19 @@
 
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-10.jpg">
+					<div class="slide-inner slide-bg-image background-image" data-background="./img/download/image-3.png">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
 									<div data-swiper-parallax="300" class="slide-title">
-										<h2>Web Development</h2>
+										<h3 class="text-white">Recruitment & Placement Services</h3>
 									</div>
 									<div data-swiper-parallax="400" class="slide-text">
-										<p>Using server and serverless web development technologies effectively.</p>
+										<h4 class="text-white">
+											Connecting Talent with Opportunity
+										</h4>
+										<p>Seamless recruitment and placement services that align your skills with the right opportunities, helping you land your dream job.</p>
 									</div>
 
 									<div class="clearfix"></div>
@@ -253,7 +297,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/web-development.png">
+									<!-- <img src="images/hero/web-development.png"> -->
 								</div>
 							</div>
 						</div>
@@ -261,15 +305,18 @@
 				</div>
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-14.jpg">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-5.png">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
 									<div data-swiper-parallax="300" class="slide-title">
-										<h2>Digital Marketing</h2>
+										<h3 class="text-white">Upskilling & Reskilling Programs
+											Headline</h3>
 									</div>
 									<div data-swiper-parallax="400" class="slide-text">
-										<p>Can Promote and enhance your business through our expert</p>
+										<h4 class="text-white">Stay Ahead with the Latest Skills</h4>
+										<p>Future-proof your career with tailored upskilling and reskilling programs designed to keep you competitive in a fast-changing job market.</p>
 									</div>
 
 									<div class="clearfix"></div>
@@ -280,7 +327,36 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/digital-marketing.png">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-4.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Corporate Training & Development</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<h4 class="text-white">Enhance your team's capabilities with customized corporate training solutions that foster growth, innovation, and leadership.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
 								</div>
 							</div>
 						</div>
@@ -303,17 +379,18 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="common-heading text-l">
-						<h2 class="mb30"><span class="text-second text-bold">Pojo Technology </span>is Marketing
-							Solution Provider For All Your Business Needs</h2>
-						<p class="text-justify">Pojo Tehnology is a full-service digital marketing agency. We’ve been
-							providing a wide range
-							of services to clients of all industries since 2018.</p>
-						<p class="mt10 text-justify"> Our digital marketing services include
-							consulting and management options for a variety of online marketing tactics including search
-							engine optimization (SEO),Social Media Markeging.</p>
-						<p class="mt10  text-justify"> We also offer web design and development services for both
-							eCommerce and B2B companies. You might have website for your business but it doesn't bring
-							right customers to your site.</p>
+						<h2 class="mb30"><span class="text-second text-bold">ICMS </span>your trusted partner in
+							navigating the complexities of today’s dynamic job market.</h2>
+						<p class="text-justify">Welcome to Integrated Career Management Services Pvt Ltd, your trusted
+							partner in navigating the complexities of today’s dynamic job market. </p>
+						<p class="mt10 text-justify">Whether you're a student exploring career options, a professional
+							aiming for advancement, or an organization seeking top-tier talent, we provide tailored
+							solutions to meet your unique needs.</p>
+						<p class="mt10  text-justify">At Integrated Career Management Services Pvt Ltd, we are committed
+							to transforming career journeys through expert career counseling, psychometric assessments,
+							recruitment solutions, and training programs. Whether you're a student seeking clarity, a
+							professional advancing your career, or an organization building stronger teams, we provide
+							end-to-end solutions tailored to individual and organizational needs.</p>
 					</div>
 
 
@@ -360,34 +437,35 @@
 	</section>
 
 
-	<section class="service-section-app pad-tb dark-bg2">
+	<section class="service-section-app  dark-bg2 pb-5">
 
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="common-heading ptag">
-						<span>SOLUTIONS</span>
-						<h2>Our Services</h2>
+						<!-- <span>SOLUTIONS</span> -->
+						<h2>Personalized Career Counseling</h2>
 					</div>
 				</div>
-				<p class="mb30 text-center">Thanks to the creativity, our Web and
+				<!-- <p class="mb30 text-center">Thanks to the creativity, our Web and
 					Mobile Apps security and stability, integrated solutions and quality
 					services, the Pojo Technology has turned into world's renowned
 					destination for innovation, perceptive and business management
 
-				</p>
+				</p> -->
 			</div>
 			<div class="row upset">
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.2s">
 					<div class="service-card-app hoshd">
-						<h4>App Development</h4>
+						<h4>Career Counseling & Psychometric Testing</h4>
 						<ul class="-service-list mt10">
-							<li> <a href="#">iPhone</a> </li>
+							<!-- <li> <a href="#">iPhone</a> </li>
 							<li> <a href="#">Android</a> </li>
-							<li> <a href="#">Cross Platform</a> </li>
+							<li> <a href="#">Cross Platform</a> </li> -->
 						</ul>
 						<div class="tec-icon mt30">
-							<ul class="servc-icon-sldr">
+							<img src="./img/download/schedule-8744592_1280.webp" alt="">
+							<!-- <ul class="servc-icon-sldr">
 								<li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/android.svg" alt="img"></div>
 									</a></li>
@@ -397,11 +475,11 @@
 								<li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/tablet.svg" alt="img"></div>
 									</a></li>
-							</ul>
+							</ul> -->
 						</div>
-						<p class="mt20 text-justify">Create, publish App and promote engaging content to generate more
-							traffic and
-							build a dedicated community.
+						<p class="mt20 text-justify">Our Career Counseling & Psychometric Testing services are designed
+							to provide clarity, direction, and actionable strategies to help you achieve your
+							professional aspirations.
 						</p>
 						<a href="mobile-app-development.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
@@ -409,16 +487,18 @@
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.5s">
 					<div class="service-card-app hoshd">
-						<h4>Web Development</h4>
+						<h4>Recruitment & Placement Services</h4>
 						<ul class="-service-list mt10">
-							<li> <a href="#">Angular Js</a> </li>
+							<!-- <li> <a href="#">Angular Js</a> </li>
 							<li> <a href="#">Node Js</a> </li>
 							<li> <a href="#">React Js</a> </li>
-							<li> <a href="#">WordPress</a></li>
+							<li> <a href="#">WordPress</a></li> -->
 						</ul>
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
+								<img src="./img/download/image-6.webp" alt="">
+
+								<!-- <li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/angular.png" alt="img"></div>
 									</a></li>
 								<li><a href="#">
@@ -429,83 +509,62 @@
 									</a></li>
 								<li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/wordpress.svg" alt="img"></div>
-									</a></li>
+									</a></li> -->
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Web applications that can keep you on the upbeat of the IT rhythm
-							by hampering downtimes and accelerating productivity. </p>
+						<p class="mt20 text-justify">Finding the right job or the perfect candidate can be challenging.
+						</p>
 						<a href="web-development.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
-						<h4>Hosting Service</h4>
+						<h4>Upskilling & Reskilling Programs</h4>
 						<ul class="-service-list mt10">
-							<li> <a href="#">Magento</a> </li>
+							<!-- <li> <a href="#">Magento</a> </li>
 							<li> <a href="#">Shopify</a> </li>
-							<li> <a href="#">Woo-commerce</a></li>
+							<li> <a href="#">Woo-commerce</a></li> -->
 						</ul>
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/shopify.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/woocommerce.svg" alt="img"></div>
-									</a></li>
+								<img src="./img/download/image-7.avif" alt="">
+
+								<!-- <li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
+										</a></li>
+									<li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/shopify.svg" alt="img"></div>
+										</a></li>
+									<li><a href="#">
+											<div class="img-iconbb"><img src="images/icons/woocommerce.svg" alt="img"></div>
+										</a></li> -->
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Give your website to our reliable hosting service. We can host all
-							your website's and template.</p>
+						<p class="mt20 text-justify">In a rapidly evolving job market, continuous learning and
+							development are essential for career advancement and organizational success</p>
 						<a href="hosting.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 
 
-				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
-						<h4>Digital Marketing</h4>
+						<h4>Corporate Training & Development</h4>
 						<ul class="-service-list mt10">
-							<li> <a href="#">Facebook</a> </li>
-							<li> <a href="#">Instagram</a> </li>
-							<li> <a href="#">Youtube</a> </li>
-							<li> <a href="#">LinkedIn</a> </li>
-
-
 						</ul>
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/facebook.png" alt="Facebook">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/instagram.png" alt="Instagram">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/youtube.png" alt="Youtube">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/linkedin.png" alt="LinedI n">
-										</div>
-									</a></li>
-
+							<img src="./img/download/schedule-8744592_1280.webp" alt="">
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Digital media marketing is a big ocean unto itself, with several
-							significant elements to be worked on. </p>
+						<p class="mt20 text-justify">Unlocking potential through comprehensive training programs that drive innovation, leadership, and business success.</p>
 						<a href="digital-marketing.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
+				</div> -->
+				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
 						<h4>SEO Optimization</h4>
 						<ul class="-service-list mt10">
@@ -550,9 +609,9 @@
 							you've landed on the right page. </p>
 						<a href="graphic-design.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div>
+					</div> -->
 			</div>
+		</div>
 		</div>
 	</section>
 
@@ -560,59 +619,69 @@
 
 
 
-	<section class="work-category pad-tb">
+	<section class="work-category pt-5 pb-5">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="common-heading ptag">
-						<span>We Have Worked Across Multiple Industries</span>
-						<h2>Industries We Serve</h2>
+						<!-- <span>We Have Worked Across Multiple Industries</span> -->
+						<h2>Partners
+						</h2>
 
 					</div>
 				</div>
 			</div>
 			<div class="row mt30">
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.1s">
-					<div class="industry-workfor hoshd"><img src="images/icons/house.svg" alt="img">
-						<h6>Real estate</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.1s">
+					<div class="industry-workfor hoshd"><img src="img/partners/medhavi.png" alt="img">
+						<h6>Medhavi Skill University </h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.3s">
-					<div class="industry-workfor hoshd"><img src="images/icons/travel-case.svg" alt="img">
-						<h6>Tour &amp; Travels</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.3s">
+					<div class="industry-workfor hoshd"><img src="img/partners/nsdc.jpg" alt="img">
+						<h6>National Skill Development Corporation</h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.5s">
-					<div class="industry-workfor hoshd"><img src="images/icons/video-tutorials.svg" alt="img">
-						<h6>Education</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.5s">
+					<div class="industry-workfor hoshd"><img src="img/partners/bfsi.jfif" alt="img">
+						<h6>Banking and Financial Sector Skill Council </h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.7s">
-					<div class="industry-workfor hoshd"><img src="images/icons/taxi.svg" alt="img">
-						<h6>Transport</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.7s">
+					<div class="industry-workfor hoshd"><img src="img/partners/GKU.jpg" alt="img">
+						<h6>Guru Kashi University</h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="0.9s">
-					<div class="industry-workfor hoshd"><img src="images/icons/event.svg" alt="img">
-						<h6>Event</h6>
+				<div class="row justify-content-center  mt-5">
+					<div class="col-lg-8">
+						<div class="common-heading ptag">
+							<h2>Recognised by 
+							</h2>
+	
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.1s">
-					<div class="industry-workfor hoshd"><img src="images/icons/smartphone.svg" alt="img">
-						<h6>eCommerce</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.9s">
+					<div class="industry-workfor hoshd"><img src="img/partners/start_up-removebg-preview.png" alt="img">
+						<h6>Start up india </h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.3s">
-					<div class="industry-workfor hoshd"><img src="images/icons/joystick.svg" alt="img">
-						<h6>IoT Automation</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.1s">
+					<div class="industry-workfor hoshd"><img src="img/partners/msmse-removebg-preview.png" alt="img">
+						<h6>MSME </h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.5s">
-					<div class="industry-workfor hoshd"><img src="images/icons/healthcare.svg" alt="img">
-						<h6>Healthcare</h6>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.3s">
+					<div class="industry-workfor hoshd"><img src="img/partners/international.png" alt="img">
+						<h6>International Association of Colleges and Universities</h6>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.7s">
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.5s">
+					<div class="industry-workfor hoshd"><img src="img/partners/ministry-for-corporate-affairs-jobs.webp" alt="img">
+						<h6>Ministry of Corporate Affairs</h6>
+					</div>
+				</div>
+				<!-- <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.7s">
 					<div class="industry-workfor hoshd"><img src="images/icons/money-growth.svg" alt="img">
 						<h6>Finance</h6>
 					</div>
@@ -631,7 +700,7 @@
 					<div class="industry-workfor hoshd"><img src="images/icons/groceries.svg" alt="img">
 						<h6>Grocery</h6>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -640,7 +709,7 @@
 
 
 
-	<section class="clients-section-app pad-tb">
+	<!-- <section class="clients-section-app pad-tb">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
@@ -724,7 +793,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -735,10 +804,10 @@
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="common-heading text-l">
-						<span>What our clients say about us.</span>
-						<h2>Over 200+ Satisfied Clients and Growing</h2>
+						<span>What our Students say about us.</span>
+						<h2>Over 200+ Satisfied Students and Growing</h2>
 					</div>
-					<div class="review-title-ref mt40">
+					<!-- <div class="review-title-ref mt40">
 						<div class="cta-card mt40">
 							<a href="#" class="btn-outline lnk">Write a Reviews<span class="circle"></span></a>
 						</div>
@@ -747,7 +816,7 @@
 						<a href="#" target="blank" class="wow fadeIn col-lg-4 col-4" data-wow-delay=".2s"><img
 								src="images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
 
-					</div>
+					</div> -->
 				</div>
 				<div class="col-lg-7">
 					<div class="pl50">
@@ -755,9 +824,8 @@
 						<div class="testimonial-card-a tcd owl-carousel">
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<p>"Integrated Career Management Services transformed my career path. Their guidance
+										was invaluable!".</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -765,7 +833,7 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5> – Aisha K</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -774,9 +842,9 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<p>"After taking the psychometric tests, I realized my passion for digital
+										marketing. The counselors helped me transition smoothly into my new career." .
+									</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -784,7 +852,25 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5>– Suresh P</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"ICMS helped me land a position at a leading tech firm within two months. Their
+										support was exceptional!" .</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>– Rahul S</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -834,37 +920,59 @@
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
 								<p>Email <span> <a
-											href="mailto:info@pojotechnology.com">info@pojotechnology.com</a></span>
+											href="mailto:info@pojotechnology.com">info.icmsgroup@gmail.com</a></span>
 								</p>
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
 								<p>Phone <span> <a href="tel:+918072515050">
-											+91 80725 15050</a></span></p>
+											+91 8808807014</a></span></p>
 							</li>
-						<div class="d-flex">
-							<li>
-								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Registered Office  <span> Maliyakkal, Princy Villa 
-									Chekom ,Pathanapuram 
-									Kollam , Kerala 689695 </span></p>
-							</li>
-							<li>
-								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Corporate Office  <span> IV 64 -1,C , Darshanam Complex 
-									Mundur, Thrissur Kerala India 680541</span></p>
-							</li>
-						</div>
+							<div class="">
+								<!-- <li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Registered Office <span> Maliyakkal, Princy Villa
+											Chekom ,Pathanapuram
+											Kollam , Kerala-689695 </span></p>
+								</li> -->
+								<li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Corporate Office <span> IV 64 -1,C , Darshanam Complex
+											Mundur, Thrissur Kerala India 680541</span></p>
+								</li>
+							</div>
 						</ul>
 					</div>
 
-
+					<p class=" border-bottom pb-2 text-justify pt-3  border-2">© 2024 All Rights Reserved By <b
+							class="text-primary">Integrated Career Management Services Pvt Ltd</b></p>
 				</div>
 			</div>
 		</div>
 
 
 	</footer>
+	<!-- <div class="footer-row3">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-social-media-icons">
+							<a href="https://www.facebook.com/careercounsellorkerala?mibextid=ZbWKwL
+					" target="blank"><i class="fab fa-facebook"></i></a>
+				
+					<a href=" https://instagram.com/mycareercounsellor?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
+							class="fab fa-instagram"></i></a>
+					<a href="https://youtube.com/@mycareercounsellor?si=deOSl3bAqhPsV4ph" target="blank"><i
+							class="fab fa-youtube"></i></a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

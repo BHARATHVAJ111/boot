@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title></title>
+	<title>Circuites</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#4302b2">
 
-	<link href="images/favicon.png" rel="icon">
+	<link href="img/logo/logo-removebg-preview.png" rel="icon">
 	<link href="css/swiper.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/plugin.min.css" rel="stylesheet">
@@ -24,6 +24,53 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		
+		.slide-bg-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
+    z-index: 1; /* Make sure the gradient is on top of the background image */
+}
+
+.slide-inner .container {
+    position: relative;
+    z-index: 2; /* Ensure content is on top of the gradient */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.slide-title h3,
+.slide-text p {
+    color: white;
+    z-index: 2;
+}
+.service-img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    /* object-fit: cover; This will maintain aspect ratio and cover the container */
+}
+.gradient-text {
+            background: linear-gradient(45deg, #a5048d, #ff6f00,blue,yellow);
+            -webkit-background-clip: text;
+            color: transparent;
+         font-size: 18px;
+		 font-weight: 700;
+        }
+			
+	</style>
 </head>
 
 <body>
@@ -41,8 +88,8 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img src="images/.png" alt="Logo" class="mega-white-logo" />
-						<img src="images/.png" alt="Logo" class="mega-darks-logo" />
+						<img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-white-logo" />
+						<img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-darks-logo" />
 					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -203,7 +250,9 @@
 			<div class="swiper-wrapper">
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-12.jpg">
+					
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/wire-1098059_1280.jpg">
+						<div class="gradient-overlay"></div> 
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -222,17 +271,19 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/mobile-app.png">
+									<!-- <img src="images/hero/mobile-app.png"> -->
 								</div>
 							</div>
 
 						</div>
 					</div>
 				</div>
-
+				
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-10.jpg">
+					<!-- <img src="" alt=""> -->
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-2.webp">
+						<div class="gradient-overlay"></div> 
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -251,7 +302,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/web-development.png">
+									<!-- <img src="images/hero/web-development.png"> -->
 								</div>
 							</div>
 						</div>
@@ -259,7 +310,9 @@
 				</div>
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-14.jpg">
+					<!-- <img src="" alt=""> -->
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-1.webp">
+						<div class="gradient-overlay"></div> 
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -278,7 +331,7 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/digital-marketing.png">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
 								</div>
 							</div>
 						</div>
@@ -369,23 +422,10 @@
 			<div class="row upset">
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.2s">
 					<div class="service-card-app hoshd">
-							<!-- <h4>App Development</h4>
-							<ul class="-service-list mt10">
-								<li> <a href="#">iPhone</a> </li>
-								<li> <a href="#">Android</a> </li>
-								<li> <a href="#">Cross Platform</a> </li>
-							</ul> -->
+							
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/android.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/apple.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/tablet.svg" alt="img"></div>
-									</a></li>
+								<img src="./img/download/service-1.webp" alt="" class="service-img">
 							</ul>
 						</div>
 						<p class="mt20 text-justify">List of electrical services offered, such as installation, maintenance, and repair
@@ -396,57 +436,28 @@
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.5s">
 					<div class="service-card-app hoshd">
-						<!-- <h4>Web Development</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Angular Js</a> </li>
-							<li> <a href="#">Node Js</a> </li>
-							<li> <a href="#">React Js</a> </li>
-							<li> <a href="#">WordPress</a></li>
-						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/angular.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/node.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/react.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/wordpress.svg" alt="img"></div>
-									</a></li>
+								<img src="./img/download/service-2.jpeg" alt="" class="service-img">
+
+								
 							</ul>
 						</div>
 						<p class="mt20 text-justify">Electrical Equipment service and Testing </p>
-						<a href="web-development.html" class="mt20 link-prbs">Read More <i
+						<a href="web-development.html" class="mt-5 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
-						<!-- <h4>Hosting Service</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Magento</a> </li>
-							<li> <a href="#">Shopify</a> </li>
-							<li> <a href="#">Woo-commerce</a></li>
-						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/shopify.svg" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/woocommerce.svg" alt="img"></div>
-									</a></li>
+								<img src="./img/download/service-4.jpg" alt="" class="service-img">
+
 							</ul>
 						</div>
 						<p class="mt20 text-justify"> Annual maintenance</p>
-						<a href="hosting.html" class="mt20 link-prbs">Read More <i
+						<a href="hosting.html" class="pt-5  mt-4 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
@@ -454,33 +465,11 @@
 
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
-						<!-- <h4>Digital Marketing</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Facebook</a> </li>
-							<li> <a href="#">Instagram</a> </li>
-							<li> <a href="#">Youtube</a> </li>
-							<li> <a href="#">LinkedIn</a> </li>
-
-
-						</ul> -->
+						
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/facebook.png" alt="Facebook">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/instagram.png" alt="Instagram">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/youtube.png" alt="Youtube">
-										</div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/linkedin.png" alt="LinedI n">
-										</div>
-									</a></li>
+								<img src="./img/download/service-3.png" alt="" class="service-img">
+								
 
 							</ul>
 						</div>
@@ -491,16 +480,10 @@
 				</div>
 				<div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
 					<div class="service-card-app hoshd">
-						<!-- <h4>SEO Optimization</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Google Search Console</a> </li>
-
-						</ul> -->
+						
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/google.png" alt="Google"></div>
-									</a></li>
+								<img src="./img/download/satisfaction.png" alt="" class="service-img">
 
 							</ul>
 						</div>
@@ -511,30 +494,6 @@
 								class="fas fa fa-arrow-circle-right"></i></a>
 					</div>
 				</div>
-				<!-- <div class="col-lg-4 col-md-6 mt30 wow fadeIn" data-wow-delay="0.8s">
-					<div class="service-card-app hoshd">
-						<h4>Graphic Design</h4>
-						<ul class="-service-list mt10">
-							<li> <a href="#">Coreldraw</a> </li>
-							<li> <a href="#">Photoshop</a> </li>
-						</ul>
-						<div class="tec-icon mt30">
-							<ul class="servc-icon-sldr">
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/coreldraw.png" alt="img"></div>
-									</a></li>
-								<li><a href="#">
-										<div class="img-iconbb"><img src="images/icons/photoshop.png" alt="img"></div>
-									</a></li>
-
-							</ul>
-						</div>
-						<p class="mt20 text-justify">If you're looking for a logo design firm for your brand, then
-							you've landed on the right page. </p>
-						<a href="graphic-design.html" class="mt20 link-prbs">Read More <i
-								class="fas fa fa-arrow-circle-right"></i></a>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</section>
@@ -793,7 +752,7 @@
 			<div class="row upset">
 				<div class="col-lg-3 col-sm-6 mt30">
 					<div class="s-block up-hor">
-						<div class="s-card-icon"><img src="images/icons/research.svg" alt="service" class="img-fluid" />
+						<div class="s-card-icon"><img src="img/download/competitive.png" alt="service" class="img-fluid" />
 						</div>
 						<h4>Competitive pricing.</h4>
 
@@ -801,7 +760,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-6 mt30">
 					<div class="s-block up-hor">
-						<div class="s-card-icon"><img src="images/icons/chat.svg" alt="service" class="img-fluid" />
+						<div class="s-card-icon"><img src="img/download/engineer.png" alt="service" class="img-fluid" />
 						</div>
 						<h4>We have a team of experts and commit to provide top-notch service and support.</h4>
 
@@ -809,7 +768,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-6 mt30">
 					<div class="s-block up-hor">
-						<div class="s-card-icon"><img src="images/icons/monitor.svg" alt="service" class="img-fluid" />
+						<div class="s-card-icon"><img src="img/download/guaranteed.png" alt="service" class="img-fluid" />
 						</div>
 						<h4> Commitment to safety and quality workmanship.</h4>
 
@@ -817,7 +776,7 @@
 				</div>
 				<div class="col-lg-3 col-sm-6 mt30">
 					<div class="s-block up-hor">
-						<div class="s-card-icon"><img src="images/icons/trasparency.svg" alt="service"
+						<div class="s-card-icon"><img src="img/download/emergency.png" alt="service"
 								class="img-fluid" /></div>
 						<h4>Immediate response for inquiries and appointments.</h4>
 					</div>
@@ -837,14 +796,14 @@
 		<div class="footer-row2">
 			<div class="container">
 				<div class="row justify-content-between">
-					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="images/.png"
+					<div class="col-lg-6 col-sm-6  ftr-brand-pp">
+						<a class="navbar-brand pb-5 f-dark-logo" href="#"> <img src="img/logo/logo-removebg-preview-crap.png"
 								alt="Logo" /></a>
-						<a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="images/-logo.png"
+						<a class="navbar-brand pb-5 f-white-logo" href="#"> <img src="img/logo/logo-removebg-preview-crap.png"
 								alt="Logo" /></a>
 						<p> We started our adventure with business and trade in 2024 to manufacture and supply Electrical and Electronic Systems for Industries, Institutions,Domestic buildings, etc,.Over the period the company has enlarged its customer base and now supplies the most of products that meet customer’s satisfication.</p>
 					</div>
-					<div class="col-lg-4 col-sm-6">
+					<!-- <div class="col-lg-4 col-sm-6">
 						<h5>Useful Links</h5>
 						<ul class="footer-address-list link-hover">
 							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
@@ -853,8 +812,8 @@
 							<li><a href="digital-marketing.html">Digital Marketing</a></li>
 							<li><a href="hosting.html">Hosting Services</a></li>
 						</ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">
+					</div> -->
+					<div class="col-lg-6 col-sm-6">
 						<h5>Contact Us</h5>
 						<ul class="footer-address-list ftr-details">
 							<li>
@@ -874,8 +833,9 @@
 							</li>
 						</ul>
 					</div>
+				
 
-
+<p class="border-bottom border-2 pt-4 pb-2">© 2024 All Rights Reserved By <span class="gradient-text">Circuites</span></p>
 				</div>
 			</div>
 		</div>

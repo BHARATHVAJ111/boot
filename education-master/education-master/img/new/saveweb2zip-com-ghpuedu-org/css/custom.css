@@ -1,0 +1,96 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+
+.profile-container .view-profile {
+    background: #fff;
+    border: 1px solid green;
+    padding: 25px;
+}
+
+.profile-container .view-profile .profile-header{
+    background: #2f4c97;
+    background: -webkit-linear-gradient(top, #00a957, #2f4c97);
+    background: linear-gradient(to bottom, #00a957, #2f4c97);
+    padding: 15px 20px;
+}
+
+.profile-container .view-profile .about-profile{
+    padding: 20px;
+}
+
+.profile-container .view-profile .about-profile span{ 
+    color: #888; 
+    
+} 
+
+.profile-container .view-profile .about-profile h6{ 
+    color: #000; 
+    padding-top: 6px;
+    font-weight: 600;
+}
+
+.award-personalities .award-profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.award-personalities .award-profile img{
+    height: 355px;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.award-personalities .award-profile{
+    position: relative;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    border-radius: 0 20px;
+    height: 100%;
+}
+
+.award-personalities .award-profile:hover{
+    cursor: pointer;
+    overflow: hidden;
+    /* border: 1px solid #05a856; */
+    box-shadow: #6fb792 0px 4px 12px;
+    transition: all 0.5s ease;
+    box-shadow: rgb(145 252 198) 0px 5px 15px;
+    transform: scale(1.03);
+}
+
+.award-personalities .award-profile a .profile-name{
+    background:#bf2f38;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 0 15px 0 0;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.award-personalities .award-profile .detail{
+    border-radius: 0 0 0 15px;
+    overflow: auto;
+    background: #304e9a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.award-personalities .award-profile .detail p{
+    font-size: 12px;
+    background: #304e9a;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0;
+}
+

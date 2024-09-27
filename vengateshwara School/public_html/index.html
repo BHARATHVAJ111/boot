@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#4302b2">
 
-	<link href="images/favicon.png" rel="icon">
+	<link href="images/logo/logo.png" rel="icon">
 	<link href="css/swiper.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/plugin.min.css" rel="stylesheet">
@@ -24,6 +24,78 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.slide-bg-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
+    z-index: 1; /* Make sure the gradient is on top of the background image */
+}
+
+.slide-inner .container {
+    position: relative;
+    z-index: 2; /* Ensure content is on top of the gradient */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.slide-title h3,
+.slide-text p {
+    color: white;
+    z-index: 2;
+}
+
+
+.rules-list {
+    list-style-type: none;
+    padding-left: 0;
+	border-radius: 40px 2px 70px 2px;
+}
+
+.rules-list li {
+    font-size: 18px;
+    color: #34495e;
+    padding: 15px;
+    border-bottom: 1px solid #ecf0f1;
+    position: relative;
+    padding-left: 60px; /* Adjust padding for spacing */
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+}
+
+.rules-list li span {
+    font-weight: bold;
+    color: purple;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+    /* border: 2px solid #34495e; */
+    line-height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+	text-shadow: 1px 1px 1px white;
+}
+
+	</style>
 </head>
 
 <body>
@@ -56,10 +128,10 @@
 						</li>
 
 						<li>
-							<a href="products.html" class="menu-links">Products</a>
+							<a href="products.html" class="menu-links">Rules & Regulations</a>
 						</li>
 
-						<li class="sbmenu rpdropdown">
+						<!-- <li class="sbmenu rpdropdown">
 							<a href="#" class="menu-links">Services</a>
 							<div class="nx-dropdown menu-dorpdown">
 								<div class="sub-menu-section">
@@ -82,7 +154,7 @@
 						</li>
 						<li>
 							<a href="our-clients.html" class="menu-links">Our Clients</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="contact-us.html" class="menu-links">Contact Us</a>
 						</li>
@@ -111,8 +183,11 @@
 					<li>
 						<a href="about-us.html">About Us</a>
 					</li>
-
 					<li>
+						<a href="products.html">Rules & Regulations</a>
+					</li>
+
+					<!-- <li>
 						<a href="products.html">Products</a>
 					</li>
 
@@ -131,7 +206,7 @@
 
 					<li>
 						<a href="our-clients.html" class="menu-links">Our Clients</a>
-					</li>
+					</li> -->
 					<li>
 						<a href="contact-us.html" class="menu-links">Contact Us</a>
 					</li>
@@ -158,27 +233,28 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+918072515050">+91 80725 15050 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="">+91 9442161577 <span>Mon-Fri 9am - 6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+91918072515050" target="_blank">+91 80725 15050 <span>Mon-Fri 9am -
+						<a href="https://wa.me/+919442161577" target="_blank">+91 9442161577 <span>Mon-Fri 9am -
 								6pm</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="mailto:info@pojotechnology.com" target="_blank">info@pojotechnology.com
+						<a href="" target="_blank">contact@srivenkateswaraschool.in | srivenkateswaraschool@outlook.com
 							<span>Online Support</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="#">111, RR Building Opp, Guindy, Chennai-600032<span>Visit Our Office</span></a>
+						<a href="#">
+							Sri Venkateswara Matriculation School, 498/A, Periyar Nagar Sattur - 626203 virudhunagar District.<span>Visit Our Office</span></a>
 					</div>
 				</div>
 			</div>
@@ -202,7 +278,7 @@
 
 			<div class="swiper-wrapper">
 
-				<div class="swiper-slide">
+				<!-- <div class="swiper-slide">
 					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-12.jpg">
 						<div class="container">
 							<div class="row">
@@ -228,11 +304,38 @@
 
 						</div>
 					</div>
-				</div>
-
-
+				</div> -->
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-10.jpg">
+					<img src="" alt="">
+					<div class="slide-inner slide-bg-image background-img" data-background="./images/download/slider-1.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Welcome to Sri Venkateshwara Matriculation School </h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<p>At Sri Venkateshwara Matriculation School, we provide a dynamic and nurturing environment where every student is encouraged to reach their full potential and prepare for a bright future.</p>
+									</div>
+				
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- Empty column for layout purpose -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="" alt="">
+					<div class="slide-inner slide-bg-image background-img" data-background="./images/download/slider-3.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -242,24 +345,25 @@
 									<div data-swiper-parallax="400" class="slide-text">
 										<p>Our mission is to ensure that each student experiences continuous growth through innovative teaching methods and personalized attention.</p>
 									</div>
-
+				
 									<div class="clearfix"></div>
 									<div data-swiper-parallax="500" class="slide-btns">
 										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
-												class="fas fa-chevron-right fa-icon"></i><span
-												class="circle"></span></a>
+												class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/web-development.png">
+									<!-- Empty column for layout purpose -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-14.jpg">
+					<img src="" alt="">
+					
+					<div class="slide-inner slide-bg-image background-img" data-background="./images/download/slider-2.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -269,25 +373,21 @@
 									<div data-swiper-parallax="400" class="slide-text">
 										<p>At Sri Venkateshwara Matriculation School, we foster a love of learning by encouraging curiosity, creativity, and critical thinking in a supportive environment.</p>
 									</div>
-
+				
 									<div class="clearfix"></div>
 									<div data-swiper-parallax="500" class="slide-btns">
 										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
-												class="fas fa-chevron-right fa-icon"></i><span
-												class="circle"></span></a>
+												class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<img src="images/hero/digital-marketing.png">
+									<!-- Empty column for layout purpose -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
-
-
 			<div class="swiper-pagination"></div>
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
@@ -302,18 +402,13 @@
 				<div class="col-lg-6">
 					<div class="common-heading text-l">
 						<h2 class="mb30"><span class="text-second text-bold">Sri Venkateshwara Matriculation School </span>provide a dynamic and nurturing environment </h2>
-						<p class="text-justify">Our School has been functioning well in this town since 1985. In the beginning, it 
-							was started the name of “ Sri Venkateswara Kindergarden English School” near Vembakottai 
-							Road, Sattur, under the roof of bricked building with 90 students and 3 teachers. </p>
-						<p class="mt10 text-justify"> In the year of 
-							1992, it gets its proper approval from Tamilnadu Government. In the year of 1998, its name get 
-							changed into “ Sri Venkateswara Nursery and Primary School. By our hardwork we have achieved 
-							the good standard of education.</p>
-						<p class="mt10  text-justify">  Year by year the strength of the students get raised. Then,from the 
+						<p class="text-justify">Our school, established in 1985 as "Sri Venkateswara Kindergarten English School" in Sattur, began with 90 students and 3 teachers. It received Tamil Nadu government approval in 1992 and was renamed "Sri Venkateswara Nursery and Primary School" in 1998. </p>
+						<p class="mt10 text-justify">  Due to increasing enrollment, the school moved to a larger building in Periyar Nagar in 2006. In 2014, we gained approval to offer classes VI-VIII, and in 2016, the school was renamed "Sri Venkateswara Matriculation School" with approval to add classes IX and X.</p>
+						<!-- <p class="mt10  text-justify">  Year by year the strength of the students get raised. Then,from the 
 							year 2006 to maintain a comfortable surrounding, we have shifted our school management to highly 
 							storage building at Periyar Nagar, Sattur.And in the year of 2014, We get the approval to start the 
 							classes VI –VIII Std and its name get changed in to “Sri Venkateswara Matriculation School” on 
-							June 2016, we also get the approval to start the classes IX and X Std</p>
+							June 2016, we also get the approval to start the classes IX and X Std</p> -->
 					</div>
 
 
@@ -326,7 +421,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl2">
 									<img src="images/icons/startup.svg" alt="startup icon">
-									<span class="services-cuntr counter">39</span><span class="services-cuntr">+</span>
+									<span class="services-cuntr counter">25</span><span class="services-cuntr">+</span>
 									<p>Years Experience </p>
 								</div>
 							</div>
@@ -341,15 +436,15 @@
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl5">
 									<img src="images/icons/computers.svg" alt="projects">
-									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
-									<p>Projects Delivered</p>
+									<span class="services-cuntr counter">400</span><span class="services-cuntr">+</span>
+									<p>No Of Students</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
 								<div class="funfct srcl1">
 									<img src="images/icons/deal.svg" alt="Satisfaction">
-									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
-									<p>Client Satisfaction</p>
+									<span class="services-cuntr counter">40</span><span class="services-cuntr">+</span>
+									<p>No Of Staff</p>
 								</div>
 							</div>
 						</div>
@@ -360,7 +455,7 @@
 	</section>
 
 
-	<section class="service-section-app mt-5 dark-bg2">
+	<section class="service-section-app mt-5 dark-bg2 mb-5 pb-5" >
 
 		<div class="container">
 			<div class="row justify-content-center">
@@ -390,7 +485,7 @@
 						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img src="./images/download/pexels-photo-2292837.webp" class="rounded" alt="">
+								<img src="./images/download/online-certification-illustration-concept_.avif" class="rounded" alt="">
 								<!-- <li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/android.svg" alt="img"></div>
 									</a></li>
@@ -419,7 +514,7 @@
 						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img src="./images/download/pexels-photo-2292837.webp" class="rounded" alt="">
+								<img src="./images/download/hand-drawn-report-card-template_23-2149588809.avif" class="rounded" alt="">
 								<!-- <li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/angular.png" alt="img"></div>
 									</a></li>
@@ -450,7 +545,7 @@
 						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img src="./images/download/pexels-photo-2292837.webp" class="rounded" alt="">
+								<img src="./images/download/conduct.jpg" class="rounded bg-dark shadow" alt="">
 								<!-- <li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/magento.svg" alt="img"></div>
 									</a></li>
@@ -483,7 +578,7 @@
 						</ul> -->
 						<div class="tec-icon mt30">
 							<ul class="servc-icon-sldr">
-								<img src="./images/download/pexels-photo-2292837.webp" class="rounded" alt="">
+								<img src="./images/download/community.jpg" class="rounded" style="margin-top: 34px;" alt="">
 								<!-- <li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/facebook.png" alt="Facebook">
 										</div>
@@ -525,8 +620,8 @@
 
 							</ul> -->
 						</div>
-						<p class="mt20 text-justify">( Only for ICSE, CBSE, other State
-							Boards)
+						<!-- <p class="mt20 text-justify">Get more website traffic, more customers, and more online
+							visibility with powerful SEO services. -->
 
 						</p>
 						<!-- <a href="seo.html" class="mt20 link-prbs">Read More <i
@@ -541,7 +636,7 @@
 							<li> <a href="#">Photoshop</a> </li>
 						</ul> -->
 						<div class="tec-icon mt30">
-							<img src="./images/download/pexels-photo-2292837.webp" class="rounded" alt="">
+							<img src="./images/download/students.webp" class="rounded" alt="">
 							<!-- <ul class="servc-icon-sldr">
 								<li><a href="#">
 										<div class="img-iconbb"><img src="images/icons/coreldraw.png" alt="img"></div>
@@ -562,11 +657,47 @@
 		</div>
 	</section>
 
+	<!-- <section class="work-category pad-tb">
+	<div class="container-fluid">
+		<h2 class="text-center mb-5">Rules & Regulations</h2>
+		<div class="row">
+			<div class="col-lg-6 col-sm-12">
+				<ol class="rules-list bg-white shadow p-2">
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Children who have completed the age of 3 years are eligible for admission in L.K.G and those who have completed 5 years are eligible for first standard.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> The Birth certificate should accompany the application form.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Children coming from other schools will have to produce Transfer Certificate and Birth Certificate.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Students are selected on the basis of an entrance test and interview.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Each student should bring their Assignment Book to the school every day.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Students should come to school in Uniform daily except on Saturdays.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> All students should assemble for the school prayer at 09:10 A.M.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Latecomers will not be admitted into the class without the permission of the Principal.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Leave letters should be sent with the signature of the parents.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> After one month of continual absence without permission, the absentee’s name will be struck off from the roll.</li>
+				</ol>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<ol class="rules-list bg-white shadow p-2">
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Children who have completed the age of 3 years are eligible for admission in L.K.G and those who have completed 5 years are eligible for first standard.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> The Birth certificate should accompany the application form.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Children coming from other schools will have to produce Transfer Certificate and Birth Certificate.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Students are selected on the basis of an entrance test and interview.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Each student should bring their Assignment Book to the school every day.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Students should come to school in Uniform daily except on Saturdays.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> All students should assemble for the school prayer at 09:10 A.M.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Latecomers will not be admitted into the class without the permission of the Principal.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> Leave letters should be sent with the signature of the parents.</li>
+					<li><span><img src="img/icons/graduation-hat.png" class="20px" alt=""></span> After one month of continual absence without permission, the absentee’s name will be struck off from the roll.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	</section> -->
+	
 
 
 
 
-	<section class="work-category pad-tb">
+	<!-- <section class="work-category pad-tb">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
@@ -730,7 +861,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -741,19 +872,19 @@
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="common-heading text-l">
-						<span>What our clients say about us.</span>
-						<h2>Over 200+ Satisfied Clients and Growing</h2>
+						<span>School Management</span>
+						<h3>Our school management ensures excellence, discipline, and development with efficient administration and support.</h3>
 					</div>
-					<div class="review-title-ref mt40">
+					<!-- <div class="review-title-ref mt40">
 						<div class="cta-card mt40">
 							<a href="#" class="btn-outline lnk">Write a Reviews<span class="circle"></span></a>
 						</div>
-					</div>
-					<div class="row mt30">
+					</div> -->
+					<!-- <div class="row mt30">
 						<a href="#" target="blank" class="wow fadeIn col-lg-4 col-4" data-wow-delay=".2s"><img
 								src="images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
 
-					</div>
+					</div> -->
 				</div>
 				<div class="col-lg-7">
 					<div class="pl50">
@@ -761,9 +892,7 @@
 						<div class="testimonial-card-a tcd owl-carousel">
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<h3>President</h3>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -771,7 +900,7 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5>Shri. N.ANANDHARAJAN</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -780,9 +909,7 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<h3>Secretary</h3>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -790,7 +917,44 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5>Mrs. S.CHELLATHAI</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<h3>Treasurer </h3>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>Mr.N.KUMARASAMY</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<h3>Members</h3>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>N.SURESH <span class="text-danger">|</span>
+												N.NAVANETHA KRISHNAN<span class="text-danger"> |</span>
+												N.ANANTH <span class="text-danger">|</span>
+												S.ALWARSAMY</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -814,17 +978,15 @@
 		<div class="footer-row2">
 			<div class="container">
 				<div class="row justify-content-between">
-					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="images/logo.png"
+					<div class="col-lg-6 col-sm-6  ftr-brand-pp">
+						<a class="navbar-brand   f-dark-logo" href="#"> <img src="images/logo/logo.png"
 								alt="Logo" /></a>
-						<a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="images/white-logo.png"
+						<a class="navbar-brand   f-white-logo" href="#"> <img src="images/logo/logo.png"
 								alt="Logo" /></a>
-						<p>Founded in 2018, Pojo Technology is working with customers and partners to deliver solutions
-							across multiple verticals. With proprietary core technologies, Pojo Technology delivers
-							Website,Mobile Applications and Digital Marketing solutions to enhance enterprise
-							operations.</p>
+						<p>
+							Our school started in 1985 as <b>"Sri Venkateswara Kindergarten English School"</b> with 90 students and 3 teachers. In 1992, we received government approval and were renamed <b>"Sri Venkateswara Nursery and Primary School"</b> in 1998. With growing enrollment, we moved to a larger building in Periyar Nagar in 2006. By 2016, we had expanded to include classes up to Std X, becoming <b>"Sri Venkateswara Matriculation School."</b></p>
 					</div>
-					<div class="col-lg-4 col-sm-6">
+					<!-- <div class="col-lg-4 col-sm-6">
 						<h5>Useful Links</h5>
 						<ul class="footer-address-list link-hover">
 							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
@@ -833,24 +995,27 @@
 							<li><a href="digital-marketing.html">Digital Marketing</a></li>
 							<li><a href="hosting.html">Hosting Services</a></li>
 						</ul>
-					</div>
-					<div class="col-lg-3 col-sm-6">
+					</div> -->
+					<div class="col-lg-6 col-sm-6">
 						<h5>Contact Us</h5>
 						<ul class="footer-address-list ftr-details">
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
 								<p>Email <span> <a
-											href="mailto:info@pojotechnology.com">info@pojotechnology.com</a></span>
+											href="mailto:info@pojotechnology.com">contact@srivenkateswaraschool.in  | srivenkateswaraschool@outlook.com</a></span>
 								</p>
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:+918072515050">
-											+91 80725 15050</a></span></p>
+								<p>Phone <span> <a href="">
+											+91 9442161577</a></span></p>
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span> 111, RR Building Opp, Guindy, Chennai-600032</span></p>
+								<p>Address <span> Sri Venkateswara Matriculation School,
+									498/A, Periyar Nagar
+									Sattur - 626203
+									virudhunagar District.</span></p>
 							</li>
 						</ul>
 					</div>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Schedule Table</title>
+    <style>
+        .TableContainer {
+            width: 80%;
+            margin: 0 auto;
+            min-width: 500px;
+            overflow-x: auto;
+        }
+        .TableHolder {
+            margin: 0 auto;
+            width: 100%;
+            text-align: left;
+            color: #fff;
+            cursor: default;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        .TableHolder tr:first-child th {
+            border-bottom: 1px solid #65CEC8;
+            padding: 15px;
+            background-color: #ffffff44;
+            font-size: 1.1em;
+        }
+        .TableHolder tr td, .TableHolder tr:not(:first-child) th {
+            padding: 12px 20px;
+            font-weight: normal;
+            position: relative;
+        }
+        .TableHolder tr:not(:first-child) th {
+            transition: all 0.3s ease-out;
+        }
+        .TableHolder tr td::after, .TableHolder tr:not(:first-child) th::after {
+            width: 0;
+            height: 2px;
+            background-color: #ffffff22;
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.1s ease-out 0.2s, height 0.2s ease 0.4s;
+        }
+        .TDActiv::after {
+            width: calc(100% - 20px) !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 bg-danger">
+        <div class="TableContainer">
+            <div class="table-responsive">
+                <table class="TableHolder">
+                    <tr>
+                        <th>Programme</th>
+                        <th>From</th>
+                        <th>To</th>
+                    </tr>
+                    <tr>
+                        <th>Prayer</th>
+                        <td>09:10 AM</td>
+                        <td>09:20 AM</td>
+                    </tr>
+                    <tr>
+                        <th>I Period</th>
+                        <td>09:20 AM</td>
+                        <td>10:00 AM</td>
+                    </tr>
+                    <tr>
+                        <th>II Period</th>
+                        <td>10:00 AM</td>
+                        <td>10:40 AM</td>
+                    </tr>
+                    <tr>
+                        <th>Refreshment Break</th>
+                        <td>10:40 AM</td>
+                        <td>10:50 AM</td>
+                    </tr>
+                    <tr>
+                        <th>III Period</th>
+                        <td>10:50 AM</td>
+                        <td>11:30 AM</td>
+                    </tr>
+                    <tr>
+                        <th>IV Period</th>
+                        <td>11:30 AM</td>
+                        <td>12:10 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Lunch</th>
+                        <td>12:10 PM</td>
+                        <td>12:40 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Handwriting Practice</th>
+                        <td>12:40 PM</td>
+                        <td>12:55 PM</td>
+                    </tr>
+                    <tr>
+                        <th>V Period</th>
+                        <td>12:55 PM</td>
+                        <td>01:35 PM</td>
+                    </tr>
+                    <tr>
+                        <th>VI Period</th>
+                        <td>01:35 PM</td>
+                        <td>02:15 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Refreshment Break</th>
+                        <td>02:15 PM</td>
+                        <td>02:25 PM</td>
+                    </tr>
+                    <tr>
+                        <th>VII Period</th>
+                        <td>02:25 PM</td>
+                        <td>03:05 PM</td>
+                    </tr>
+                    <tr>
+                        <th>VIII Period</th>
+                        <td>03:05 PM</td>
+                        <td>03:40 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Diary Check</th>
+                        <td>03:40 PM</td>
+                        <td>03:50 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".TableHolder tr td, .TableHolder tr:not(:first-child) th").hover(
+                function() {
+                    $(this).addClass("TDActiv");
+                },
+                function() {
+                    $(this).removeClass("TDActiv");
+                }
+            );
+
+            $(".TableHolder tr td").hover(
+                function() {
+                    $(this).parent().find("th").css("background-color", "rgba(0,0,0,0.1)");
+                },
+                function() {
+                    $(this).parent().find("th").css("background-color", "inherit");
+                }
+            );
+        });
+    </script>
+</body>
+</html>

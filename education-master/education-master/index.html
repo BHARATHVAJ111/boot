@@ -121,7 +121,7 @@
   }
 }
 .GHPU{
-	background-image: url("./img/logo/school-7199838_1280.jpg");
+	background-image: url("./img/logo/board-5599231_1280.webp");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -361,13 +361,50 @@
   font-size: 0.9rem;
 }
 .shadow {
-    box-shadow: 0px 1px 6px 0px black;
+    box-shadow: 0px 1px 6px 0px #d7dfe2;
+}
+
+.slide-bg-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Dark gradient overlay */
+    z-index: 1; /* Make sure the gradient is on top of the background image */
+}
+
+.slide-inner .container {
+    position: relative;
+    z-index: 2; /* Ensure content is on top of the gradient */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.slide-title h3,
+.slide-text p {
+    color: white;
+    z-index: 2;
+}
+.service-img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    /* object-fit: cover; This will maintain aspect ratio and cover the container */
 }
 
 </style>
 </head>
 
-<body>
+<!-- <body><img src="./img/logo/board-5599231_1280.webp" alt=""> -->
 	<header id="header" id="home" style="font-family: sans-serif;">
 		<div class="header-top">
 			<div class="container">
@@ -583,11 +620,12 @@
 
 	<section>
 		<div class="container-fluid mt-5  p-5 GHPU">
+			
 			<div class="row d-flex justify-content-center ">
 				<div class="menu-content pb-70 col-lg-8">
 					<div class="title text-center">
-						<h1 class="mb-4 text-white " style="text-shadow:19px 8px 19px black;">GHPU – Alison Partnership Program</h1>
-						<h5 class="text-white">Over 4000 Free Online Courses across Nine Distinct Categories.</h5>
+						<h1 class="mb-4 text-white " style="text-shadow:1px 4px 2px black;">GHPU – Alison Partnership Program</h1>
+						<h5 class="text-white" style="text-shadow:1px 3px 3px black;">Over 4000 Free Online Courses across Nine Distinct Categories.</h5>
 					</div>
 				</div>
 			</div>
@@ -756,7 +794,7 @@
 						<div class="thumb-wrap relative border-rounded">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/caregiving.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 								<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -872,7 +910,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/Prevention.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 								<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -992,7 +1030,7 @@
 						<div class="thumb-wrap relative ">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/032.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1021,7 +1059,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p2.jpg" alt="">
+								<img class="img-fluid" src="img/new/031.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1049,7 +1087,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p3.jpg" alt="">
+								<img class="img-fluid" src="img/new/030.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1078,7 +1116,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p4.jpg" alt="">
+								<img class="img-fluid" src="img/new/029.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1107,7 +1145,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/028.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1136,7 +1174,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/027.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1165,7 +1203,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/026.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1194,7 +1232,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/023.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1223,7 +1261,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/025.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1252,7 +1290,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/018.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1281,7 +1319,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/016.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1310,7 +1348,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/015.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1339,7 +1377,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/014.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1368,7 +1406,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/013.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1397,7 +1435,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/012.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1426,7 +1464,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/011.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1455,7 +1493,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/010.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1484,7 +1522,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/08.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1514,7 +1552,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/05.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1543,7 +1581,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/4.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1572,7 +1610,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/02.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1601,7 +1639,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/01-1.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1630,7 +1668,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/032.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1659,7 +1697,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/031.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1688,7 +1726,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/030.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1717,7 +1755,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/029.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1746,7 +1784,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/028.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1775,7 +1813,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/027.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1805,7 +1843,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/026.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1834,7 +1872,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/025.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1863,7 +1901,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/024.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1892,7 +1930,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/023.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1921,7 +1959,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/022.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1950,7 +1988,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/021.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -1979,7 +2017,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/020.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -2008,7 +2046,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/019.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -2037,7 +2075,7 @@
 						<div class="thumb-wrap relative">
 							<div class="thumb relative">
 								<div class="overlay overlay-bg"></div>
-								<img class="img-fluid" src="img/p1.jpg" alt="">
+								<img class="img-fluid" src="img/new/018.jpg" alt="">
 							</div>
 							<!-- <div class="meta d-flex justify-content-between">
 							<p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
@@ -2087,8 +2125,8 @@
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="card">
 							<div class="card-banner">
-							  <p class="category-tag technology">Biryani</p>
-							  <img class="banner-img" src='img/e1.jpg' alt=''>
+							  <p class="category-tag technology">Education</p>
+							  <img class="banner-img" src='img/new/course__list_2.jpg' alt=''>
 							</div>
 							<div class="card-body">
 							  <p class="blog-hashtag">Repost - 28, Aug 2019</p>
@@ -2112,8 +2150,8 @@
 					  
 						  <div class="card">
 							<div class="card-banner">
-							  <p class="category-tag technology">Biryani</p>
-							  <img class="banner-img" src='img/e2.jpg' alt=''>
+							  <p class="category-tag technology">Education</p>
+							  <img class="banner-img" src='img/new/online-learning-vs-traditional-learning-efrontpro-810x338.jpg' alt=''>
 							</div>
 							<div class="card-body">
 							  <p class="blog-hashtag">Aug 20, 2019</p>
@@ -2137,8 +2175,8 @@
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="card">
 							<div class="card-banner">
-							  <p class="category-tag popular">Pizza</p>
-							  <img class="banner-img" src='img/e1.jpg' alt=''>
+							  <p class="category-tag popular">Education</p>
+							  <img class="banner-img" src='img/new/Virtual-Edu1-1.jpg' alt=''>
 							</div>
 							<div class="card-body">
 							  <p class="blog-hashtag">Repost - 28, Aug 2019</p>
@@ -2160,8 +2198,8 @@
 					  
 						  <div class="card">
 							<div class="card-banner">
-							  <p class="category-tag popular">Pizza</p>
-							  <img class="banner-img" src='img/e1.jpg' alt=''>
+							  <p class="category-tag popular">Education</p>
+							  <img class="banner-img" src='img/new/01.jpg' alt=''>
 							</div>
 							<div class="card-body">
 							  <p class="blog-hashtag">August 20, 2019</p>
@@ -2326,7 +2364,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g6.jpg" alt="">
+							<img src="./img/new/01-2.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2346,7 +2384,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g2.jpg" alt="">
+							<img src="./img/new/02-1.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2366,7 +2404,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g6.jpg" alt="">
+							<img src="./img/new/03-1.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2386,7 +2424,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g2.jpg" alt="">
+							<img src="./img/new/04-1.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2406,7 +2444,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g6.jpg" alt="">
+							<img src="./img/new/07_1.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2426,7 +2464,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g2.jpg" alt="">
+							<img src="./img/new/08_1.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2435,7 +2473,7 @@
 						</p> -->
 					</div>
 					<div class="single-review item">
-						<img src="img/r1.png" alt="">
+						<!-- <img src="img/r1.png" alt=""> -->
 						<div class="title justify-content-start d-flex">
 							<!-- <a href="#">
 								<h4>Fannie Rowe</h4>
@@ -2447,7 +2485,7 @@
 								<span class="fa fa-star"></span>
 								<span class="fa fa-star"></span>
 							</div> -->
-							<img src="./img/gallery/g6.jpg" alt="">
+							<img src="./img/new/09.jpg" alt="">
 						</div>
 						<!-- <p>
 							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
@@ -2457,23 +2495,23 @@
 					</div>
 					<div class="single-review item">
 						<div class="title justify-content-start d-flex">
-							<!-- <a href="#">
-								<h4>Hulda Sutton</h4>
-							</a>
-							<div class="star">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div> -->
-							<img src="./img/gallery/g2.jpg" alt="">
+							<img src="./img/new/010_1.jpg" alt="">
 						</div>
-						<!-- <p>
-							Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
-							scanner, speaker. Here you can find the best computer accessory for your laptop, monitor,
-							printer, scanner, speaker.
-						</p> -->
+					</div>
+					<div class="single-review item">
+						<div class="title justify-content-start d-flex">
+							<img src="./img/new/011_1.jpg" alt="">
+						</div>
+					</div>
+					<div class="single-review item">
+						<div class="title justify-content-start d-flex">
+							<img src="./img/new/012_1.jpg" alt="">
+						</div>
+					</div>
+					<div class="single-review item">
+						<div class="title justify-content-start d-flex">
+							<img src="./img/new/013_1.jpg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2532,41 +2570,19 @@
 							
 						</div>
 						<ul>
-							<li><a href="#">Global Human Peace University an Independent , Non Academic International
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">Global Human Peace University an Independent , Non Academic International
 									Online University Incorporated and Registered under the State of Delaware, USA and
 									Globally Recognized.</a></li>
-							<li><a href="#">Certified by, SCK – a Certification Body which is Accredited by
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">Certified by, SCK – a Certification Body which is Accredited by
 									International Accreditation Service ( IAS ) and recognized by International
 									Accreditation Forum ( IAF )</a></li>
-							<li><a href="#">GHPU association with People Forum of India Bharat Sevak Shamaj ( Regd.
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">GHPU association with People Forum of India Bharat Sevak Shamaj ( Regd.
 									866/BK IV/2011 ) an NGO Partner under Planning Commission – Government of India</a>
 							</li>
 							<!-- <li><a href="#">Marketing Service</a></li> -->
 						</ul>
 					</div>
 				</div>
-				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Quick links</h4>
-						<ul>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Brand Assets</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</div>
-				</div> -->
-				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Features</h4>
-						<ul>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Brand Assets</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</div>
-				</div> -->
 				<div class="col-lg-3 col-md-6 col-sm-6  pl-5">
 					<div class="single-footer-widget">
 						<h4>Useful links</h4>
@@ -2592,10 +2608,19 @@
 							</div> 
 							<img src="./img/communication.png" alt="" width="30px" height="30px"><span> info@ghpuedu.org</span>
 						</div>
+						<div>
+							<h5 class="text-white pt-3 ml-4">Follow Us :</h5>
+							<ul class="d-flex pt-3">
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook text-white"></i></a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter text-white"></i></a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram text-white"></i></a></li>
+								<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom row align-items-center justify-content-between">
+			<div class="footer-bottom row align-items-center justify-content-between border-bottom border-2  pb-3">
 				<p class="footer-text m-0 col-lg-12 col-md-12 text-center">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					Copyright &copy;
