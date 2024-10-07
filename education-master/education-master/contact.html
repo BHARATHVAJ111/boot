@@ -261,6 +261,175 @@
 				opacity: 1;
 			}
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.right_conatct_social_icon {
+    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+}
+
+.contact_us {
+    background-color: #f1f1f1;
+    padding: 60px 0px; /* Reduced padding for smaller screens */
+}
+
+.contact_inner {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 20px 22px 44px #cccc;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.contact_field {
+    padding: 60px 15px; /* Adjusted padding for better mobile experience */
+}
+
+.contact_field h3 {
+    color: #000;
+    font-size: 32px; /* Reduced font size for smaller screens */
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact_field p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.contact_field .form-control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact_field .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
+}
+
+.contact_field .form-control::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.contact_info_sec {
+    position: relative;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px; /* Positioned below for mobile view */
+}
+
+.contact_info_sec h4 {
+    color: white;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.info_single {
+    margin: 30px 0px;
+}
+
+.info_single i {
+    margin-right: 15px;
+}
+
+.info_single span {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+button.contact_form_submit {
+    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.socil_item_inner li {
+    list-style: none;
+}
+
+.socil_item_inner li a {
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+
+.socil_item_inner {
+    padding-bottom: 10px;
+}
+
+.map_sec {
+    padding: 50px 0px;
+}
+
+.map_inner h4, .map_inner p {
+    color: #000;
+    text-align: center;
+}
+
+.map_inner p {
+    font-size: 13px;
+}
+
+.map_bind {
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .contact_field {
+        padding: 30px 15px; /* Adjusted padding for mobile */
+    }
+
+    .contact_field h3 {
+        font-size: 28px; /* Adjusted heading size */
+    }
+
+    .contact_info_sec {
+        margin-top: 20px;
+        height: auto; /* Removed fixed height for better flexibility */
+        width: 100%; /* Full width on smaller screens */
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .right_conatct_social_icon {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .socil_item_inner li a {
+        font-size: 20px;
+    }
+}
+
 	</style>
 </head>
 
@@ -370,73 +539,75 @@
 	<!-- End banner Area -->
 
 	<!-- Start contact-page Area -->
-	<section class="contact-page-area section-gap">
+	 <div>
+	<section class="contact_us">
 		<div class="container">
 			<div class="row">
-				<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-				<div class="col-lg-4 d-flex flex-column address-wrap">
-					<div class="single-contact-address d-flex flex-row">
-						<div class="icon">
-							<span class="lnr lnr-home"></span>
-						</div>
-						<div class="contact-details">
-							<h5>Binghamton, New York</h5>
-							<p>
-								4343 Hinkle Deegan Lake Road
-							</p>
-						</div>
-					</div>
-					<div class="single-contact-address d-flex flex-row">
-						<div class="icon">
-							<span class="lnr lnr-phone-handset"></span>
-						</div>
-						<div class="contact-details">
-							<h5>00 (958) 9865 562</h5>
-							<p>Mon to Fri 9am to 6 pm</p>
-						</div>
-					</div>
-					<div class="single-contact-address d-flex flex-row">
-						<div class="icon">
-							<span class="lnr lnr-envelope"></span>
-						</div>
-						<div class="contact-details">
-							<h5>support@colorlib.com</h5>
-							<p>Send us your query anytime!</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+				<div class="col-md-10 offset-md-1">
+					<div class="contact_inner">
 						<div class="row">
-							<div class="col-lg-6 form-group">
-								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Enter your name'"
-									class="common-input mb-20 form-control" required="" type="text">
-
-								<input name="email" placeholder="Enter email address"
-									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
-									class="common-input mb-20 form-control" required="" type="email">
-
-								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
-									required="" type="text">
+							<div class="col-md-8">
+								<div class="contact_form_inner">
+									<div class="contact_field">
+										<h3>Contact Us</h3>
+										<p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+										<input type="text" class="form-control form-group" placeholder="Name" />
+										<input type="text" class="form-control form-group" placeholder="Email" />
+										<textarea class="form-control form-group" placeholder="Message"></textarea>
+										<button class="contact_form_submit">Send</button>
+									</div>
+								</div>
 							</div>
-							<div class="col-lg-6 form-group">
-								<textarea class="common-textarea form-control" name="message"
-									placeholder="Enter Messege" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
-							</div>
-							<div class="col-lg-12">
-								<div class="alert-msg" style="text-align: left;"></div>
-								<button class="genric-btn primary" style="float: right;">Send Message</button>
+							<div class="col-md-4">
+								<!-- <div class="right_conatct_social_icon d-flex align-items-end">
+								   <div class="socil_item_inner d-flex">
+									  <li><a href="#"><img src="./" alt=""></a></li>
+									  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								   </div>
+								</div> -->
+								<div class="contact_info_sec">
+									<h4>Contact Info</h4>
+									<div class="d-flex info_single align-items-center">
+										<i class="fas fa-headset"></i>
+										<span>+91 8009 054294</span>
+									</div>
+									<div class="d-flex info_single align-items-center">
+										<i class="fas fa-envelope-open-text"></i>
+										<span>info@flightmantra.com</span>
+									</div>
+									<div class="d-flex info_single align-items-center">
+										<i class="fas fa-map-marked-alt"></i>
+										<span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+									</div>
+								</div>
 							</div>
 						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+</div>
+	
+    
+    <section class="map_sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="map_inner">
+                        <h4>Find Us on Google Map</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
+                        <div class="map_bind">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471220.5631094339!2d88.04952462217592!3d22.6757520733225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1596988408134!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
 	<!-- End contact-page Area -->
 	<div class="container text-center card-new">
 		<div class="row">
@@ -572,41 +743,19 @@
 							
 						</div>
 						<ul>
-							<li><a href="#">Global Human Peace University an Independent , Non Academic International
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">Research University an Independent , Non Academic International
 									Online University Incorporated and Registered under the State of Delaware, USA and
 									Globally Recognized.</a></li>
-							<li><a href="#">Certified by, SCK – a Certification Body which is Accredited by
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">Certified by, SCK – a Certification Body which is Accredited by
 									International Accreditation Service ( IAS ) and recognized by International
 									Accreditation Forum ( IAF )</a></li>
-							<li><a href="#">GHPU association with People Forum of India Bharat Sevak Shamaj ( Regd.
+							<li><a href="#"><img src="./img/logo/rec.png" width="20px" alt="" class="mr-2">GHPU association with People Forum of India Bharat Sevak Shamaj ( Regd.
 									866/BK IV/2011 ) an NGO Partner under Planning Commission – Government of India</a>
 							</li>
 							<!-- <li><a href="#">Marketing Service</a></li> -->
 						</ul>
 					</div>
 				</div>
-				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Quick links</h4>
-						<ul>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Brand Assets</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</div>
-				</div> -->
-				<!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Features</h4>
-						<ul>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Brand Assets</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</div>
-				</div> -->
 				<div class="col-lg-3 col-md-6 col-sm-6  pl-5">
 					<div class="single-footer-widget">
 						<h4>Useful links</h4>
@@ -632,10 +781,19 @@
 							</div> 
 							<img src="./img/communication.png" alt="" width="30px" height="30px"><span> info@ghpuedu.org</span>
 						</div>
+						<div>
+							<h5 class="text-white pt-3 ml-4">Follow Us :</h5>
+							<ul class="d-flex pt-3">
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook text-white"></i></a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter text-white"></i></a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram text-white"></i></a></li>
+								<!-- <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom row align-items-center justify-content-between">
+			<div class="footer-bottom row align-items-center justify-content-between border-bottom border-2  pb-3">
 				<p class="footer-text m-0 col-lg-12 col-md-12 text-center">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					Copyright &copy;

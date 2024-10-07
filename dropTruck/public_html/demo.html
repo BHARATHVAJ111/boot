@@ -99,22 +99,59 @@
 .form-bg{
     background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
+    padding: 20px;
+}
+.zoom{
+    width: 80px;
+    height: 80px;
+}
+/* For medium screens (768px and above) */
+@media (min-width: 320px) {
+    .p {
+        font-size: 13px;
+    }
+}
+@media (min-width: 768px) {
+    .p {
+        font-size: 16px;
+    }
 }
 
-    /* .my-float {
-margin-top: 10px;
-} */
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+    .p {
+        font-size: 16px;
+    }
+}
+
+/* For extra-large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .form-bg {
+       /* Adjust this value as per your design */
+        padding-top: 20px; /* Adjust this value as per your design */
+        max-height: 700px !important;
+    }
+	.zoom{
+    width: 40px;
+    height: 40px;
+}
+}
 </style>
 
 <body>
-    <form method="POST" enctype="multipart/form-data" id="truckForm" class="p-5 m-5 form-bg" >
+    <form method="POST" enctype="multipart/form-data" id="truckForm" class="form-bg" >
         <input type="hidden" value="2" name="role_id">
         <div class="row pb-2">
             <!-- First column with five columns -->
-            <div class="col-lg-3 col-md-4 col-sm-6 custom-col mb-2">
+            <div class="col-6 custom-col mb-2">
                 <input type="text" class="form-control form-control-sm input" id="pick" name="pickup" placeholder="Pick Up Location *" required>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 custom-col mb-2">
+            <div class="col-6 custom-col mb-2">
                 <input type="text" class="form-control form-control-sm input" id="drop" name="drop" placeholder="Drop Location *" required>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 custom-col mb-2">
@@ -198,37 +235,53 @@ margin-top: 10px;
                 <input type="text" class="form-control form-control-sm" id="new_material_type" name="new_material_type" placeholder="Enter Material Type">
             </div>
         </div>
-        <p class="text-white mt-1 fw">Must Select Truck Type *</p>
-        <div class=" d-flex flex-wrap justify-content-between mt-1">
-            <div>
-                <input type="image" class="zoom" src="images/trucks/8ft-removebg-preview.png" alt="Image-1" width="80px" height="80px" value="8ft Truck" onclick="setImageValue('8ft Truck'); return false;">
-                <p class="text-white">8ft Truck</p>
+        <!-- <p class="text-white mt-1 fw p">Must Select Truck Type *</p> -->
+        <div class="row mt-1">
+            <!-- Each column will take up 4 columns in a 12-column grid (i.e., 3 images per row) -->
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/8ft-removebg-preview.png" alt="Image-1" value="8ft Truck" onclick="setImageValue('8ft Truck'); return false;">
+                    <p class="text-white p">8ft Truck</p>
+                </div>
             </div>
-            <div>
-                <input type="image" class="zoom" src="images/trucks/10ft-removebg-preview.png" alt="Image-1" width="80px" height="80px" value="10ft Truck" onclick="setImageValue('10ft Truck'); return false;">
-                <p class="text-white">10ft Truck</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/10ft-removebg-preview.png" alt="Image-1" value="10ft Truck" onclick="setImageValue('10ft Truck'); return false;">
+                    <p class="text-white p">10ft Truck</p>
+                </div>
             </div>
-            <div id="eicher_container">
-                <input type="image" class="zoom" src="images/trucks/eicher-removebg-preview.png" alt="Image-1" width="80px" height="80px" value="Eicher" onclick="setImageValue('Eicher'); return false;">
-                <p class="text-white">Eicher</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/eicher-removebg-preview.png" alt="Image-1" value="Eicher" onclick="setImageValue('Eicher'); return false;">
+                    <p class="text-white p">Eicher</p>
+                </div>
             </div>
-            <div id="taurus_container">
-                <input type="image" class="zoom" src="images/trucks/taurus.png" alt="Image-1" width="80px" height="80px" value="Taurus" onclick="setImageValue('Taurus'); return false;">
-                <p class="text-white">Taurus</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/taurus.png" alt="Image-1" value="Taurus" onclick="setImageValue('Taurus'); return false;">
+                    <p class="text-white p">Taurus</p>
+                </div>
             </div>
-            <div id="32_container">
-                <input type="image" class="zoom" src="images/trucks/ashok-leyland-removebg-preview.png" alt="Image-1" width="80px" height="80px" value="32ft" onclick="setImageValue('32ft'); return false;">
-                <p class="text-white">32ft Truck</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/ashok-leyland-removebg-preview.png" alt="Image-1" value="32ft" onclick="setImageValue('32ft'); return false;">
+                    <p class="text-white p">32ft Truck</p>
+                </div>
             </div>
-            <div id="Trailer_container">
-                <input type="image" class="zoom" src="images/trucks/trailer.png" alt="Image-1" width="80px" height="80px" value="Trailer" onclick="setImageValue('Trailer'); return false;">
-                <p class="text-white">Trailer</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/trailer.png" alt="Image-1" value="Trailer" onclick="setImageValue('Trailer'); return false;">
+                    <p class="text-white p">Trailer</p>
+                </div>
             </div>
-            <div>
-                <input type="image" class="zoom" src="images/trucks/other.png" alt="Image-1" width="80px" height="80px" value="37" onclick="setImageValue('37'); return false;">
-                <p class="text-white">Others</p>
+            <div class="col-3 col-sm-2">
+                <div>
+                    <input type="image" class="zoom" src="images/trucks/other.png" alt="Image-1" value="37" onclick="setImageValue('37'); return false;">
+                    <p class="text-white p">Others</p>
+                </div>
             </div>
         </div>
+        
         <div class="d-flex justify-content-center mt-1">
             <button class="gradient-button rounded-pill" type="submit">Submit</button>
         </div>
