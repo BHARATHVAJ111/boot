@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Truck</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<style>
+    @media (max-width: 767px) {
+        .sidebar a {
+            display: none;
+        }
+        .sidebar .btn.dash,
+        .sidebar a.d-block {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .sidebar .btn.dash,
+        .sidebar a.d-none.d-lg-block {
+            display: none;
+        }
+        .sidebar a.d-block.d-lg-none {
+            display: block;
+        }
+    }
+
+    span {
+        color: black;
+    }
+
+    .active>span {
+        background-color: #F98917 !important;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .nav-link:hover {
+        color: black !important;
+    }
+
+    .nav-link:active,
+    a.nav-link.active {
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+    .nav-link i.fa-arrow-right {
+        display: none;
+    }
+
+    .nav-link.active i.fa-arrow-right {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .toast-error {
+        color: red;
+    }
+</style>
+<div class="main">
+    <div class="row align-items-center">
+        <div>
+            <h2 class="btn btn-primary text-white fw-bolder float-end mt-1">User: [User Name]</h2>
+        </div>
+        <div class="col">
+            <div class="welcome-back">Welcome Back<span class="drop-truck">, DROP TRUCK!</span></div>
+        </div>
+        <div class="col-auto">
+            <button type="button" style="background-color: #F98917;border-radius: 20px; font-size:12px;" class="btn mt-3" data-bs-toggle="modal" data-bs-target="#createIndentModal">Create Indent</button>
+            
+            <!-- Modal -->
+            <div class="modal fade container-fluid" id="createIndentModal" tabindex="-1" aria-labelledby="createIndentModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header fw-bolder text-white" style="background-color:#F98917">
+                            <h5 class="modal-title" id="createIndentModalLabel">Create Indent</h5>
+                            <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Include your indent create form here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top mt-2 mb-0">
+        <p class="fw-bold">Indents</p>
+        <div class="d-flex flex-row gap-1">
+            <div class="indents p-3">
+                <div class="d-flex gap-6 text-center top1">
+                    <div>
+                        <p class="shade">[Unquoted Count]</p> unquoted
+                    </div>
+                    <div>
+                        <p class="shade">[Quoted Count]</p> quoted
+                    </div>
+                    <div>
+                        <p class="shade">[Delayed Count]</p> Delayed
+                    </div>
+                    <div>
+                        <p class="shade">[Confirmed Count]</p> confirmed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top mt-2 mb-0">
+        <div class="d-flex flex-row gap-1">
+            <div class="indents p-3">
+                <div class="d-flex gap-4 text-center top1">
+                    <div>
+                        <p class="shade">[Waiting Count]</p> Waiting For Driver
+                    </div>
+                    <div>
+                        <p class="shade">[Loading Count]</p> Loading
+                    </div>
+                    <div>
+                        <p class="shade">[On The Road Count]</p> On The Road
+                    </div>
+                    <div>
+                        <p class="shade">[Unloading Count]</p> Unloading
+                    </div>
+                    <div>
+                        <p class="shade">[POD Count]</p> POD
+                    </div>
+                    <div>
+                        <p class="shade">[Confirmed Trips]</p> Complete Trips
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom mt-3">
+        <div class="row">
+            <div class="col-md-6 d-flex flex-column">
+                <div class="firsthalf">
+                    <div class="d-flex gap-3 p-2 mb-0 align-items-start">
+                        <p class="fw-bolder">Live Map</p>
+                        <p class="fw-bolder">History</p>
+                    </div>
+                    <div class="range p-3 mt-0">
+                        <h5 class="fw-bolder mb-0">Select Range</h5>
+                        <br><br>
+                        <input type="text" id="datepicker" placeholder="Date">
+                        <span class="fw-bolder">To </span>
+                        <input type="text" id="datepicker1" placeholder="Date">
+                        <div class="ms-5 fw-bolder labels"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="secondhalf">
+                    <div class="piechart">
+                        <canvas id="myPieChart" class="chart-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // setTimeout(function(){
+    //   location.reload();
+    // }, 100000); // 10000 milliseconds = 10 seconds
+</script>

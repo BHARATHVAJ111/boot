@@ -2,129 +2,648 @@
 <html lang="en" class="no-js">
 
 <head>
-	<meta charset="utf-8" />
-	<title>Haruto Technologies LLP</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title>Haruto Technologies LLP</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-	<link href="img/logo/logo.jpg" rel="icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#4302b2">
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/plugin.min.css" rel="stylesheet">
-	<link href="css/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-		rel="stylesheet">
+    <link href="img/logo/logo.jpg" rel="icon">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugin.min.css" rel="stylesheet">
+    <link href="css/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
 
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/darkmode.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/darkmode.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .slide-bg-image {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            /* Adjust height as needed */
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            /* Dark gradient overlay */
+            z-index: 1;
+            /* Make sure the gradient is on top of the background image */
+        }
+
+        .slide-inner .container {
+            position: relative;
+            z-index: 2;
+            /* Ensure content is on top of the gradient */
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .slide-title h3,
+        .slide-text p {
+            color: white;
+            z-index: 2;
+        }
+
+        .offcanvas {
+            width: 350px;
+            /* Adjust the width of the sidebar */
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 1.5rem;
+        }
+
+        .offcanvas-header {
+            background-color: #6c757d;
+            /* Matches your header color */
+            color: #fff;
+        }
+
+        .offcanvas-body {
+            padding: 1rem;
+        }
+
+        .offcanvas-body .nav-link {
+            color: #000;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+        }
+    </style>
+
 </head>
 
 <body>
 
-	<header class="header-pr nav-bg-w main-header navfix fixed-top bg-secondary">
-		<div class="container-fluid m-pad">
-			<div class="menu-header">
-				<div class="dsk-logo"><a class="nav-brand" href="index.html">
-						<img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-white-logo" />
-						<img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-darks-logo" />
-					</a>
-				</div>
-				<div class="custom-nav" role="navigation">
-					<ul class="nav-list">
-						<li>
-							<a href="index.html" class="menu-links">Home</a>
-
-						</li>
-						<li>
-							<a href="about-us.html" class="menu-links">About Us</a>
-						</li>
-						<li>
-							<a href="products.html" class="menu-links">Products</a>
-						</li>
-
-						<!-- <li class="sbmenu rpdropdown">
-							<a href="#" class="menu-links">Services</a>
-							<div class="nx-dropdown menu-dorpdown">
-								<div class="sub-menu-section">
-									<div class="sub-menu-center-block">
-										<div class="sub-menu-column smfull">
-											<ul>
-												<li><a href="mobile-app-development.html">Mobile App Development</a>
-												</li>
-												<li><a href="web-development.html">Web Development</a> </li>
-												<li><a href="graphic-design.html">Graphic Design</a> </li>
-												<li><a href="seo.html">SEO</a> </li>
-												<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-												<li><a href="hosting.html">Hosting Service</a> </li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="our-clients.html" class="menu-links">Our Clients</a>
-						</li> -->
-						<li>
-							<a href="contact-us.html" class="menu-links">Contact Us</a>
-						</li>
-
-					</ul>
-
-					<ul class="nav-list right-end-btn">
-						<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
-								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-						<!-- <li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
-								Quote <span class="circle"></span></a> </li> -->
-
-						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
-								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-						<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
-					</ul>
-				</div>
-			</div>
-
-			<nav id="main-nav">
-				<ul class="first-nav">
-					<li>
-						<a href="index.html">Home</a>
-
-					</li>
-					<li>
-						<a href="about-us.html">About Us</a>
-					</li>
-					<li>
-						<a href="products.html">Products</a>
-					</li>
-					<!-- <li>
-						<a href="#">Services</a>
-						<ul>
-							<li><a href="mobile-app-development.html">Mobile App Development</a> </li>
-							<li><a href="web-development.html">Web Development</a> </li>
-							<li><a href="graphic-design.html">Graphic Design</a> </li>
-							<li><a href="seo.html">SEO</a> </li>
-							<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-							<li><a href="hosting.html">Hosting Service</a> </li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="our-clients.html" class="menu-links">Our Clients</a>
-					</li> -->
-					<li>
-						<a href="contact-us.html" class="menu-links">Contact Us</a>
-					</li>
-				</ul>
-
-
-			</nav>
+    <!--<div class="onloadpage" id="page_loader">
+		<div class="pre-content">
+			<div class="logo-pre"><img src="images/logo.png" alt="Logo" class="img-fluid" /></div>
+			<div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML
+				Template Are 2 Seconds Away. Have Patience</div>
 		</div>
-	</header>
+	</div>-->
+
+
+    <header class="header-pr nav-bg-b main-header navfix fixed-top " style="background-color: 
+#052027;">
+        <div class="container-fluid m-pad">
+            <div class="menu-header">
+                <!-- Logo -->
+                <div class="dsk-logo">
+                    <a class="nav-brand" href="index.html">
+                        <img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-white-logo" />
+                        <img src="img/logo/logo-removebg-preview.png" alt="Logo" class="mega-darks-logo" />
+                    </a>
+                </div>
+
+                <!-- Burger Icon for Mobile -->
+                 <div class="d-flex">
+                    <ul class="nav-list d-block d-xl-none">
+                        <li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+                        <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+                        <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+                    </ul>
+                    <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"><img src="./img/logo/burger-bar (1).png" alt=""></span>
+                    </button>
+                 </div>
+
+                <!-- Main Navigation for Larger Screens -->
+                <div class="custom-nav d-none d-xl-block">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="menu-links">Home</a></li>
+                        <li><a href="about-us.html" class="menu-links">About Us</a></li>
+                        <li><a href="contact-us.html" class="menu-links">Contact Us</a></li>
+                        <li>
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    HIRE DEVELOPER 
+                                                </a>
+                                                <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown"
+                                                    style="transform: translateX(33%);">
+                                                    <li class="row">
+                                                        <div class="col ">
+                                                            <div class=" border-start border-2">
+                                                                <h6 class="dropdown-header">Hire Mobile Apps Developer
+                                                                </h6>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Hire Flutter
+                                                                    Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire React
+                                                                    Native
+                                                                    developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Android
+                                                                    Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire iOS
+                                                                    Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Swift
+                                                                    Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Kotlin
+                                                                    Developers</a>
+                                                                <!-- <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Xamarin
+                                                                    Developers</a> -->
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Ionic
+                                                                    Developers</a>
+                                                            </div>
+                                                            <div class=" border-start border-2">
+                                                                <h6 class="dropdown-header">Hire DevOps Engineer
+                                                                </h6>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire DevOps
+                                                                    Engineer</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire CI/CD
+                                                                    Develope</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col  border-2">
+                                                            <div>
+                                                                <h6 class="dropdown-header">Hire Front End Developer
+                                                                </h6>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire
+                                                                    AngularJS Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire ReactJS
+                                                                    developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire VueJs
+                                                                    Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire MEAN
+                                                                    Stack Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire MERN
+                                                                    Stack Developers</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Full
+                                                                    Stack Developers</a>
+                                                            </div>
+                                                            <div>
+                                                                <h6 class="dropdown-header">Hire AI Engineers
+                                                                </h6>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>  Hire AI
+                                                                    Developer</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Machine
+                                                                    Learning</a>
+                                                                <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Data
+                                                                    Analyst</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  border-2">
+                                                            <h6 class="dropdown-header">Hire Back End Developer</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>  Hire NodeJS
+                                                                developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Java
+                                                                Developer
+                                                            </a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire PHP
+                                                                Developers
+                                                            </a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>  Hire Laravel
+                                                                Developers
+                                                            </a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Python
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Java Spring
+                                                                Boot Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Asp Dot Net
+                                                                developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Python
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Golang
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Django
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire RoR
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire FlutterFlow
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Flask
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire CodeIgniter
+                                                                Developer</a>
+                                                        </div>
+                                                        <div class="col border-2">
+                                                            <h6 class="dropdown-header">Other Services</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Automation
+                                                                Tester</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire AWS Cloud
+                                                                Management</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire GraphQL
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire HTML5
+                                                                Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Manual
+                                                                Software Tester</a>
+                                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Meteor
+                                                                Developer</a> -->
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Microsoft
+                                                                Power BI Developers</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire JavaScript
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Salesforce
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Symfony
+                                                                Developer</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire UI/UX
+                                                                designer</a>
+                                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire VAPT
+                                                                Tester</a> -->
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Virtual
+                                                                Assistant</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire WordPress
+                                                                Developers</a>
+                                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hire Yardi
+                                                                Consultant</a> -->
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </nav>
+                        </li>
+
+                        <!-- <li><a href="products.html" class="menu-links">Products</a></li> -->
+                        <!-- <li class="sbmenu rpdropdown">
+                            <a href="#" class="menu-links">Services</a>
+                            <div class="nx-dropdown menu-dorpdown">
+                                <div class="sub-menu-section">
+                                    <div class="sub-menu-center-block">
+                                        <div class="sub-menu-column smfull d-flex">
+                                            <ul>
+                                                <li><a href="web-development.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>IT Staff Augmentation</a>
+                                                </li>
+                                                <li><a href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> permanent Staffing</a> </li>
+                                                <li><a href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Contractual Staffing</a> </li>
+                                                <li><a href="./contact-us.html">Payroll Services</a> </li>
+
+                                                <li><a href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Statutory Compliance services
+                                                    </a> </li>
+                                                <li><a href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>HR Consultation</a> </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <li>
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    SERVICES
+                                                </a>
+                                                <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                                                    <li class="row">
+                                                        <div class="col border-start  border-2">
+                                                        
+                                                            <a class="dropdown-item text-dark" href="./web-development.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> IT Staff Augmentation</a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>permanent Staffing</a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Contractual Staffing</a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Payroll Services</a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Statutory Compliance services</a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>HR Consultation</a>
+                                                        </div>
+                                                        <div class="col  border-2">
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>  App development </a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Web development </a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Hosting services </a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Digital marketing </a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Seo optimisation </a>
+                                                            <a class="dropdown-item text-dark" href="./contact-us.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>Graphic designing</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </nav>
+                        </li>
+                        <li>
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown"
+                                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    TECHNOLOGIES
+                                                </a>
+                                                <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                                                    <li class="row">
+                                                        <div class="col border-start  border-2">
+                                                            <h6 class="dropdown-header">Frontend</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> AngularJS
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> ReactJS
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> UI/UX Design
+                                                                Company</a>
+                                                        </div>
+                                                        <div class="col  border-2">
+                                                            <h6 class="dropdown-header">Backend</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> NodeJS
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Java
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> PHP
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Dot Net
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Django
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Python
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Golang
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Laravel
+                                                                Development</a>
+                                                        </div>
+                                                        <div class="col  border-2">
+                                                            <h6 class="dropdown-header">Mobile</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> iOS App
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Android App
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Flutter App
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i>  React Native
+                                                                App
+                                                                Development</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Swift App
+                                                                Development</a>
+                                                        </div>
+                                                        <div class="col border-2">
+                                                            <h6 class="dropdown-header">Other Tech</h6>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Software
+                                                                Testing</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Automation
+                                                                Testing</a>
+                                                            <a class="dropdown-item text-dark" href="./request_form.html"><i class="fa-solid fa-circle-right fa-beat-fade me-2" style="color: #FFD43B;"></i> Business
+                                                                Analyst</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </nav>
+                        </li>
+                        <ul class="nav-list">
+                        <li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+                        <li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+                        <li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+                    </ul>
+
+                        <!-- <li><a href="our-clients.html" class="menu-links">Our Clients</a></li> -->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Sidebar for Mobile -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Haruto</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    HIRE DEVELOPER 
+                                </a>
+                                <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown"
+                                    style="min-width: 100%;">
+                                    <li class="row">
+                                        <div class="col ">
+                                            <div class=" border-2">
+                                                <h6 class="dropdown-header">Hire Mobile Apps Developer
+                                                </h6>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Flutter
+                                                    Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire React Native
+                                                    developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Android
+                                                    Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire iOS
+                                                    Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Swift
+                                                    Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Kotlin
+                                                    Developers</a>
+                                                <!-- <a class="dropdown-item text-dark" href="./request_form.html">Hire Xamarin
+                                                    Developers</a> -->
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Ionic
+                                                    Developers</a>
+                                            </div>
+                                            <div class="  border-2">
+                                                <h6 class="dropdown-header">Hire DevOps Engineer
+                                                </h6>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire DevOps Engineer</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire CI/CD Develope</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col  border-2">
+                                            <div>
+                                                <h6 class="dropdown-header">Hire Front End Developer
+                                                </h6>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire AngularJS Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire ReactJS developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire VueJs Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire MEAN Stack Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire MERN Stack Developers</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Full Stack Developers</a>
+                                            </div>
+                                            <div>
+                                                <h6 class="dropdown-header">Hire AI Engineers
+                                                </h6>
+                                                <a class="dropdown-item text-dark" href="./request_form.html"> Hire AI Developer</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Machine Learning</a>
+                                                <a class="dropdown-item text-dark" href="./request_form.html">Hire Data Analyst</a>
+                                            </div>
+                                        </div>
+                                        <div class="col  border-2 d-flex flex-wrap">
+                                            <h6 class="dropdown-header">Hire Back End Developer</h6>
+                                            <a class="dropdown-item text-dark" href="./request_form.html"> Hire NodeJS developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Java Developer
+                                            </a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire PHP Developers
+                                            </a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html"> Hire Laravel Developers
+                                            </a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Python Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Java Spring Boot Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Asp Dot Net developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Python Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Golang Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Django Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire RoR Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire FlutterFlow Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Flask Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire CodeIgniter Developer</a>
+                                        </div>
+                                        <div class="col border-2 d-flex flex-wrap">
+                                            <h6 class="dropdown-header">Other Services</h6>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Automation Tester</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire AWS Cloud Management</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire GraphQL Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire HTML5 Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Manual Software Tester</a>
+                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html">Hire Meteor Developer</a> -->
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Microsoft Power BI Developers</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire JavaScript Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Salesforce Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Symfony Developer</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire UI/UX designer</a>
+                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html">Hire VAPT Tester</a> -->
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire Virtual Assistant</a>
+                                            <a class="dropdown-item text-dark" href="./request_form.html">Hire WordPress Developers</a>
+                                            <!-- <a class="dropdown-item text-dark" href="./request_form.html">Hire Yardi Consultant</a> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                            <li class="row">
+                                <div class="col-md-3">
+                                    <!-- <h6 class="dropdown-header">Frontend</h6> -->
+                                    <a class="dropdown-item text-dark" href="./web-development.html">IT Staff Augmentation</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">permanent Staffing</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">Contractual Staffing</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">Payroll Services</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">Statutory Compliance services</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">HR Consultation</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <!-- <h6 class="dropdown-header">Backend</h6> -->
+                                    <a class="dropdown-item text-dark" href="./contact-us.html"> App development</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">Web development</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html"> Hosting services</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html">Digital marketing</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html"> Seo optimisation</a>
+                                    <a class="dropdown-item text-dark" href="./contact-us.html"> Graphic designing</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                            <li class="row">
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Frontend</h6>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">AngularJS Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">ReactJS Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">UI/UX Design Company</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Backend</h6>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">NodeJS Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Java Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">PHP Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html"> Dot Net Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html"> Django Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html"> Python Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html"> Golang Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">  Laravel Development</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Mobile</h6>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">iOS App Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Android App Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Flutter App Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html"> React Native App Development</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Swift App Developme</a>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="dropdown-header">Other Tech</h6>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Software Testing</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Automation Testing</a>
+                                    <a class="dropdown-item text-dark" href="./request_form.html">Business Analyst</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
 
 
 	<div class="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
@@ -140,14 +659,13 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+918072515050">+91 80725 15050 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="tel:+919591345153">+91 9591345153 <span></span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+91918072515050" target="_blank">+91 80725 15050 <span>Mon-Fri 9am -
-								6pm</span></a>
+						<a href="https://wa.me/+919591345153" target="_blank">+91 9591345153 <span></span></a>
 					</div>
 				</div>
 				<div class="media mt15">
@@ -167,13 +685,14 @@
 			<div class="contact-data mt30">
 				<h4>Follow Us On:</h4>
 				<div class="social-media-linkz mt10">
-					<a href="" target="blank"><i class="fab fa-facebook"></i></a>
-					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a> -->
-					<a href="https://www.instagram.com/haruto_technologies/" target="blank"><i
-							class="fab fa-instagram"></i></a>
-					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a> -->
-					<a href="" target="blank"><i
-							class="fab fa-youtube"></i></a>
+					<a href="https://www.facebook.com/people/Haruto-Technologies/100083205656902/" target="blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/haruto_technologies/" target="blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/company/haruto-technologies-llp" target="blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="blank"><i
+                        class="fab fa-youtube"></i></a>
 				</div>
 			</div>
 		</div>
@@ -222,7 +741,8 @@
 								<i class="fas fa-phone-alt"></i>
 							</div>
 							<div class="text pl-4">
-								<p><span>Phone:</span> <a href="tel:+918072515050">+91 80725 15050</a></p>
+								<p><span>Phone:</span> <a href="tel:+919591345153">
+									+91 9591345153</a></p>
 							</div>
 						</div>
 						<div class="dbox d-flex align-items-start">
@@ -244,8 +764,9 @@
 						<p class="mb60 mt10">We will catch you as early as we receive the message</p>
 					</div>
 					<div class="form-block">
-						<form method="post" action="enquiry.php">
+						<form method="POST" action="https://api.web3forms.com/submit">
 							<div class="row">
+								<input type="hidden" name="access_key" value="787e110c-5f9e-476a-990f-7135575a72e9">
 								<div class="form-group col-sm-6">
 									<input type="text" name="name" placeholder="Enter name" required>									
 								</div>
@@ -255,11 +776,11 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group col-sm-6">
+								<div class="form-group col-sm-12">
 									<input type="text" name="phone" placeholder="Enter mobile" required
 										>									
 								</div>
-								<div class="form-group col-sm-6">
+								<!-- <div class="form-group col-sm-6">
 									<select name="dtype" required>
 										<option value>Select Requirement</option>
 										<option value="app">App Development</option>
@@ -268,7 +789,7 @@
 										<option value="seo">SEO</option>
 									</select>
 									
-								</div>
+								</div> -->
 							</div>
 							<div class="form-group">
 								<textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
@@ -290,7 +811,7 @@
 	<div class="contact-location">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
-				<div class="col-lg-12">
+				<div class="col-lg-12 pb-5">
 					<div class="map-div">
 						<!-- <iframe
 							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31099.638329220685!2d80.219695!3d13.006685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267709aa40a7d%3A0xca348695fc512750!2sGuindy%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1685102960633!5m2!1sen!2sus"
@@ -306,65 +827,66 @@
 
 	<footer>
 
-		<div class="footer-row2">
-			<div class="container">
-				<div class="row justify-content-between">
-					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="img/logo/logo.jpg"
-								alt="Logo" /></a>
-						<a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="img/logo/logo.jpg"
-								alt="Logo" /></a>
-						<p>Pojo Tehnology is a full-service digital marketing agency. We’ve been providing a wide range
-							of services to clients of all industries since 2020.</p>
-						
+        <div class="footer-row2 pt5 pb-3" style="background-color: 
+#052027;">
+            <div class="container ">
+                <div class="row justify-content-between ">
+                    <div class="col-lg-5 col-sm-6  ftr-brand-pp">
+                        <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="img/logo/haruto.png"
+                                alt="Logo" /></a>
+                        <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="img/logo/haruto.png"
+                                alt="Logo" /></a>
+                        <p class="text-white">At Haruto, we specialize in connecting businesses with top-tier developers while also providing comprehensive website and mobile app development services. Whether you need to hire skilled developers for your project or require a custom-built application, we've got you covered.</p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <h5 class="text-white">Useful Links</h5>
+                        <ul class="footer-address-list link-hover">
+                            <li class="text-white"><a href="index.html" class="text-white">Home</a></li>
+                            <li><a href="about-us.html" class="text-white">About us</a></li>
+                            <li><a href="contact-us.html" class="text-white">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-sm-6 mb-3">
+                        <h5 class="text-white">Contact Us</h5>
+                        <ul class="footer-address-list ftr-details">
+                            <li class="text-white">
+                                <span><i class="fas fa-envelope"></i></span>
+                                <p>Email <span> <a href="mailto:info@haruto.in " class="text-white">info@haruto.in </a></span>
+                                </p>
+                            </li>
+                            <li class="text-white">
+                                <span><i class="fas fa-phone-alt"></i></span>
+                                <p>Phone <span> <a href="tel:+919591345153" class="text-white">
+									+91 9591345153</a></span></p>
+                            </li>
+                            <li class="text-white">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>Address <span> Wework Latitude, 9th Floor, Rmz Latitude Commercial Building, Bellary
+                                        Road, Hebbal Kempapura, Bangalore, Bangalore North, Karnataka, India,
+                                        560024</span></p>
+                            </li>
+                        </ul>
+                    </div>
+					<div class="border-top pt-3">
+						<p class="text-white">© 2024 All Rights Reserved By <a href="https://pojotechnology.com/" class="text-white"></a></p>
 					</div>
-					<div class="col-lg-2 col-sm-6">
-						<h5>Useful Links</h5>
-						<ul class="footer-address-list link-hover">
-							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
-							<li><a href="web-development.html">Web Development</a></li>
-							<li><a href="seo.html">Search Engine Optimization</a></li>
-							<li><a href="digital-marketing.html">Digital Marketing</a></li>
-							<li><a href="hosting.html">Hosting Services</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-5 col-sm-6">
-						<h5>Contact Us</h5>
-						<ul class="footer-address-list ftr-details">
-							<li>
-								<span><i class="fas fa-envelope"></i></span>
-								<p>Email <span> <a
-											href="mailto:info@haruto.in">info@haruto.in</a></span>
-								</p>
-							</li>
-							<li>
-								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:+918072515050">
-											+91 80725 15050</a></span></p>
-							</li>
-							<li>
-								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span> Wework Latitude, 9th Floor, Rmz Latitude Commercial Building, Bellary Road, Hebbal Kempapura, Bangalore, Bangalore North, Karnataka, India, 560024	</span></p>
-							</li>
-						</ul>
-					</div>
-
-
-				</div>
-			</div>
-		</div>
-
+                </div>
+            </div>
+        </div>
 		<div class="footer-row3">
 			<div class="copyright">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="footer-social-media-icons">
-								<a href="https://www.facebook.com/pojotechnology" target="blank"><i class="fab fa-facebook"></i></a>
-								<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i class="fab fa-instagram"></i></a>
-								<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-								<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i class="fab fa-youtube"></i></a>
+								<a href="https://www.facebook.com/people/Haruto-Technologies/100083205656902/" target="blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/haruto_technologies/" target="blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://in.linkedin.com/company/haruto-technologies-llp" target="blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="blank"><i
+                                    class="fab fa-youtube"></i></a>
 
 							</div>
 
@@ -373,7 +895,9 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+
+
+    </footer>
 
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

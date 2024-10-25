@@ -26,102 +26,209 @@
 
 <body>
 
-	<header class="header-pr nav-bg-w main-header navfix fixed-top menu-white">
+	<header class="header-pr nav-bg-b main-header navfix fixed-top ">
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
-				<div class="dsk-logo"><a class="nav-brand" href="index.html">
+				<!-- Logo -->
+				<div class="dsk-logo">
+					<a class="nav-brand" href="index.html">
 						<img src="img/logo/logo_crap-removebg-preview.png" alt="Logo" class="mega-white-logo" />
 						<img src="img/logo/logo_crap-removebg-preview.png" alt="Logo" class="mega-darks-logo" />
 					</a>
 				</div>
-				<div class="custom-nav" role="navigation">
-					<ul class="nav-list">
-						<li>
-							<a href="index.html" class="menu-links">Home</a>
 
-						</li>
-						<li>
-							<a href="about-us.html" class="menu-links">About Us</a>
-						</li>
-						<li>
-							<a href="products.html" class="menu-links">Services</a>
-						</li>
-						<!-- <li class="sbmenu rpdropdown">
-							<a href="#" class="menu-links">Services</a>
-							<div class="nx-dropdown menu-dorpdown">
-								<div class="sub-menu-section">
-									<div class="sub-menu-center-block">
-										<div class="sub-menu-column smfull">
-											<ul>
-												<li><a href="mobile-app-development.html">Mobile App Development</a>
-												</li>
-												<li><a href="web-development.html">Web Development</a> </li>
-												<li><a href="graphic-design.html">Graphic Design</a> </li>
-												<li><a href="seo.html">SEO</a> </li>
-												<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-												<li><a href="hosting.html">Hosting Service</a> </li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="our-clients.html" class="menu-links">Our Clients</a>
-						</li> -->
-						<li>
-							<a href="contact-us.html" class="menu-links">Contact Us</a>
-						</li>
-
-					</ul>
-
-					<ul class="nav-list right-end-btn">
+				<!-- Burger Icon for Mobile -->
+				<div class="d-flex">
+					<ul class="nav-list d-block d-xl-none">
 						<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
 								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
-						<!-- <li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
-								Quote <span class="circle"></span></a> </li> -->
-
 						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
 								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
 						<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
 					</ul>
+					<button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+						<span class="navbar-toggler-icon"><img src="./img/logo/burger-bar (1).png" alt=""></span>
+					</button>
+				</div>
+
+				<!-- Main Navigation for Larger Screens -->
+				<div class="custom-nav d-none d-xl-block">
+					<ul class="nav-list">
+						<li><a href="index.html" class="menu-links">Home</a></li>
+						<li><a href="about-us.html" class="menu-links">About Us</a></li>
+						<li>
+							<nav class="navbar navbar-expand-lg navbar-light ">
+								<div class="container-fluid">
+									<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+										data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarNavDropdown">
+										<ul class="navbar-nav">
+											<li class="nav-item dropdown">
+												<a href="./products.html" class="nav-link">SERVICES</a>
+												<a class="nav-link dropdown-toggle " href="./products.html"
+													id="servicesDropdown" role="button" data-bs-toggle="dropdown"
+													aria-expanded="false">
+													
+												</a>
+												<ul class="dropdown-menu mega-menu shadow" aria-labelledby="servicesDropdown"
+													style="transform: translateX(17%);">
+													<div class="container">
+														<div class="row d-flex flex-row justify-content-between align-items-center overflow-auto">
+															<!-- Caregiver -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<a href="./blood.html"><img src="./img/logo/blood.jpg" class="rounded-circle" width="100px" height="150px" alt="Blood Investigation"></a>
+																<h6 class="ms-3">Blood Investigation</h6>
+															</div>
+													
+															<!-- Physiotherapy -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<img src="./img/logo/doctor.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+																<h6 class="ms-3">Doctor consultation </h6>
+															</div>
+													
+															<!-- ICU at Home -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<img src="./img/logo/shipping-medicinep.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+																<h6 class="ms-3">Medicine delivery</h6>
+															</div>
+													
+															<!-- Medical Equipment -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<img src="./img/logo/physiotherapy.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+																<h6 class="ms-3">Physiotherapy </h6>
+															</div>
+													
+															<!-- Nursing -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<a href="./nursing.html"><img src="./img/logo/nursing_care.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation"></a>
+																<h6 class="ms-3">Nursing care services at home</h6>
+															</div>
+															
+															<!-- Attendant -->
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<img src="./img/logo/Types-of-Scan.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+																<h6 class="ms-3">Scan : X-Ray,MRI and CT</h6>
+															</div>
+															<div class="col-md-3 d-flex align-items-center mb-4">
+																<img src="./img/logo/ambulance.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+																<h6 class="ms-3">Ambulance services </h6>
+															</div>
+														</div>
+													</div>
+													
+												</ul>
+											</li>
+										</ul>
+
+									</div>
+								</div>
+							</nav>
+						</li>
+						<li><a href="contact-us.html" class="menu-links">Contact Us</a></li>
+						
+
+
+
+						<ul class="nav-list">
+							<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+									class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+							<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+									class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+							<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+						</ul>
+
+						<!-- <li><a href="our-clients.html" class="menu-links">Our Clients</a></li> -->
+					</ul>
+
 				</div>
 			</div>
+		</div>
 
-			<nav id="main-nav">
-				<ul class="first-nav">
-					<li>
-						<a href="index.html">Home</a>
+		
 
+		<!-- Offcanvas Sidebar for Mobile -->
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+			aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Haruto</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
 					</li>
-					<li>
-						<a href="about-us.html">About Us</a>
+					<li class="nav-item">
+						<a href="about-us.html" class="nav-link">About Us</a>
 					</li>
-					<li>
-						<a href="products.html">Services</a>
+					<li class="nav-item">
+						<a href="contact-us.html" class="nav-link">Contact Us</a>
 					</li>
-					<!-- <li>
-						<a href="#">Services</a>
-						<ul>
-							<li><a href="mobile-app-development.html">Mobile App Development</a> </li>
-							<li><a href="web-development.html">Web Development</a> </li>
-							<li><a href="graphic-design.html">Graphic Design</a> </li>
-							<li><a href="seo.html">SEO</a> </li>
-							<li><a href="digital-marketing.html">Digital Marketing</a> </li>
-							<li><a href="hosting.html">Hosting Service</a> </li>
+					<li class="nav-item">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									HIRE DEVELOPER
+								</a>
+								<ul class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown"
+									style="min-width: 100%;">
+									<li class="row">
+										<div class="container">
+											<div class="row d-flex flex-row justify-content-between align-items-center overflow-auto">
+												<!-- Caregiver -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<a href="./blood.html"><img src="./img/logo/blood.jpg" class="rounded-circle" width="100px" height="150px" alt="Blood Investigation"></a>
+													<h6 class="ms-3">Blood Investigation</h6>
+												</div>
+										
+												<!-- Physiotherapy -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<img src="./img/logo/doctor.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+													<h6 class="ms-3">Doctor consultation </h6>
+												</div>
+										
+												<!-- ICU at Home -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<img src="./img/logo/shipping-medicinep.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+													<h6 class="ms-3">Medicine delivery</h6>
+												</div>
+										
+												<!-- Medical Equipment -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<img src="./img/logo/physiotherapy.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+													<h6 class="ms-3">Physiotherapy </h6>
+												</div>
+										
+												<!-- Nursing -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<a href="./nursing.html"><img src="./img/logo/nursing_care.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation"></a>
+													<h6 class="ms-3">Nursing care services at home</h6>
+												</div>
+												
+												<!-- Attendant -->
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<img src="./img/logo/Types-of-Scan.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+													<h6 class="ms-3">Scan : X-Ray,MRI and CT</h6>
+												</div>
+												<div class="col-md-3 d-flex align-items-center mb-4">
+													<img src="./img/logo/ambulance.jpg" class="rounded-circle" width="100px" height="100px" alt="Blood Investigation">
+													<h6 class="ms-3">Ambulance services </h6>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
-
-					<li>
-						<a href="our-clients.html" class="menu-links">Our Clients</a>
-					</li> -->
-					<li>
-						<a href="contact-us.html" class="menu-links">Contact Us</a>
-					</li>
 				</ul>
-
-
-			</nav>
+			</div>
 		</div>
 	</header>
 
@@ -139,28 +246,27 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:+917904029402">+91 7904029402 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="tel:+917904029402">+91 7904029402 <span></span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/+91917904029402" target="_blank">+91 7904029402 <span>Mon-Fri 9am -
-								6pm</span></a>
+						<a href="https://wa.me/+917904029402" target="_blank">+91 7904029402 <span></span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="mailto:heamtechcenter@gmail.com " target="_blank">heamtechcenter@gmail.com 
+						<a href="mailto:heamtechcenter@gmail.com " target="_blank">heamtechcenter@gmail.com
 							<span>Online Support</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="#"> Heam tech diagnostic centre 
-							No.281,kallapatti pirivu saravanampatty coimbatore 
+						<a href="#"> Heam tech diagnostic centre
+							No.281,kallapatti pirivu saravanampatty coimbatore
 							Tamilnadu
 							641035<span>Visit Our Office</span></a>
 					</div>
@@ -171,43 +277,25 @@
 				<div class="social-media-linkz mt10">
 					<a href="https://www.facebook.com/pojotechnology" target="blank"><i class="fab fa-facebook"></i></a>
 					<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-					<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i
+							class="fab fa-instagram"></i></a>
 					<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
 					<a href="javascript:void(0)" target="blank"><i class="fab fa-youtube"></i></a>
-					<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i class="fab fa-pinterest-p"></i></a>
+					<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i
+							class="fab fa-pinterest-p"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<section class="breadcrumb-area banner-1" data-background="images/banner/9.jpg">
-		<div class="text-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 v-center">
-						<div class="bread-inner">
-							<div class="bread-menu">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="#">Contact Us</a></li>
-								</ul>
-							</div>
-							<div class="bread-title">
-								<h2>Contact Us</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
-	<section class="contact-page pad-tb">
+
+	<section class="contact-page pad-tb mt-5 about-sec-app">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-5 contact2dv">
+				<div class="col-lg-5 contact2dv rounded">
 					<div class="info-wrapr">
 						<h3 class="mb-4">Contact us</h3>
 						<div class="dbox d-flex align-items-start">
@@ -215,10 +303,10 @@
 								<i class="fas fa-map-marker"></i>
 							</div>
 							<div class="text pl-4">
-								<p><span>Address:</span> Heam tech diagnostic centre 
-No.281,kallapatti pirivu saravanampatty coimbatore 
-Tamilnadu
-641035</p>
+								<p><span>Address:</span> Heam tech diagnostic centre
+									No.281 , Kallapatti Pirivu , Saravanampatty , Coimbatore ,
+									Tamilnadu-
+									641 035</p>
 							</div>
 						</div>
 						<div class="dbox d-flex align-items-start">
@@ -244,26 +332,26 @@ Tamilnadu
 				</div>
 				<div class="col-lg-7 m-mt30 pr30 pl30">
 					<div class="common-heading text-l">
-						<h2 class="mt0 mb0">Get in touch</h2>
+						<h2 class="mt0 mb0">Feel free to contact</h2>
 						<p class="mb60 mt10">We will catch you as early as we receive the message</p>
 					</div>
 					<div class="form-block">
-						<form method="post" action="enquiry.php">
+						<form method="POST" action="https://api.web3forms.com/submit">
+							<input type="hidden" name="access_key" value="6d4de50e-d8e8-4e96-92ef-fc887db886a1">
 							<div class="row">
 								<div class="form-group col-sm-6">
-									<input type="text" name="name" placeholder="Enter name" required>									
+									<input type="text" name="name" placeholder="Enter name" required>
 								</div>
 								<div class="form-group col-sm-6">
 									<input type="email" name="email" placeholder="Enter email" required>
-									
+
 								</div>
 							</div>
 							<div class="row">
-								<div class="form-group col-sm-6">
-									<input type="text" name="phone" placeholder="Enter mobile" required
-										>									
+								<div class="form-group col-sm-12">
+									<input type="text" name="phone" placeholder="Enter mobile" required>
 								</div>
-								<div class="form-group col-sm-6">
+								<!-- <div class="form-group col-sm-6">
 									<select name="dtype" required>
 										<option value>Select Requirement</option>
 										<option value="app">App Development</option>
@@ -272,15 +360,15 @@ Tamilnadu
 										<option value="seo">SEO</option>
 									</select>
 									
-								</div>
+								</div> -->
 							</div>
 							<div class="form-group">
 								<textarea name="message" rows="5" placeholder="Enter your message" required></textarea>
-								
+
 							</div>
 
 							<button type="submit" class="btn lnk btn-main bg-btn"> <span
-									class="circle"></span>Submit</button>							
+									class="circle"></span>Submit</button>
 							<div class="clearfix"></div>
 
 						</form>
@@ -296,8 +384,12 @@ Tamilnadu
 			<div class="row justify-content-center">
 				<div class="col-lg-12">
 					<div class="map-div">
-						<iframe
+						<!-- <iframe
 							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31099.638329220685!2d80.219695!3d13.006685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267709aa40a7d%3A0xca348695fc512750!2sGuindy%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1685102960633!5m2!1sen!2sus"
+							width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.9634125401726!2d77.00221979999999!3d11.0750744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f7a6e5ff11b9%3A0xa030f5bedb39476e!2sThyro%20care%20aarogyam%20centre!5e1!3m2!1sen!2sin!4v1729490749976!5m2!1sen!2sin"
 							width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
@@ -311,75 +403,124 @@ Tamilnadu
 
 		<div class="footer-row2">
 			<div class="container">
+				<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img
+					src="img/logo/logo_crap-removebg-preview.png" alt="Logo" /></a>
 				<div class="row justify-content-between">
-					<div class="col-lg-5 col-sm-6  ftr-brand-pp">
-						<a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="img/logo/logo_crap-removebg-preview.png"
-								alt="Logo" /></a>
-						<a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="img/logo/logo_crap-removebg-preview.png"
-								alt="Logo" /></a>
-						<p>Pojo Tehnology is a full-service digital marketing agency. We’ve been providing a wide range
-							of services to clients of all industries since 2020.</p>
-						
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<h5>Useful Links</h5>
+					<div class="col-lg-2  ftr-brand-pp">
+						<h5>Our Services</h5>
 						<ul class="footer-address-list link-hover">
-							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
-							<li><a href="web-development.html">Web Development</a></li>
-							<li><a href="seo.html">Search Engine Optimization</a></li>
-							<li><a href="digital-marketing.html">Digital Marketing</a></li>
-							<li><a href="hosting.html">Hosting Services</a></li>
+							<li><a href="">Physiotherapy</a></li>
+							<li><a href="">Caregiver</a></li>
+							<li><a href="">ICU at Home</a></li>
+							<li><a href="">Equipment</a></li>
+							<li><a href="">Assisted Living</a></li>
+							<li><a href="">Nursing</a></li>
+							<li><a href="">Attendant</a></li>
 						</ul>
 					</div>
-					<div class="col-lg-3 col-sm-6">
+					<div class="col-lg-7">
+						<h5>Recovery Programs</h5>
+						<div class="row">
+							<div class="col-lg-3 ">
+								<ul class="footer-address-list link-hover">
+									<li><a href="">Spine Care</a></li>
+									<li><a href="">Senior Care</a></li>
+									<li><a href="">Tracheostomy Care</a></li>
+									<li><a href="">Alzheimer’s Care</a></li>
+									<li><a href="">Craniotomy Care</a></li>
+									<li><a href="">Feeding Tube Care</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3">
+								<ul class="footer-address-list link-hover">
+									<li><a href="">Parkinson’s Care</a></li>
+									<li><a href="">Post Covid-19 Care</a></li>
+									<li><a href="">Orthopedic Care</a></li>
+									<li><a href="">Postoperative Care</a></li>
+									<li><a href="">Trauma Care</a></li>
+									<li><a href="">Stroke Care</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3">
+								<ul class="footer-address-list link-hover">
+									<li><a href="">Cardiac Care</a></li>
+									<li><a href="">Oncology Care</a></li>
+									<li><a href="">Psychological Rehab Therapy</a></li>
+									<li><a href="">Respiratory Therapy</a></li>
+									<li><a href="">Integrative Therapy</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3">
+								<ul class="footer-address-list link-hover">
+									<li><a href="">Nutrition Therapy</a></li>
+									<li><a href="">Occupational Therapy</a></li>
+									<li><a href="">Speech Swallow Therapy</a></li>
+									<li><a href="">Neuro Care</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 pb-3">
 						<h5>Contact Us</h5>
 						<ul class="footer-address-list ftr-details">
 							<li>
 								<span><i class="fas fa-envelope"></i></span>
-								<p>Email <span> <a
-											href="mailto:heamtechcenter@gmail.com ">heamtechcenter@gmail.com </a></span>
+								<p>Email <span> <a href="mailto:heamtechcenter@gmail.com ">
+									heamtechcenter@gmail
+									.com
+										</a></span>
 								</p>
 							</li>
 							<li>
-								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:+917904029402">
-											+91 7904029402</a></span></p>
+								<span><i class="fas fa-phone"></i></span>
+								<p>Phone <span> <a href="tel:+917904029402
+									">
+											+91 7904029402
+										</a></span></p>
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>
-								<p>Address <span>  Heam tech diagnostic centre 
-No.281,kallapatti pirivu saravanampatty coimbatore 
-Tamilnadu
-641035</span></p>
+								<p>Address <span> Heam tech diagnostic centre
+										No.281 , Kallapatti pirivu , Saravanampatty , Coimbatore ,
+										Tamilnadu-
+										641035
+									</span></p>
 							</li>
 						</ul>
 					</div>
 
-
-				</div>
-			</div>
-		</div>
-
-		<div class="footer-row3">
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="footer-social-media-icons">
-								<a href="https://www.facebook.com/pojotechnology" target="blank"><i class="fab fa-facebook"></i></a>
-								<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i class="fab fa-instagram"></i></a>
-								<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
-								<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i class="fab fa-youtube"></i></a>
-
-							</div>
-
-						</div>
+					<div class="border-top pt-3 d-flex justify-content-between flex-wrap">
+						<p>© 2024 All Rights Reserved By <a href="https://pojotechnology.com/">Pojo Technology</a></p>
+						<p>Designed By <a href="https://pojotechnology.com/">Pojo Technology</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 	</footer>
+	<div class="footer-row3">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-social-media-icons">
+							<a href="https://www.facebook.com/pojotechnology" target="blank"><i
+									class="fab fa-facebook"></i></a>
+							<a href="javascript:void(0)" target="blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://www.instagram.com/pojotechnologies/" target="blank"><i
+									class="fab fa-instagram"></i></a>
+							<a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a>
+							<a href="https://www.youtube.com/channel/UCY0dB_bd67ZRiRIdNsVOgRA" target="blank"><i
+									class="fab fa-youtube"></i></a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

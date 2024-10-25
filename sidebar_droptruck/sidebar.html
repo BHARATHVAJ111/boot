@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Truck</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<style>
+    @media (max-width: 767px) {
+        .sidebar a {
+            display: none;
+        }
+        .sidebar .btn.dash,
+        .sidebar a.d-block {
+            display: block;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .sidebar .btn.dash,
+        .sidebar a.d-none.d-lg-block {
+            display: none;
+        }
+        .sidebar a.d-block.d-lg-none {
+            display: block;
+        }
+    }
+
+    span {
+        color: black;
+    }
+
+    .active>span {
+        background-color: #F98917 !important;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .nav-link:hover {
+        color: black !important;
+    }
+
+    .nav-link:active,
+    a.nav-link.active {
+        background-color: transparent !important;
+        color: black !important;
+    }
+
+    .nav-link i.fa-arrow-right {
+        display: none;
+    }
+
+    .nav-link.active i.fa-arrow-right {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .toast-error {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container-fluid" style="font-size:12px;">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white shadow">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/dashboard" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">
+                            <img src="./images/logo.jpg" alt="Drop Truck Logo" width="100" height="90">
+                        </span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="dashboard-link" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/dashboard.png" height="20" width="20" class="img">
+                                    <span class="ms-1">Dashboard <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="enquiries-link" class="nav-link align-middle px-0">
+                                <span class="d-none d-sm-inline">
+                                    <img src="./images/dashboard/home.png" height="25" width="25" class="img">
+                                    <span class="ms-1">Enquiries <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="./sidebar.html" id="trip" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/trip.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Trips <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="accounts" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/pricing.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Accounts <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="master" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/master.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Master <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="reports"  class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/reports.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Reports <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="customer" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/customer.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Customers <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="suppliers" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/suppliers.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Suppliers <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="truck" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/trucks.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Truck Type</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="trucks" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/trucks.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Trucks <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="./sidebar.html" id="pricing" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/pricing.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Pricing <i class="fas fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a href="/logout" class="nav-link align-middle px-0">
+                                <span class="ms-1 d-none d-sm-inline">
+                                    <img src="./images/dashboard/arrow.png" height="20" width="20" class="img">
+                                    <span class="ms-1"> Logout</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-xl-10 px-sm-4 px-0">
+                <div class="content-wrapper">
+                    <!-- Your form and other content goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDrYOd-VMvjfoqKwIaRRZylZG1HZM_cE8"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            // When a nav-link is clicked
+            $('.nav-link').on('click', function () {
+                // Remove the 'active' class from all nav-links
+                $('.nav-link').removeClass('active');
+                
+                // Add the 'active' class to the clicked link
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

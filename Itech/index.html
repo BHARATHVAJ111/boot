@@ -24,6 +24,45 @@
 	<link href="css/responsive.css" rel="stylesheet">
 	<link href="css/darkmode.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.slide-bg-image {
+						position: relative;
+						background-size: cover;
+						background-position: center;
+						height: 100vh;
+						/* Adjust height as needed */
+					}
+
+					.gradient-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+						/* Dark gradient overlay */
+						z-index: 1;
+						/* Make sure the gradient is on top of the background image */
+					}
+
+					.slide-inner .container {
+						position: relative;
+						z-index: 2;
+						/* Ensure content is on top of the gradient */
+					}
+
+					.text-white {
+						color: #ffffff;
+					}
+
+					.slide-title h3,
+					.slide-text p {
+						color: white;
+						z-index: 2;
+					}
+
+					
+	</style>
 </head>
 
 <body>
@@ -158,14 +197,14 @@
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="tel:070108 32201">070108 32201 <span>Mon-Fri 9am - 6pm</span></a>
+						<a href="tel:+919952784179">+91 99527 84179</a>
+						<a href="tel:+917010832201">+91 70108 32201<span class="text">24/7 Service</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
 					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
 					<div class="media-body getintouchinfo">
-						<a href="https://wa.me/070108 32201" target="_blank">070108 32201 <span>Mon-Fri 9am -
-								6pm</span></a>
+						<a href="https://wa.me/+917010832201" target="_blank">+91 70108 32201 <span>24/7 Service</span></a>
 					</div>
 				</div>
 				<div class="media mt15">
@@ -186,11 +225,11 @@
 				<h4>Follow Us On:</h4>
 				<div class="social-media-linkz mt10">
 					<a href="https://www.facebook.com/profile.php?id=61559404466830" target="blank"><i class="fab fa-facebook"></i></a>
-					<a href="" target="blank"><i class="fab fa-twitter"></i></a>
-					<a href="" target="blank"><i class="fab fa-instagram"></i></a>
-					<a href="" target="blank"><i class="fab fa-linkedin"></i></a>
-					<a href="" target="blank"><i class="fab fa-youtube"></i></a>
-					<a href="" target="blank"><i class="fab fa-pinterest-p"></i></a>
+					<a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/i_tech_foundation_de_addiction/profilecard/?igsh=MW5mNjh1dmV1ZW55dg==" target="blank"><i class="fab fa-instagram"></i></a>
+					<a href="#" target="blank"><i class="fab fa-linkedin"></i></a>
+					<a href="#" target="blank"><i class="fab fa-youtube"></i></a>
+					<a href="#" target="blank"><i class="fab fa-pinterest-p"></i></a>
 				</div>
 			</div>
 		</div>
@@ -199,9 +238,10 @@
 		<div class="swiper-container">
 
 			<div class="swiper-wrapper">
-
+<!-- <img src="" alt=""> -->
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-12.jpg">
+					<div class="slide-inner slide-bg-image background-image" data-background="./img/logo/treatment-4099432_1280.jpg">
+						<div class="gradient-overlay"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -230,7 +270,8 @@
 
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-10.jpg">
+					<div class="slide-inner slide-bg-image background-image" data-background="./img/logo/stop-2785450_640.jpg">
+						<div class="gradient-overlay"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -257,7 +298,8 @@
 				</div>
 
 				<div class="swiper-slide">
-					<div class="slide-inner slide-bg-image" data-background="images/hero/banner-14.jpg">
+					<div class="slide-inner slide-bg-image background-image" data-background="./img/logo/images.jfif">
+						<div class="gradient-overlay"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-6">
@@ -326,7 +368,7 @@
 								<div class="funfct srcl3">
 									<img src="images/icons/team.svg" alt="team">
 									<span class="services-cuntr counter">50</span><span class="services-cuntr">+</span>
-									<p>Talented Squad </p>
+									<p>Talented Doctors </p>
 								</div>
 							</div>
 
@@ -334,7 +376,7 @@
 								<div class="funfct srcl5">
 									<img src="images/icons/computers.svg" alt="projects">
 									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
-									<p>Projects Delivered</p>
+									<p>Trust and Assurance</p>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
@@ -392,7 +434,7 @@
 									</a></li> -->
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Residential drug and alcohol addiction treatment at Keerthi Foundation is a designed for anyone who suffers from substance addiction and is unable to achieve recovery whilst at home. Residential rehab involves a private stay in our centre; during your stay with us you will receive a combination of therapy and treatment to help you achieve recovery from your addictions.
+						<p class=" text-justify">Residential drug and alcohol addiction treatment at <b>I-Tech </b> is a designed for anyone who suffers from substance addiction and is unable to achieve recovery whilst at home. Residential rehab involves a private stay in our centre; during your stay with us you will receive a combination of therapy and treatment to help you achieve recovery from your addictions.
 
 							Residential rehab treatment is an opportunity to remove yourself from daily distractions and temptations. It also allows you to receive the support and care needed to help you through the difficult parts of your addiction recovery. Families and loved ones who are living through the impact of addition on a daily basis will have a much needed period of rest and reassurance.
 							
@@ -427,7 +469,7 @@
 									</a></li> -->
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Detoxification, or detox, requires the flushing of all toxins out of the system. Keerthi Foundation provides a medicated detox programme which is designed specifically for each client by one of our doctors. The drug and alcohol detox regime is created on your first day at the centre. This means you are prescribed specialist medications to help with the withdrawal symptoms experienced during the detoxification programme.
+						<p class="mt20 text-justify">Detoxification, or detox, requires the flushing of all toxins out of the system. <b>I-Tech</b> provides a medicated detox programme which is designed specifically for each client by one of our doctors. The drug and alcohol detox regime is created on your first day at the centre. This means you are prescribed specialist medications to help with the withdrawal symptoms experienced during the detoxification programme.
 
 							Once the Doctor has created the prescribing plan, our experienced team will ensure all of your clinical and medical requirements are met. Your care is our highest priority and will be constantly reviewed during your stay to make sure your detoxification is working and your withdrawal from drugs or alcohol is safe and comfortable. Safe drug and alcohol detoxification can typically range between 7 and 28 days.</p>
 						<!-- <a href="" class="mt20 link-prbs">Read More <i
@@ -455,7 +497,7 @@
 									</a></li> -->
 							</ul>
 						</div>
-						<p class="mt20 text-justify">Our treatment programmes are individually designed to make sure you achieve your recovery goals. The programmes use a combination of group and individual therapy sessions. Keerthi Foundation combines advice, education & guidance with therapies for the mind, body and the soul. These therapies will help with the understanding of the addiction and prepare the addiction sufferer to deal with the addiction and help achieve recovery goals and provide freedom from alcohol and drugs.</p>
+						<p class="mt20 text-justify">Our treatment programmes are individually designed to make sure you achieve your recovery goals. The programmes use a combination of group and individual therapy sessions. <b>I-Tech</b> combines advice, education & guidance with therapies for the mind, body and the soul. These therapies will help with the understanding of the addiction and prepare the addiction sufferer to deal with the addiction and help achieve recovery goals and provide freedom from alcohol and drugs.</p>
 						<!-- <a href="hosting.html" class="mt20 link-prbs">Read More <i
 								class="fas fa fa-arrow-circle-right"></i></a> -->
 					</div>
@@ -750,9 +792,7 @@
 						<div class="testimonial-card-a tcd owl-carousel">
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<p>I cannot express enough gratitude for the care and support I received at the De-addiction Cum Rehabilitation Center. The staff is compassionate, and the therapy programs are well-structured to help you not just overcome addiction, but rebuild your life with purpose. The environment is incredibly supportive, and I always felt like I was in good hands. Thanks to them, I am now sober and healthier than ever before.</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -760,7 +800,7 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5>Bharath</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -769,9 +809,7 @@
 							</div>
 							<div class="testimonial-card">
 								<div class="tt-text">
-									<p>They Possesses exceptional knowledge in web development they detected and
-										provided good assistance in solving any technical problem we got. Kudos to the
-										team for their satisfying service.</p>
+									<p>The De-addiction Cum Rehabilitation Center changed my life. The holistic approach they take — with therapy, medical support, and group activities — was exactly what I needed. I felt seen, heard, and cared for every step of the way. I highly recommend this center to anyone struggling with addiction. It gave me a second chance at life.</p>
 								</div>
 								<div class="client-thumbs mt30">
 									<div class="media v-center upset">
@@ -779,7 +817,7 @@
 												src="images/user-thumb/pojo-testimonial.png" alt="girl"
 												class="img-fluid rounded-circle" /></div>
 										<div class="media-body user-info v-center">
-											<h5>Bala Kumaran</h5>
+											<h5>Jaya Pragash</h5>
 
 											<i class="fas fa-quote-right posiqut"></i>
 										</div>
@@ -835,8 +873,10 @@
 							</li>
 							<li>
 								<span><i class="fas fa-phone-alt"></i></span>
-								<p>Phone <span> <a href="tel:070108 32201">
-											070108 32201</a></span></p>
+								<p>Phone <span> <a href="tel:+91 70108 32201">
+											+91 70108 32201</a></span><span> <a href="tel:+91 9952784179">
+												+91 9952784179</a></span></p>
+								
 							</li>
 							<li>
 								<span><i class="fas fa-map-marker-alt"></i></span>

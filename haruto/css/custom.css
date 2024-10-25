@@ -1,6 +1,6 @@
 .footer-row2 .navbar-brand img{
     width: 150px !important;
-    height:150px !important
+    height:50px !important
 }
 
 .text-justify{
@@ -10,7 +10,8 @@
     background-color: #fff;
 }
 .nav-bg-b .custom-nav .nav-list li a.menu-links{
-    color:#050748
+    /* color:#050748 */
+    color: white;
 }
 
 .ptb-30{
