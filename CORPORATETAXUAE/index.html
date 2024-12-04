@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<title>CORPORATETAXUAE</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#4302b2">
+
+	<link href="images/logo/icms.png" rel="icon">
+	<link href="css/swiper.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/plugin.min.css" rel="stylesheet">
+	<link href="css/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/darkmode.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<style>
+		.slide-bg-image {
+						position: relative;
+						background-size: cover;
+						background-position: center;
+						height: 100vh;
+						/* Adjust height as needed */
+					}
+
+					.gradient-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+						/* Dark gradient overlay */
+						z-index: 1;
+						/* Make sure the gradient is on top of the background image */
+					}
+
+					.slide-inner .container {
+						position: relative;
+						z-index: 2;
+						/* Ensure content is on top of the gradient */
+					}
+
+					.text-white {
+						color: #ffffff;
+					}
+
+					.slide-title h3,
+					.slide-text p {
+						color: white;
+						z-index: 2;
+					}
+	</style>
+</head>
+
+<body>
+
+	<!--<div class="onloadpage" id="page_loader">
+		<div class="pre-content">
+			<div class="logo-pre"><img src="images/logo.png" alt="Logo" class="img-fluid" /></div>
+			<div class="pre-text- text-radius text-light text-animation bg-b">Niwax - Creative Agency & Portfolio HTML
+				Template Are 2 Seconds Away. Have Patience</div>
+		</div>
+	</div>-->
+
+
+	<header class="header-pr nav-bg-b main-header navfix fixed-top menu-white">
+		<div class="container-fluid m-pad">
+			<div class="menu-header">
+				<div class="dsk-logo"><a class="nav-brand" href="index.html">
+						<!-- <img src="images/logo/icms.png" alt="Logo" class="mega-white-logo" />
+						<img src="images/logo/icms.png" alt="Logo" class="mega-darks-logo" /> -->
+						<h5>CORPORATETAXUAE</h5>
+					</a>
+				</div>
+				<div class="custom-nav" role="navigation">
+					<ul class="nav-list">
+						<li>
+							<a href="index.html" class="menu-links">Home</a>
+
+						</li>
+						<li>
+							<a href="about-us.html" class="menu-links">About Us</a>
+						</li>
+						<li>
+							<a href="web-development.html" class="menu-links">Services</a>
+						</li>
+
+						
+					
+
+						<!-- <li class="sbmenu rpdropdown">
+							<a href="#" class="menu-links">Services</a>
+							<div class="nx-dropdown menu-dorpdown">
+								<div class="sub-menu-section">
+									<div class="sub-menu-center-block">
+										<div class="sub-menu-column smfull">
+											<ul>
+												<li><a href="career.html">Career Counseling & Psychometric
+														Assessments</a> </li>
+												<li><a href="web-development.html">Recruitment & Placement Services</a>
+												</li>
+												<li><a href="upskilling.html">Upskilling & Corporate Training</a> </li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li> -->
+						<!-- <li>
+							<a href="our-clients.html" class="menu-links">Our Clients</a>
+						</li> -->
+						<li>
+							<a href="contact-us.html" class="menu-links">Contact Us</a>
+						</li>
+
+					</ul>
+
+					<ul class="nav-list right-end-btn">
+						<li class="hidemobile"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+						<li class="hidemobile"><a href="contact-us.html" class="btn-br bg-btn3 btshad-b2 lnk">Request A
+								Quote <span class="circle"></span></a> </li>
+
+						<li class="hidedesktop"><a data-bs-toggle="offcanvas" href="#offcanvasExample"
+								class="btn-round- btn-br bg-btn2"><i class="fas fa-phone-alt"></i></a></li>
+						<li class="navm- hidedesktop"> <a class="toggle" href="#"><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<nav id="main-nav">
+				<ul class="first-nav">
+					<li>
+						<a href="index.html">Home</a>
+
+					</li>
+					<li>
+						<a href="about-us.html">About Us</a>
+					</li>
+
+					<li>
+						<a href="web-development.html">Services</a>
+					</li>
+
+					<!-- <li>
+						<a href="#">Services</a>
+						<ul>
+							<li><a href="career.html">Career Counseling & Psychometric Assessments</a> </li>
+							<li><a href="web-development.html">Recruitment & Placement Services</a> </li>
+							<li><a href="upskilling.html">Upskilling & Corporate Training</a> </li>
+						</ul>
+					</li> -->
+
+					<!-- <li>
+						<a href="our-clients.html" class="menu-links">Our Clients</a>
+					</li> -->
+					<li>
+						<a href="contact-us.html" class="menu-links">Contact Us</a>
+					</li>
+
+
+
+				</ul>
+
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="niwaxofcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample">
+		<div class="offcanvas-body">
+			<div class="cbtn animation">
+				<div class="btnclose"> <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button></div>
+			</div>
+
+			<div class="getintouchblock mt30">
+				<h4>Get In Touch</h4>
+
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/call.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="">(+971) 05 05 05 4657 <span>Mon-Fri 9am - 6pm</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/whatsapp.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="https://wa.me/971505054657" target="_blank">(+971) 05 05 05 4657 <span>Mon-Fri 9am - 6pm</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/mail.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="" target="_blank">
+							<span>Online Support</span></a>
+					</div>
+				</div>
+				<div class="media mt15">
+					<div class="icondive"><img src="images/icons/map.svg" alt="icon"></div>
+					<div class="media-body getintouchinfo">
+						<a href="#">
+							Po Box 236792 , Al Qusais, Dubai , UAE <span>Visit Our Office</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="contact-data mt30">
+				<h4>Follow Us On:</h4>
+				<div class="social-media-linkz mt10">
+					<a href="#
+					" target="blank"><i class="fab fa-facebook"></i></a>
+					<a href="#"><img src="./img/download/google.png" width="18px"
+							alt=""></a>
+					<a href="#" target="blank"><img
+							src="./img/download/whatsapp.png" width="18px" alt=""></a>
+					<a href=" #" target="blank"><i
+							class="fab fa-instagram"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-linkedin"></i></a> -->
+					<a href="#" target="blank"><i
+							class="fab fa-youtube"></i></a>
+					<!-- <a href="javascript:void(0)" target="blank"><i class="fab fa-pinterest-p"></i></a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="hero-slider hero-style">
+		<div class="swiper-container">
+
+			<div class="swiper-wrapper">
+
+				<div class="swiper-slide">
+					<!-- <img src="./img/download/" alt="/img/"> -->
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/pexels-photo-4386367.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">"Expert Tax Solutions for Financial Peace of Mind"
+											</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<h4 class="text-white">Offering accurate, comprehensive tax services to relieve financial stress and help you focus on what matters most.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/mobile-app.png"> -->
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-image" data-background="./img/download/pexels-photo-209224.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">Recruitment & Placement Services</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<h4 class="text-white">
+											"Your Trusted Partner in Tax & Financial Planning"
+										</h4>
+										<p>
+											Providing reliable, ongoing support in tax compliance and financial strategy to ensure lasting success.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/web-development.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/pexels-photo-6863248.jpeg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">"Simplifying Taxes, Amplifying Growth"</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<h4 class="text-white">
+											Streamlining complex tax processes so you can invest more energy in expanding your business and personal finances.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="swiper-slide">
+					<div class="slide-inner slide-bg-image background-img" data-background="./img/download/image-4.jpg">
+						<div class="gradient-overlay"></div> <!-- Gradient overlay -->
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<div data-swiper-parallax="300" class="slide-title">
+										<h3 class="text-white">"Precision, Compliance, and Dedication – Every Time"</h3>
+									</div>
+									<div data-swiper-parallax="400" class="slide-text">
+										<h4 class="text-white">
+											Committed to meticulous accuracy and full compliance with tax laws to safeguard your financial interests.</p>
+									</div>
+
+									<div class="clearfix"></div>
+									<div data-swiper-parallax="500" class="slide-btns">
+										<a href="contact-us.html" class="btn-main bg-btn lnk">Enquiry Now <i
+												class="fas fa-chevron-right fa-icon"></i><span
+												class="circle"></span></a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<!-- <img src="images/hero/digital-marketing.png"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+	</section>
+
+
+	<section class="about-sec-app pad-tb pt60 dark-bg2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="common-heading text-l">
+						<h2 class="mb30">
+							<span class="text-second text-bold">CORPORATETAXUAE</span> - your trusted partner in 
+							navigating the complexities of today’s ever-evolving tax landscape.
+						</h2>
+						<p class="text-justify">At CORPORATETAXUAE, we are dedicated to providing expert tax solutions for individuals and businesses alike. With a team of highly skilled professionals and years of experience in the industry, we ensure that our clients receive tailored advice, accurate tax filing, and comprehensive financial planning.  </p>
+						<p class="mt10 text-justify">Our commitment is to help you navigate the complexities of tax laws, optimize your tax position, and support your financial growth.</p>
+						<!-- <p class="mt10  text-justify">At Integrated Career Management Services Pvt Ltd, we are committed
+							to transforming career journeys through expert career counseling, psychometric assessments,
+							recruitment solutions, and training programs. Whether you're a student seeking clarity, a
+							professional advancing your career, or an organization building stronger teams, we provide
+							end-to-end solutions tailored to individual and organizational needs.</p> -->
+					</div>
+
+
+
+				</div>
+				<div class="col-lg-6">
+					<div class="funfact">
+						<div class="row">
+
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl2">
+									<img src="images/icons/startup.svg" alt="startup icon">
+									<span class="services-cuntr counter">6</span><span class="services-cuntr">+</span>
+									<p>Years Experience </p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl3">
+									<img src="images/icons/team.svg" alt="team">
+									<span class="services-cuntr counter">50</span><span class="services-cuntr">+</span>
+									<p>Talented Squad </p>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl5">
+									<img src="images/icons/computers.svg" alt="projects">
+									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
+									<p>Projects Delivered</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-6">
+								<div class="funfct srcl1">
+									<img src="images/icons/deal.svg" alt="Satisfaction">
+									<span class="services-cuntr counter">100</span><span class="services-cuntr">%</span>
+									<p>Client Satisfaction</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+
+
+
+	<section class="work-category pt-5 pb-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading ptag">
+						<!-- <span>We Have Worked Across Multiple Industries</span> -->
+						<h2>Knowledge Partners 
+						</h2>
+
+					</div>
+				</div>
+			</div>
+			<div class="row mt30">
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.3s">
+					<div class="industry-workfor hoshd"><img src="img/partners/nsdc.jpg" alt="img">
+						<h6>National Skill Development Corporation</h6>
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.5s">
+					<div class="industry-workfor hoshd"><img src="img/partners/bfsi.jfif" alt="img">
+						<h6>Banking and Financial Sector Skill Council </h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.1s">
+					<div class="industry-workfor hoshd"><img src="img/partners/medhavi.png" alt="img">
+						<h6>Medhavi Skill University </h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.7s">
+					<div class="industry-workfor hoshd"><img src="img/partners/GKU.jpg" alt="img">
+						<h6>Guru Kashi University</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.7s">
+					<div class="industry-workfor hoshd"><img src="img/partners/lead_tomorrow_img_940a8763b7.webp" alt="img">
+						<h6>Mangaytan University </h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.7s">
+					<div class="industry-workfor hoshd"><img src="img/partners/Vivekananda Global University.png" alt="img">
+						<h6>Vivekananda Global University </h6>
+					</div>
+				</div>
+				<div class="row justify-content-center  mt-5">
+					<div class="col-lg-8">
+						<div class="common-heading ptag">
+							<h2>Recognised by 
+							</h2>
+	
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.5s">
+					<div class="industry-workfor hoshd"><img src="img/partners/ministry-for-corporate-affairs-jobs.webp" alt="img">
+						<h6>Ministry of Corporate Affairs</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.1s">
+					<div class="industry-workfor hoshd"><img src="img/partners/msmse-removebg-preview.png" alt="img">
+						<h6>MSME </h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.9s">
+					<div class="industry-workfor hoshd"><img src="img/partners/start_up-removebg-preview.png" alt="img">
+						<h6>Start up india </h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="0.9s">
+					<div class="industry-workfor hoshd"><img src="img/partners/iso.png" alt="img">
+						<h6>Iso 9001-2015  </h6>
+					</div>
+				</div>
+				<!-- <div class="col-lg-8"></div> -->
+				
+				<!-- <div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.7s">
+					<div class="industry-workfor hoshd"><img src="images/icons/money-growth.svg" alt="img">
+						<h6>Finance</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="1.9s">
+					<div class="industry-workfor hoshd"><img src="images/icons/baker.svg" alt="img">
+						<h6>Restaurant</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="2.1s">
+					<div class="industry-workfor hoshd"><img src="images/icons/mobile-app.svg" alt="img">
+						<h6>On-Demand</h6>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-6 wow fadeIn" data-wow-delay="2.3s">
+					<div class="industry-workfor hoshd"><img src="images/icons/groceries.svg" alt="img">
+						<h6>Grocery</h6>
+					</div>
+				</div> -->
+			</div>
+			<div class="row">
+				<div class="col-lg-4"></div>
+			<div class="col-lg-4 col-sm-6 col-6 wow fadeIn mb-3" data-wow-delay="1.3s">
+				<div class="industry-workfor hoshd"><img src="img/partners/international.png" alt="img">
+					<h6>International Association of Colleges and Universities</h6>
+				</div>
+			</div>
+			<div class="col-lg-4"></div>
+
+		</div>
+		</div>
+	</section>
+	
+
+
+
+
+	<!-- <section class="clients-section-app pad-tb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="common-heading text-w">
+
+						<h2 class="mb30">Some of our Clients</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="client-logoset">
+						<ul class="row text-center clearfix apppg">
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".2s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-1.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Admire</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".4s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-2.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Annai Masala</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".6s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-3.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>MK Auto Plast</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".8s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-4.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Bestie</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-5.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>BTM</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.2s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-6.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Camping</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.4s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-7.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>CPS</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.6s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-8.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Escon Logo</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.8s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-9.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Event Service</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-10.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Jai Academy</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.2s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-11.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>JJ</p>
+							</li>
+							<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.4s">
+								<div class="brand-logo hoshd"><img src="images/client/client-logo-12.jpg" alt="clients"
+										class="img-fluid"></div>
+								<p>Jungle Hikers</p>
+							</li>
+						</ul>
+					</div>
+					<div class="-cta-btn mt70">
+						<div class="free-cta-title v-center wow zoomInDown">
+							<a href="our-clients.html" class="btn-outline lnk">View More<span class="circle"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+
+
+
+	<section class="testinomial-section-app bg-none pad-tb">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="common-heading text-l">
+						<span>What our Students say about us.</span>
+						<h2>Over 200+ Satisfied Students and Growing</h2>
+					</div>
+					<!-- <div class="review-title-ref mt40">
+						<div class="cta-card mt40">
+							<a href="#" class="btn-outline lnk">Write a Reviews<span class="circle"></span></a>
+						</div>
+					</div>
+					<div class="row mt30">
+						<a href="#" target="blank" class="wow fadeIn col-lg-4 col-4" data-wow-delay=".2s"><img
+								src="images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
+
+					</div> -->
+				</div>
+				<div class="col-lg-7">
+					<div class="pl50">
+						<div class="shape shape-a1"><img src="images/shape/shape-3.svg" alt="shape"></div>
+						<div class="testimonial-card-a tcd owl-carousel">
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"CORPORATETAXUAE has been instrumental in simplifying our tax processes. Their expertise and attention to detail have saved us time and money, year after year. Highly recommend them to anyone in need of reliable tax assistance!"</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5> – Aisha K</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"The team at CORPORATETAXUAE truly understands the challenges of corporate taxes. They’re professional, dependable, and always provide sound advice tailored to our unique needs. They’re a partner we trust fully!"
+									</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>– Suresh P</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-card">
+								<div class="tt-text">
+									<p>"CORPORATETAXUAE has been our go-to for all tax-related needs. They’re excellent at explaining complex tax issues in a way we understand, and they’re always ready to help. Exceptional service!"</p>
+								</div>
+								<div class="client-thumbs mt30">
+									<div class="media v-center upset">
+										<div class="user-image bdr-radius"><img
+												src="images/user-thumb/pojo-testimonial.png" alt="girl"
+												class="img-fluid rounded-circle" /></div>
+										<div class="media-body user-info v-center">
+											<h5>– Rahul S</h5>
+
+											<i class="fas fa-quote-right posiqut"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<footer>
+
+		<div class="footer-row2">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-9 col-sm-6  ftr-brand-pp">
+						<!-- <a class="navbar-brand  f-dark-logo" href="#"> CORPORATETAXUAE</a>
+						<a class="navbar-brand  f-white-logo" href="#"> CORPORATETAXUAE</a> -->
+						
+						<h5 class=""> CORPORATETAXUAE</h5>
+
+						<p>At CORPORATETAXUAE, we specialize in delivering expert tax solutions for both individuals and businesses. Backed by a skilled team with extensive industry experience, we provide personalized advice, precise tax filing, and financial planning to meet each client’s unique needs. Our mission is to simplify the complexities of tax law, help optimize tax outcomes, and support our clients in achieving long-term financial success.</p>
+					</div>
+					<!-- <div class="col-lg-4 col-sm-6">
+						<h5>Useful Links</h5>
+						<ul class="footer-address-list link-hover">
+							<li><a href="mobile-app-development.html">Mobile app Development</a></li>
+							<li><a href="web-development.html">Web Development</a></li>
+							<li><a href="seo.html">Search Engine Optimization</a></li>
+							<li><a href="digital-marketing.html">Digital Marketing</a></li>
+							<li><a href="hosting.html">Hosting Services</a></li>
+						</ul>
+					</div> -->
+					<div class="col-lg-3 col-sm-6">
+						<h5>Contact Us</h5>
+						<ul class="footer-address-list ftr-details">
+							<li>
+								<span><i class="fas fa-envelope"></i></span>
+								<p>Email <span> <a
+											href="mailto:info.icmsgroup@gmail.com">info.@gmail.com</a></span>
+								</p>
+							</li>
+							<li>
+								<span><i class="fas fa-phone-alt"></i></span>
+								<p>Phone <span> <a href="">
+									(+971) 05 05 05 4657</a></span></p>
+							</li>
+							<div class="">
+								<!-- <li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Registered Office <span> Maliyakkal, Princy Villa
+											Chekom ,Pathanapuram
+											Kollam , Kerala-689695 </span></p>
+								</li> -->
+								<li>
+									<span><i class="fas fa-map-marker-alt"></i></span>
+									<p>Corporate Office <span>  Po Box 236792 , Al Qusais, Dubai , UAE</span></p>
+								</li>
+							</div>
+						</ul>
+					</div>
+
+					<p class=" border-bottom pb-2 text-justify pt-3  border-2">© 2024 All Rights Reserved By <b
+							class="text-primary"><a href="https://pojotechnology.com/">Pojo Technology</a></b></p>
+				</div>
+			</div>
+		</div>
+
+
+	</footer>
+	<!-- <div class="footer-row3">
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="footer-social-media-icons">
+							<a href="https://www.facebook.com/careercounsellorkerala?mibextid=ZbWKwL
+					" target="blank"><i class="fab fa-facebook"></i></a>
+				
+					<a href=" https://instagram.com/mycareercounsellor?igshid=OGQ5ZDc2ODk2ZA==" target="blank"><i
+							class="fab fa-instagram"></i></a>
+					<a href="https://youtube.com/@mycareercounsellor?si=deOSl3bAqhPsV4ph" target="blank"><i
+							class="fab fa-youtube"></i></a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/plugin.min.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/dark-mode.js"></script>
+	<script src="js/swiper.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

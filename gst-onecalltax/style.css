@@ -105,6 +105,15 @@ hr {
   /* 3 */
 }
 
+.logo_header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.submenu_header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
@@ -8603,7 +8612,7 @@ textarea.form-control.is-invalid{
   }
 
   .lg\:h-\[450px\]{
-    height: 450px;
+    height: 500px;
   }
 
   .lg\:h-\[400px\]{
@@ -8787,7 +8796,7 @@ textarea.form-control.is-invalid{
   }
 
   .lg\:max-w-\[600px\]{
-    max-width: 650px;
+    max-width: 710px;
   }
 
   .lg\:max-w-\[200px\]{
